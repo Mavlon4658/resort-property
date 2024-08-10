@@ -12,12 +12,12 @@
     <link rel="stylesheet" href="./dist/output.css">
 </head>
 <body class="bg-[#F5F5F4]">
-    <div class="wrapper">
+    <div class="w-full overflow-hidden">
 
         <!-- Header -->
-        <header class="absolute top-0 left-0 w-full z-10 border-b-[rgba(255,255,255,0.38)] border-b border-solid">
+        <header class="absolute top-0 left-0 w-full z-10 lg:border-b-[rgba(255,255,255,0.38)] lg:border-b lg:border-solid pt-[23px] lg:pt-0">
             <div class="container relative">
-                <ul class="flex items-center justify-center gap-[46px] pr-[130px]">
+                <ul class="hidden lg:flex items-center justify-center gap-[46px] pr-[130px]">
                     <li>
                         <a href="#" class="pt-[27px] pb-6 text-white font-montserrat text-sm relative flex">Недвижимость</a>
                     </li>
@@ -37,7 +37,10 @@
                         <a href="#" class="pt-[27px] pb-6 text-white font-montserrat text-sm relative flex">Блог</a>
                     </li>
                 </ul>
-                <a href="tel:+88002223344" class="absolute right-0 top-[28px] text-white font-montserrat font-medium text-base">8 800 222 33 44</a>
+                <a href="tel:+88002223344" class="absolute hidden lg:flex right-0 top-[28px] text-white font-montserrat font-medium text-base">8 800 222 33 44</a>
+                <button class="lg:hidden">
+                    <img src="./images/bars.svg" alt="">
+                </button>
             </div>
         </header>
         <!-- Header end -->
@@ -48,12 +51,12 @@
             <section class="relative z-[1]">
                 <img src="./images/home-bg.png" alt="" class="object-cover absolute z-[-1] left-0 top-0 w-full h-full">
                 <div class="absolute left-0 top-0 w-full h-full bg-[#000] z-[-1] opacity-[.4]"></div>
-                <div class="container pt-[256px] pb-[167px]">
-                    <h1 class="max-w-[895px] text-6xl leading-[74px] font-medium text-white mb-[54px]">
-                        Купить <span class="text-[#EF924F]">апартаменты <br> у моря</span> от застройщика
+                <div class="container relative pt-[400px] lg:pt-[256px] pb-[342px] lg:pb-[167px]">
+                    <h1 class="max-w-[895px] text-[23px] lg:text-6xl leading-[29px] lg:leading-[74px] font-medium text-white mb-0 lg:mb-[54px]">
+                        Купить <span class="text-white lg:text-[#EF924F]">апартаменты <br> у моря</span> от застройщика
                     </h1>
-                    <div class="flex items-center justify-between gap-[23px] bg-[#F3F3F3] rounded-[40px] pt-[11px] pr-[13px] pb-3 pl-[42px] mb-4">
-                        <div class="w-full flex items-center justify-between gap-[22px]">
+                    <div class="absolute lg:static bottom-[-85px] left-0 w-full flex items-center flex-col lg:flex-row justify-between gap-[10px] lg:gap-[23px] bg-white lg:bg-[#F3F3F3] rounded-[16px] lg:rounded-[40px] pt-[15px] lg:pt-[11px] pr-[17px] lg:pr-[13px] pb-[18px] lg:pb-3 pl-[15px] lgpl-[42px] mb-0 lg:mb-4">
+                        <div class="w-full flex items-center flex-col lg:flex-row justify-between gap-[13px] lg:gap-[22px]">
                             <div class="flex flex-col w-full">
                                 <label class="font-montserrat text-[#3B3B3B] opacity-[0.5] text-xs leading-[15px] font-light mb-2" for="">Курорт</label>
                                 <div class="relative dropdown">
@@ -63,14 +66,14 @@
                                             <path d="M4.8102 5.73977C4.71548 5.73977 4.63091 5.70256 4.55649 5.62814L0.152196 1.26443C0.0507145 1.18325 -2.67388e-05 1.08177 -2.67335e-05 0.959987C-2.67293e-05 0.865271 0.0371828 0.780704 0.111603 0.706284L0.487084 0.34095C0.541208 0.286827 0.602097 0.259765 0.669751 0.259765C0.757702 0.259765 0.862566 0.320654 0.984344 0.442432L4.80005 4.21754L8.6259 0.493173C8.74768 0.371395 8.85254 0.310506 8.94049 0.310506C9.00815 0.310506 9.07918 0.347716 9.1536 0.422136L9.55953 0.828062C9.62718 0.895716 9.66101 0.959988 9.66101 1.02088C9.66101 1.06147 9.64071 1.10544 9.60012 1.1528C9.55953 1.20693 9.51217 1.26105 9.45805 1.31517L5.13494 5.57739C5.02669 5.68564 4.91844 5.73977 4.8102 5.73977Z" fill="#3D3D3D"/>
                                         </svg>
                                     </button>
-                                    <ul class="hidden flex-col gap-6 absolute left-[-22px] bottom-[-13px] pt-[15px] px-[22px] pb-4 bg-[#F3F3F3] translate-y-full w-[calc(100%_+_44px)] dropdown-body">
+                                    <ul class="hidden flex-col gap-6 absolute left-[-15px] lg:left-[-22px] bottom-[-13px] pt-[15px] px-[22px] pb-4 bg-[#F3F3F3] translate-y-full w-[calc(100%_+_32px)] lg:w-[calc(100%_+_44px)] dropdown-body">
                                         <li class="text-[#3B3B3B] text-[15px] cursor-pointer">Квартира</li>
                                         <li class="text-[#3B3B3B] text-[15px] cursor-pointer">Апартаменты</li>
                                         <li class="text-[#3B3B3B] text-[15px] cursor-pointer">Дом</li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="bg-[#3B3B3B] h-[55px] w-[1px] opacity-[0.13]"></div>
+                            <div class="bg-[#3B3B3B] h-[1px] lg:h-[55px] w-full lg:w-[1px] opacity-[0.13]"></div>
                             <div class="flex flex-col w-full">
                                 <label class="font-montserrat text-[#3B3B3B] opacity-[0.5] text-xs leading-[15px] font-light mb-2" for="">Тип недвижимости</label>
                                 <div class="relative dropdown">
@@ -80,14 +83,14 @@
                                             <path d="M4.8102 5.73977C4.71548 5.73977 4.63091 5.70256 4.55649 5.62814L0.152196 1.26443C0.0507145 1.18325 -2.67388e-05 1.08177 -2.67335e-05 0.959987C-2.67293e-05 0.865271 0.0371828 0.780704 0.111603 0.706284L0.487084 0.34095C0.541208 0.286827 0.602097 0.259765 0.669751 0.259765C0.757702 0.259765 0.862566 0.320654 0.984344 0.442432L4.80005 4.21754L8.6259 0.493173C8.74768 0.371395 8.85254 0.310506 8.94049 0.310506C9.00815 0.310506 9.07918 0.347716 9.1536 0.422136L9.55953 0.828062C9.62718 0.895716 9.66101 0.959988 9.66101 1.02088C9.66101 1.06147 9.64071 1.10544 9.60012 1.1528C9.55953 1.20693 9.51217 1.26105 9.45805 1.31517L5.13494 5.57739C5.02669 5.68564 4.91844 5.73977 4.8102 5.73977Z" fill="#3D3D3D"/>
                                         </svg>
                                     </button>
-                                    <ul class="hidden flex-col gap-6 absolute left-[-22px] bottom-[-13px] pt-[15px] px-[22px] pb-4 bg-[#F3F3F3] translate-y-full w-[calc(100%_+_44px)] dropdown-body">
+                                    <ul class="hidden flex-col gap-6 absolute left-[-15px] lg:left-[-22px] bottom-[-13px] pt-[15px] px-[22px] pb-4 bg-[#F3F3F3] translate-y-full w-[calc(100%_+_32px)] lg:w-[calc(100%_+_44px)] dropdown-body">
                                         <li class="text-[#3B3B3B] text-[15px] cursor-pointer">Квартира</li>
                                         <li class="text-[#3B3B3B] text-[15px] cursor-pointer">Апартаменты</li>
                                         <li class="text-[#3B3B3B] text-[15px] cursor-pointer">Дом</li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="bg-[#3B3B3B] h-[55px] w-[1px] opacity-[0.13]"></div>
+                            <div class="bg-[#3B3B3B] h-[1px] lg:h-[55px] w-full lg:w-[1px] opacity-[0.13]"></div>
                             <div class="flex flex-col w-full">
                                 <label class="font-montserrat text-[#3B3B3B] opacity-[0.5] text-xs leading-[15px] font-light mb-2" for="">Статус недвижимости</label>
                                 <div class="relative dropdown">
@@ -97,14 +100,14 @@
                                             <path d="M4.8102 5.73977C4.71548 5.73977 4.63091 5.70256 4.55649 5.62814L0.152196 1.26443C0.0507145 1.18325 -2.67388e-05 1.08177 -2.67335e-05 0.959987C-2.67293e-05 0.865271 0.0371828 0.780704 0.111603 0.706284L0.487084 0.34095C0.541208 0.286827 0.602097 0.259765 0.669751 0.259765C0.757702 0.259765 0.862566 0.320654 0.984344 0.442432L4.80005 4.21754L8.6259 0.493173C8.74768 0.371395 8.85254 0.310506 8.94049 0.310506C9.00815 0.310506 9.07918 0.347716 9.1536 0.422136L9.55953 0.828062C9.62718 0.895716 9.66101 0.959988 9.66101 1.02088C9.66101 1.06147 9.64071 1.10544 9.60012 1.1528C9.55953 1.20693 9.51217 1.26105 9.45805 1.31517L5.13494 5.57739C5.02669 5.68564 4.91844 5.73977 4.8102 5.73977Z" fill="#3D3D3D"/>
                                         </svg>
                                     </button>
-                                    <ul class="hidden flex-col gap-6 absolute left-[-22px] bottom-[-13px] pt-[15px] px-[22px] pb-4 bg-[#F3F3F3] translate-y-full w-[calc(100%_+_44px)] dropdown-body">
+                                    <ul class="hidden flex-col gap-6 absolute left-[-15px] lg:left-[-22px] bottom-[-13px] pt-[15px] px-[22px] pb-4 bg-[#F3F3F3] translate-y-full w-[calc(100%_+_32px)] lg:w-[calc(100%_+_44px)] dropdown-body">
                                         <li class="text-[#3B3B3B] text-[15px] cursor-pointer">Квартира</li>
                                         <li class="text-[#3B3B3B] text-[15px] cursor-pointer">Апартаменты</li>
                                         <li class="text-[#3B3B3B] text-[15px] cursor-pointer">Дом</li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="bg-[#3B3B3B] h-[55px] w-[1px] opacity-[0.13]"></div>
+                            <div class="bg-[#3B3B3B] h-[1px] lg:h-[55px] w-full lg:w-[1px] opacity-[0.13]"></div>
                             <div class="flex flex-col w-full">
                                 <label class="font-montserrat text-[#3B3B3B] opacity-[0.5] text-xs leading-[15px] font-light mb-2" for="">Стоимость (до)</label>
                                 <div class="relative dropdown">
@@ -114,43 +117,57 @@
                                             <path d="M4.8102 5.73977C4.71548 5.73977 4.63091 5.70256 4.55649 5.62814L0.152196 1.26443C0.0507145 1.18325 -2.67388e-05 1.08177 -2.67335e-05 0.959987C-2.67293e-05 0.865271 0.0371828 0.780704 0.111603 0.706284L0.487084 0.34095C0.541208 0.286827 0.602097 0.259765 0.669751 0.259765C0.757702 0.259765 0.862566 0.320654 0.984344 0.442432L4.80005 4.21754L8.6259 0.493173C8.74768 0.371395 8.85254 0.310506 8.94049 0.310506C9.00815 0.310506 9.07918 0.347716 9.1536 0.422136L9.55953 0.828062C9.62718 0.895716 9.66101 0.959988 9.66101 1.02088C9.66101 1.06147 9.64071 1.10544 9.60012 1.1528C9.55953 1.20693 9.51217 1.26105 9.45805 1.31517L5.13494 5.57739C5.02669 5.68564 4.91844 5.73977 4.8102 5.73977Z" fill="#3D3D3D"/>
                                         </svg>
                                     </button>
-                                    <ul class="hidden flex-col gap-6 absolute left-[-22px] bottom-[-13px] pt-[15px] px-[22px] pb-4 bg-[#F3F3F3] translate-y-full w-[calc(100%_+_44px)] dropdown-body">
+                                    <ul class="hidden flex-col gap-6 absolute left-[-15px] lg:left-[-22px] bottom-[-13px] pt-[15px] px-[22px] pb-4 bg-[#F3F3F3] translate-y-full w-[calc(100%_+_32px)] lg:w-[calc(100%_+_44px)] dropdown-body">
                                         <li class="text-[#3B3B3B] text-[15px] cursor-pointer">Квартира</li>
                                         <li class="text-[#3B3B3B] text-[15px] cursor-pointer">Апартаменты</li>
                                         <li class="text-[#3B3B3B] text-[15px] cursor-pointer">Дом</li>
                                     </ul>
                                 </div>
                             </div>
+                            <div class="lg:hidden bg-[#3B3B3B] h-[1px] lg:h-[55px] w-full lg:w-[1px] opacity-[0.13]"></div>
                         </div>
-                        <button class="btn-orange !h-14 !text-sm shrink-0">Показать варианты</button>
+                        <div class="w-full lg:w-auto flex-shrink-0">
+                            <p class="lg:hidden text-[#3D3D3D] opacity-60 font-montserrat font-medium text-sm leading-6 mt-[-3px] mb-[14px]">Найдено 209 объектов</p>
+                            <button class="btn-orange w-full lg:w-auto !h-14 !text-sm shrink-0">Показать варианты</button>
+                        </div>
                     </div>
-                    <p class="text-white font-montserrat text-base leading-6">Найдено 209 объектов</p>
+                    <p class="hidden lg:flex text-white font-montserrat text-base leading-6">Найдено 209 объектов</p>
                 </div>
             </section>
             <!-- Home end -->
 
+            <section class="bg-[#F5F5F4] h-[743px]">
+
+            </section>
+
             <!-- Rating -->
-            <section class="bg-white pt-[88px] pb-[112px] rating">
+            <section class="bg-white pt-[43px] lg:pt-[88px] pb-[54px] lg:pb-[112px] rating">
                 <div class="container">
-                    <h2 class="text-[#3D3D3D] text-[40px] mb-[62px]">Рейтинг комплексов <br> черноморского побережья</h2>
-                    <div class="border-r-[rgba(0,0,0,0.4)] border-r border-solid">
-                        <ul class="flex flex-col gap-[19px] pr-[68px] h-[648px] pt-[5px] mr-[-2px]">
-                            <li class="flex items-center justify-between pb-[19px] border-b-[#DBDBDB] border-b border-solid">
-                                <div class="flex items-center gap-[33px] text-lg font-montserrat font-semibold text-[#3D3D3D]">
+                    <h2 class="text-[#3D3D3D] text-xl lg:text-[40px] leading-[25px] lg:leading-[50px] mb-6 lg:mb-[62px]">Рейтинг комплексов <br> черноморского побережья</h2>
+                    <div class="lg:border-r-[rgba(0,0,0,0.4)] lg:border-r border-solid">
+                        <ul class="flex flex-col gap-[14px] lg:gap-[19px] lg:pr-[68px] h-[648px] lg:pt-[5px] lg:mr-[-2px]">
+                            <li class="relative flex items-center justify-between gap-3 lg:gap-0 flex-wrap lg:flex-row pt-[14px] lg:pt-0 pb-[14px] lg:pb-[19px] border-y-[#DBDBDB] border-y border-solid">
+                                <div class="flex items-start lg:items-center gap-[15px] lg:gap-[33px] w-full lg:w-auto">
                                     <div class="relative">
-                                        <img src="./images/rating-city.png" alt="">
+                                        <img src="./images/rating-city.png" class="w-[47px] lg:w-[70px] h-[47px] lg:h-[70px] rounded-full" alt="">
                                         <span class="flex items-center justify-center font-montserrat text-base font-medium absolute w-[25px] h-[25px] top-[-5px] left-0 rounded-full bg-[#EF924F] text-white">1</span>
                                     </div>
-                                    <h3 class="">SkySoul Resort</h3>
+                                    <h3 class="text-sm lg:text-lg pt-[7.75px] lg:pt-0 leading-[17px] lg:leading-6 font-montserrat font-semibold text-[#3D3D3D]">SkySoul Resort</h3>
                                 </div>
-                                <div class="flex items-center gap-1 font-montserrat text-base leading-6 font-semibold text-[#EF924F]">
+                                <div class="flex items-center absolute lg:static left-[62px] top-10 gap-1 font-montserrat text-base leading-6 font-semibold text-[#EF924F]">
                                     <span>9.8</span>
                                     <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8 0L9.79611 5.52786H15.6085L10.9062 8.94427L12.7023 14.4721L8 11.0557L3.29772 14.4721L5.09383 8.94427L0.391548 5.52786H6.20389L8 0Z" fill="#EF924F"/>
                                     </svg>
                                 </div>
-                                <p class="font-montserrat text-[#3D3D3D] text-base font-medium leading-6">45%</p>
-                                <p class="text-[#3D3D3D] font-montserrat text-base font-medium leading-6">от 3.500.000 руб</p>
+                                <p class="font-montserrat text-[#3D3D3D] text-base font-medium leading-6 w-[calc(50%_-_7px)] lg:w-auto">
+                                    <span class="block lg:hidden text-[11px] text-[#3D3D3D] opacity-60">Окупаемость</span>
+                                    45%
+                                </p>
+                                <p class="text-[#3D3D3D] font-montserrat text-base font-medium leading-6 w-[calc(50%_-_7px)] lg:w-auto">
+                                    <span class="block lg:hidden text-[11px] text-[#3D3D3D] opacity-60">Стоимость</span>
+                                    от 3.500.000 руб
+                                </p>
                                 <a href="#" class="btn-orange !h-[56px] !text-sm flex !items-center">Планировки и цены</a>
                             </li>
                             <li class="flex items-center justify-between pb-[19px] border-b-[#DBDBDB] border-b border-solid">
@@ -1066,15 +1083,488 @@
                         </div>
                         <div class="tab-body pt-8">
                             <div class="tab-body__item">
-                                <ul class="flex items-center justify-between">
+                                <ul class="flex items-center justify-between mb-5">
                                     <li class="w-1/4 text-[#3B3B3B] opacity-50 font-montserrat text-[13px] tracking-[3%] leading-4">Тип квартиры</li>
                                     <li class="w-1/4 text-[#3B3B3B] opacity-50 font-montserrat text-[13px] tracking-[3%] leading-4">Количество</li>
                                     <li class="w-1/4 text-[#3B3B3B] opacity-50 font-montserrat text-[13px] tracking-[3%] leading-4">Площадь</li>
                                     <li class="w-1/4 text-[#3B3B3B] opacity-50 font-montserrat text-[13px] tracking-[3%] leading-4">Стоимость</li>
                                 </ul>
+                                <ul class="flex flex-col gap-5">
+                                    <li class="flex items-center justify-between relative z-[1]">
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white pr-2">Студии</span>
+                                        </p>
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white -ml-2 px-2">50</span>
+                                        </p>
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white -ml-2 px-2">30 м²</span>
+                                        </p>
+                                        <p class="bg-white w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] -ml-2 pl-2 bg-white">3 600 000 —3 800 000 руб.</span>
+                                        </p>
+                                        <span class="block absolute z-[-1] left-0 bottom-[5px] w-full h-[1px] border-b-[rgba(59,59,59,0.13)] border-b border-dashed"></span>
+                                    </li>
+                                    <li class="flex items-center justify-between relative z-[1]">
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white pr-2">1-комнатные</span>
+                                        </p>
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white -ml-2 px-2">182</span>
+                                        </p>
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white -ml-2 px-2">31-48 м²</span>
+                                        </p>
+                                        <p class="bg-white w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] -ml-2 pl-2 bg-white">3 800 000 —6 000 000 руб.</span>
+                                        </p>
+                                        <span class="block absolute z-[-1] left-0 bottom-[5px] w-full h-[1px] border-b-[rgba(59,59,59,0.13)] border-b border-dashed"></span>
+                                    </li>
+                                    <li class="flex items-center justify-between relative z-[1]">
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white pr-2">2-комнатные</span>
+                                        </p>
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white -ml-2 px-2">89</span>
+                                        </p>
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white -ml-2 px-2">53-65 м²</span>
+                                        </p>
+                                        <p class="bg-white w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] -ml-2 pl-2 bg-white">5 600 000 —10 200 000 руб.</span>
+                                        </p>
+                                        <span class="block absolute z-[-1] left-0 bottom-[5px] w-full h-[1px] border-b-[rgba(59,59,59,0.13)] border-b border-dashed"></span>
+                                    </li>
+                                    <li class="flex items-center justify-between relative z-[1]">
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white pr-2">3-комнатные</span>
+                                        </p>
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white -ml-2 px-2">30</span>
+                                        </p>
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white -ml-2 px-2">77-88 м²</span>
+                                        </p>
+                                        <p class="bg-white w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] -ml-2 pl-2 bg-white">7 300 000 —11 700 000 руб.</span>
+                                        </p>
+                                        <span class="block absolute z-[-1] left-0 bottom-[5px] w-full h-[1px] border-b-[rgba(59,59,59,0.13)] border-b border-dashed"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-body__item hidden">
+                                <ul class="flex items-center justify-between mb-5">
+                                    <li class="w-1/4 text-[#3B3B3B] opacity-50 font-montserrat text-[13px] tracking-[3%] leading-4">Тип квартиры 2</li>
+                                    <li class="w-1/4 text-[#3B3B3B] opacity-50 font-montserrat text-[13px] tracking-[3%] leading-4">Количество</li>
+                                    <li class="w-1/4 text-[#3B3B3B] opacity-50 font-montserrat text-[13px] tracking-[3%] leading-4">Площадь</li>
+                                    <li class="w-1/4 text-[#3B3B3B] opacity-50 font-montserrat text-[13px] tracking-[3%] leading-4">Стоимость</li>
+                                </ul>
+                                <ul class="flex flex-col gap-5">
+                                    <li class="flex items-center justify-between relative z-[1]">
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white pr-2">Студии</span>
+                                        </p>
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white -ml-2 px-2">50</span>
+                                        </p>
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white -ml-2 px-2">30 м²</span>
+                                        </p>
+                                        <p class="bg-white w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] -ml-2 pl-2 bg-white">3 600 000 —3 800 000 руб.</span>
+                                        </p>
+                                        <span class="block absolute z-[-1] left-0 bottom-[5px] w-full h-[1px] border-b-[rgba(59,59,59,0.13)] border-b border-dashed"></span>
+                                    </li>
+                                    <li class="flex items-center justify-between relative z-[1]">
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white pr-2">1-комнатные</span>
+                                        </p>
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white -ml-2 px-2">182</span>
+                                        </p>
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white -ml-2 px-2">31-48 м²</span>
+                                        </p>
+                                        <p class="bg-white w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] -ml-2 pl-2 bg-white">3 800 000 —6 000 000 руб.</span>
+                                        </p>
+                                        <span class="block absolute z-[-1] left-0 bottom-[5px] w-full h-[1px] border-b-[rgba(59,59,59,0.13)] border-b border-dashed"></span>
+                                    </li>
+                                    <li class="flex items-center justify-between relative z-[1]">
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white pr-2">2-комнатные</span>
+                                        </p>
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white -ml-2 px-2">89</span>
+                                        </p>
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white -ml-2 px-2">53-65 м²</span>
+                                        </p>
+                                        <p class="bg-white w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] -ml-2 pl-2 bg-white">5 600 000 —10 200 000 руб.</span>
+                                        </p>
+                                        <span class="block absolute z-[-1] left-0 bottom-[5px] w-full h-[1px] border-b-[rgba(59,59,59,0.13)] border-b border-dashed"></span>
+                                    </li>
+                                    <li class="flex items-center justify-between relative z-[1]">
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white pr-2">3-комнатные</span>
+                                        </p>
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white -ml-2 px-2">30</span>
+                                        </p>
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white -ml-2 px-2">77-88 м²</span>
+                                        </p>
+                                        <p class="bg-white w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] -ml-2 pl-2 bg-white">7 300 000 —11 700 000 руб.</span>
+                                        </p>
+                                        <span class="block absolute z-[-1] left-0 bottom-[5px] w-full h-[1px] border-b-[rgba(59,59,59,0.13)] border-b border-dashed"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-body__item hidden">
+                                <ul class="flex items-center justify-between mb-5">
+                                    <li class="w-1/4 text-[#3B3B3B] opacity-50 font-montserrat text-[13px] tracking-[3%] leading-4">Тип квартиры 3</li>
+                                    <li class="w-1/4 text-[#3B3B3B] opacity-50 font-montserrat text-[13px] tracking-[3%] leading-4">Количество</li>
+                                    <li class="w-1/4 text-[#3B3B3B] opacity-50 font-montserrat text-[13px] tracking-[3%] leading-4">Площадь</li>
+                                    <li class="w-1/4 text-[#3B3B3B] opacity-50 font-montserrat text-[13px] tracking-[3%] leading-4">Стоимость</li>
+                                </ul>
+                                <ul class="flex flex-col gap-5">
+                                    <li class="flex items-center justify-between relative z-[1]">
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white pr-2">Студии</span>
+                                        </p>
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white -ml-2 px-2">50</span>
+                                        </p>
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white -ml-2 px-2">30 м²</span>
+                                        </p>
+                                        <p class="bg-white w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] -ml-2 pl-2 bg-white">3 600 000 —3 800 000 руб.</span>
+                                        </p>
+                                        <span class="block absolute z-[-1] left-0 bottom-[5px] w-full h-[1px] border-b-[rgba(59,59,59,0.13)] border-b border-dashed"></span>
+                                    </li>
+                                    <li class="flex items-center justify-between relative z-[1]">
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white pr-2">1-комнатные</span>
+                                        </p>
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white -ml-2 px-2">182</span>
+                                        </p>
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white -ml-2 px-2">31-48 м²</span>
+                                        </p>
+                                        <p class="bg-white w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] -ml-2 pl-2 bg-white">3 800 000 —6 000 000 руб.</span>
+                                        </p>
+                                        <span class="block absolute z-[-1] left-0 bottom-[5px] w-full h-[1px] border-b-[rgba(59,59,59,0.13)] border-b border-dashed"></span>
+                                    </li>
+                                    <li class="flex items-center justify-between relative z-[1]">
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white pr-2">2-комнатные</span>
+                                        </p>
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white -ml-2 px-2">89</span>
+                                        </p>
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white -ml-2 px-2">53-65 м²</span>
+                                        </p>
+                                        <p class="bg-white w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] -ml-2 pl-2 bg-white">5 600 000 —10 200 000 руб.</span>
+                                        </p>
+                                        <span class="block absolute z-[-1] left-0 bottom-[5px] w-full h-[1px] border-b-[rgba(59,59,59,0.13)] border-b border-dashed"></span>
+                                    </li>
+                                    <li class="flex items-center justify-between relative z-[1]">
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white pr-2">3-комнатные</span>
+                                        </p>
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white -ml-2 px-2">30</span>
+                                        </p>
+                                        <p class="w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] bg-white -ml-2 px-2">77-88 м²</span>
+                                        </p>
+                                        <p class="bg-white w-1/4 font-montserrat text-[#3D3D3D] text-lg tracking-[3%] leading-[22px]">
+                                            <span class="inelin-block font-montserrat font-light text-[#3D3D3D] text-lg tracking-[3%] leading-[22px] -ml-2 pl-2 bg-white">7 300 000 —11 700 000 руб.</span>
+                                        </p>
+                                        <span class="block absolute z-[-1] left-0 bottom-[5px] w-full h-[1px] border-b-[rgba(59,59,59,0.13)] border-b border-dashed"></span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <section class="bg-[#3C606F] pt-[73px] pb-[99px]">
+                <div class="container">
+                    <h2 class="text-white text-[40px] leading-[50px] font-normal mb-10">Способы оплаты</h2>
+                    <ul class="flex flex-wrap items-stretch gap-8">
+                        <li class="w-[calc(25%_-_96px_/_4)] border border-solid border-[rgba(243,243,243,0.29)] rounded-[20px] pt-6 pr-4 pb-9  pl-6">
+                            <img src="./images/payment-icon-1.svg" alt="" class="mb-[25px]">
+                            <h3 class="mb-[14px] text-white text-lg leading-[22px]">Ипотека</h3>
+                            <p class="text-[#ECECEC] text-[13px] font-montserrat font-light leading-[18px]">Наш ипотечный брокер поможет оформить ипотеку на выгодных условиях и быстро подберет для Вас индивидуальное предложение.</p>
+                        </li>
+                        <li class="w-[calc(25%_-_96px_/_4)] border border-solid border-[rgba(243,243,243,0.29)] rounded-[20px] pt-6 pr-4 pb-9  pl-6">
+                            <img src="./images/payment-icon-2.svg" alt="" class="mb-[25px]">
+                            <h3 class="mb-[14px] text-white text-lg leading-[22px]">рассрочка</h3>
+                            <p class="text-[#ECECEC] text-[13px] font-montserrat font-light leading-[18px]">Собственное жилье в рассрочку с комфортными платежами в выбранные вами периоды без переплат.</p>
+                        </li>
+                        <li class="w-[calc(25%_-_96px_/_4)] border border-solid border-[rgba(243,243,243,0.29)] rounded-[20px] pt-6 pr-4 pb-9  pl-6">
+                            <img src="./images/payment-icon-3.svg" alt="" class="mb-[25px]">
+                            <h3 class="mb-[14px] text-white text-lg leading-[22px]">маткапитал</h3>
+                            <p class="text-[#ECECEC] text-[13px] font-montserrat font-light leading-[18px]">Возможности использования материнского капитала в качестве первоначального взноса.</p>
+                        </li>
+                        <li class="w-[calc(25%_-_96px_/_4)] border border-solid border-[rgba(243,243,243,0.29)] rounded-[20px] pt-6 pr-4 pb-9  pl-6">
+                            <img src="./images/payment-icon-4.svg" alt="" class="mb-[25px]">
+                            <h3 class="mb-[14px] text-white text-lg leading-[22px]">Наличные</h3>
+                            <p class="text-[#ECECEC] text-[13px] font-montserrat font-light leading-[18px]">Возможны скидки до 15% при внесении полной суммы</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Partners -->
+            <section class="py-[100px] partners">
+                <div class="container">
+                    <h2 class="mb-10 text-[#3D3D3D] text-[40px] font-normal">Наши партнёры</h2>
+                    <div class="swiper mb-[50px] overflow-visible">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide w-[276px] rounded-[32px] h-[103px] overflow-hidden">
+                                <img src="./images/partners-card-1.png" alt="" class="w-full h-full object-contain">
+                            </div>
+                            <div class="swiper-slide w-[276px] rounded-[32px] h-[103px] overflow-hidden">
+                                <img src="./images/partners-card-2.png" alt="" class="w-full h-full object-contain">
+                            </div>
+                            <div class="swiper-slide w-[276px] rounded-[32px] h-[103px] overflow-hidden">
+                                <img src="./images/partners-card-3.png" alt="" class="w-full h-full object-contain">
+                            </div>
+                            <div class="swiper-slide w-[276px] rounded-[32px] h-[103px] overflow-hidden">
+                                <img src="./images/partners-card-1.png" alt="" class="w-full h-full object-contain">
+                            </div>
+                            <div class="swiper-slide w-[276px] rounded-[32px] h-[103px] overflow-hidden">
+                                <img src="./images/partners-card-2.png" alt="" class="w-full h-full object-contain">
+                            </div>
+                            <div class="swiper-slide w-[276px] rounded-[32px] h-[103px] overflow-hidden">
+                                <img src="./images/partners-card-3.png" alt="" class="w-full h-full object-contain">
+                            </div>
+                            <div class="swiper-slide w-[276px] rounded-[32px] h-[103px] overflow-hidden">
+                                <img src="./images/partners-card-1.png" alt="" class="w-full h-full object-contain">
+                            </div>
+                            <div class="swiper-slide w-[276px] rounded-[32px] h-[103px] overflow-hidden">
+                                <img src="./images/partners-card-2.png" alt="" class="w-full h-full object-contain">
+                            </div>
+                            <div class="swiper-slide w-[276px] rounded-[32px] h-[103px] overflow-hidden">
+                                <img src="./images/partners-card-3.png" alt="" class="w-full h-full object-contain">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-8">
+                        <button class="partners_btn__prev">
+                            <svg width="72" height="8" viewBox="0 0 72 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.646446 3.64645C0.451187 3.84171 0.451187 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53554 7.53553C4.7308 7.34027 4.7308 7.02369 4.53554 6.82843L1.70711 4L4.53554 1.17157C4.7308 0.976311 4.7308 0.659728 4.53554 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646446 3.64645ZM72 3.5L1 3.5V4.5L72 4.5V3.5Z" fill="#3D3D3D"/>
+                            </svg>
+                        </button>
+                        <button class="partners_btn__next">
+                            <svg width="72" height="8" viewBox="0 0 72 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M71.3536 3.64645C71.5488 3.84171 71.5488 4.15829 71.3536 4.35355L68.1716 7.53553C67.9763 7.7308 67.6597 7.7308 67.4645 7.53553C67.2692 7.34027 67.2692 7.02369 67.4645 6.82843L70.2929 4L67.4645 1.17157C67.2692 0.976311 67.2692 0.659728 67.4645 0.464466C67.6597 0.269204 67.9763 0.269204 68.1716 0.464466L71.3536 3.64645ZM0 3.5L71 3.5V4.5L0 4.5L0 3.5Z" fill="#3D3D3D"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- Partners end -->
+
+            <section class="bg-[#3C606F]">
+                <div class="container relative z-[1] pt-[89px] pb-[103px]">
+                    <h2 class="max-w-[798px] text-[36px] tracking-[1%] text-white mb-5">получите консультацию <br> нашего юриста</h2>
+                    <p class="max-w-[577px] text-white mb-10 font-montserrat text-lg font-light leading-[22px] tracking-[1%]">Наша команда юристов обеспечит вас комплексной поддержкой при покупке недвижимости на море. Мы тщательно проверим все юридические документы, чтобы убедиться в законности строительства и чистоте сделки</p>
+                    <form action="" class="flex items-center gap-5">
+                        <input type="tel" placeholder="Телефон" class="w-[257px] h-[50px] border border-solid border-white bg-transparent rounded-[50px] font-montserrat font-medium text-[15px] leading-[18px] text-white placeholder:text-[rgba(255,255,255,0.7)] px-5 outline-none">
+                        <button type="submit" class="btn-orange !text-[#3D3D3D] !px-[51px]">Получить</button>
+                    </form>
+                    <img src="./images/person-card-1.png" class="min-w-[867px] w-[867px] absolute right-[-100px] bottom-0 z-[-1]" alt="">
+                </div>
+            </section>
+
+            <!-- Review -->
+            <section class="bg-white pt-[100px] pb-20 review">
+                <div class="container">
+                    <h2 class="text-[#3D3D3D] text-[40px] leading-[50px] mb-10">Отзывы наших клиентов</h2>
+                    <div class="swiper overflow-visible mb-[54px]">
+                        <div class="swiper-wrapper items-stretch">
+                            <div class="swiper-slide w-[480px] h-auto relative rounded-[32px] overflow-hidden">
+                                <img src="./images/review-card-1.png" alt="" class="h-full w-full object-cover">
+                                <button class="absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4">
+                                    <svg width="27" height="32" viewBox="0 0 27 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M27 16L-1.4682e-06 31.5885L-1.05412e-07 0.411542L27 16Z" fill="white"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="swiper-slide w-[480px] h-auto flex flex-col justify-center px-10 border border-solid border-[#DBDBDB] rounded-[32px]">
+                                <div class="w-[97px] h-[97px] rounded-full bg-[#D9D9D9] mb-[25px]"></div>
+                                <h3 class="mb-[11px] text-[#3D3D3D] text-base leading-5 font-normal">Имя пользователя</h3>
+                                <p class="text-black opacity-40 font-montserrat text-sm leading-[18px]">Но не только для инвесторов интересен данный регион. Черноморское побережье станет прекрасным местом для жизни. Современные комплексы апартаментов с премиальным уровнем комфорта под управлением отельеров мирового класса сделают отпуск незабываемым.</p>
+                            </div>
+                            <div class="swiper-slide w-[480px] h-auto relative rounded-[32px] overflow-hidden">
+                                <img src="./images/review-card-2.png" alt="" class="h-full w-full object-cover">
+                                <button class="absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4">
+                                    <svg width="27" height="32" viewBox="0 0 27 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M27 16L-1.4682e-06 31.5885L-1.05412e-07 0.411542L27 16Z" fill="white"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="swiper-slide w-[480px] h-auto flex flex-col justify-center px-10 border border-solid border-[#DBDBDB] rounded-[32px]">
+                                <div class="w-[97px] h-[97px] rounded-full bg-[#D9D9D9] mb-[25px]"></div>
+                                <h3 class="mb-[11px] text-[#3D3D3D] text-base leading-5 font-normal">Имя пользователя</h3>
+                                <p class="text-black opacity-40 font-montserrat text-sm leading-[18px]">Но не только для инвесторов интересен данный регион. Черноморское побережье станет прекрасным местом для жизни. Современные комплексы апартаментов с премиальным уровнем комфорта под управлением отельеров мирового класса сделают отпуск незабываемым.</p>
+                            </div>
+                            <div class="swiper-slide w-[480px] h-auto relative rounded-[32px] overflow-hidden">
+                                <img src="./images/review-card-3.png" alt="" class="h-full w-full object-cover">
+                                <button class="absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4">
+                                    <svg width="27" height="32" viewBox="0 0 27 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M27 16L-1.4682e-06 31.5885L-1.05412e-07 0.411542L27 16Z" fill="white"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="swiper-slide w-[480px] h-auto flex flex-col justify-center px-10 border border-solid border-[#DBDBDB] rounded-[32px]">
+                                <div class="w-[97px] h-[97px] rounded-full bg-[#D9D9D9] mb-[25px]"></div>
+                                <h3 class="mb-[11px] text-[#3D3D3D] text-base leading-5 font-normal">Имя пользователя</h3>
+                                <p class="text-black opacity-40 font-montserrat text-sm leading-[18px]">Но не только для инвесторов интересен данный регион. Черноморское побережье станет прекрасным местом для жизни. Современные комплексы апартаментов с премиальным уровнем комфорта под управлением отельеров мирового класса сделают отпуск незабываемым.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-8">
+                        <button class="review-btn__prev">
+                            <svg width="72" height="8" viewBox="0 0 72 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.646446 3.64645C0.451187 3.84171 0.451187 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53554 7.53553C4.7308 7.34027 4.7308 7.02369 4.53554 6.82843L1.70711 4L4.53554 1.17157C4.7308 0.976311 4.7308 0.659728 4.53554 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646446 3.64645ZM72 3.5L1 3.5V4.5L72 4.5V3.5Z" fill="#3D3D3D"/>
+                            </svg>
+                        </button>
+                        <button class="review-btn__next">
+                            <svg width="72" height="8" viewBox="0 0 72 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M71.3536 3.64645C71.5488 3.84171 71.5488 4.15829 71.3536 4.35355L68.1716 7.53553C67.9763 7.7308 67.6597 7.7308 67.4645 7.53553C67.2692 7.34027 67.2692 7.02369 67.4645 6.82843L70.2929 4L67.4645 1.17157C67.2692 0.976311 67.2692 0.659728 67.4645 0.464466C67.6597 0.269204 67.9763 0.269204 68.1716 0.464466L71.3536 3.64645ZM0 3.5L71 3.5V4.5L0 4.5L0 3.5Z" fill="#3D3D3D"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- Review end -->
+
+            <!-- Blog -->
+            <section class="pt-[98px] pb-[100px] blog">
+                <div class="container">
+                    <div class="flex items-end justify-between mb-10">
+                        <h2 class="text-[40px] leading-[50px]">Блог</h2>
+                        <a href="#" class="flex items-center gap-2 text-[#EF924F] text-base font-light leading-5">
+                            <span>Перейти ко всем</span>
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58589 9.60304L0.86928 9.64654L0.874887 8.52289L9.59149 8.47939L9.58589 9.60304Z" fill="#EF924F"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.49628 9.60851L8.53978 0.8919L9.66344 0.886293L9.61994 9.6029L8.49628 9.60851Z" fill="#EF924F"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.09074 1.33314L9.20595 8.44836L8.36752 9.28679L1.2523 2.17157L2.09074 1.33314Z" fill="#EF924F"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="swiper">
+                        <div class="swiper-wrapper items-stretch">
+                            <div class="swiper-slide bg-white px-2 pt-2 pb-7 h-auto rounded-[32px]">
+                                <img src="./images/blog-card-1.png" alt="" class="w-full h-[202px] rounded-[26px] object-cover mb-5">
+                                <p class="font-montserrat font-light text-sm leading-[17px] text-[#3D3D3D] opacity-60 px-[13px] mb-[10px]">20.06.2024</p>
+                                <p class="font-montserrat text-[#3D3D3D] text-sm font-medium px-[13px] leading-[17px]">Инвестиции в апартаменты Крыма: Перспективы и лучшие объекты для <br> вложений</p>
+                            </div>
+                            <div class="swiper-slide bg-white px-2 pt-2 pb-7 h-auto rounded-[32px]">
+                                <img src="./images/blog-card-1.png" alt="" class="w-full h-[202px] rounded-[26px] object-cover mb-5">
+                                <p class="font-montserrat font-light text-sm leading-[17px] text-[#3D3D3D] opacity-60 px-[13px] mb-[10px]">20.06.2024</p>
+                                <p class="font-montserrat text-[#3D3D3D] text-sm font-medium px-[13px] leading-[17px]">Инвестиции в апартаменты Крыма: Перспективы и лучшие объекты для <br> вложений</p>
+                            </div>
+                            <div class="swiper-slide bg-white px-2 pt-2 pb-7 h-auto rounded-[32px]">
+                                <img src="./images/blog-card-1.png" alt="" class="w-full h-[202px] rounded-[26px] object-cover mb-5">
+                                <p class="font-montserrat font-light text-sm leading-[17px] text-[#3D3D3D] opacity-60 px-[13px] mb-[10px]">20.06.2024</p>
+                                <p class="font-montserrat text-[#3D3D3D] text-sm font-medium px-[13px] leading-[17px]">Инвестиции в апартаменты Крыма: Перспективы и лучшие объекты для <br> вложений</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Blog end -->
+
+            <section class="bg-white pt-[100px] pb-[107px]">
+                <div class="container">
+                    <h2 class="text-[#3D3D3D] text-[40px] leading-[50px] mb-[37px]">Часто задаваемые вопросы</h2>
+                    <div class="accordion">
+                        <div class="accordion_item">
+                            <div class="accordion_item__head border-t border-t-[#DBDBDB] border-solid pt-[21px] pb-[19px] flex items-center justify-between">
+                                <h3 class="text-[#3D3D3D] font-argentum text-base font-extralight leading-[18px]">Какой район Черноморского побережья наиболее привлекательный для инвесторов?</h3>
+                                <button>
+                                    <img src="./images/plus-icon.svg" alt="" class="plus">
+                                    <img src="./images/minus-icon.svg" alt="" class="minus hidden">
+                                </button>
+                            </div>
+                            <div class="accordin_item__body hidden">
+                                <p class="pt-[5px] pb-6 text-black opacity-40 font-montserrat font-light text-base leading-[22px]">В Краснодарском крае это, конечно, Сочи. Апартаменты там полностью окупаются за несколько лет. В Крыму это Ялта и Алушта – самые популярные среди туристов города на ЮБК. Узнать больше о перспективах инвестиций можно у нашего менеджера по телефону.</p>
+                            </div>
+                        </div>
+                        <div class="accordion_item">
+                            <div class="accordion_item__head border-t border-t-[#DBDBDB] border-solid pt-[21px] pb-[19px] flex items-center justify-between">
+                                <h3 class="text-[#3D3D3D] font-argentum text-base font-extralight leading-[18px]">О чем важно помнить при покупке недвижимости на Черном море?</h3>
+                                <button>
+                                    <img src="./images/plus-icon.svg" alt="" class="plus">
+                                    <img src="./images/minus-icon.svg" alt="" class="minus hidden">
+                                </button>
+                            </div>
+                            <div class="accordin_item__body hidden">
+                                <p class="pt-[5px] pb-6 text-black opacity-40 font-montserrat font-light text-base leading-[22px]">В Краснодарском крае это, конечно, Сочи. Апартаменты там полностью окупаются за несколько лет. В Крыму это Ялта и Алушта – самые популярные среди туристов города на ЮБК. Узнать больше о перспективах инвестиций можно у нашего менеджера по телефону.</p>
+                            </div>
+                        </div>
+                        <div class="accordion_item">
+                            <div class="accordion_item__head border-t border-t-[#DBDBDB] border-solid pt-[21px] pb-[19px] flex items-center justify-between">
+                                <h3 class="text-[#3D3D3D] font-argentum text-base font-extralight leading-[18px]">Растут ли в цене объекты на Черноморском побережье?</h3>
+                                <button>
+                                    <img src="./images/plus-icon.svg" alt="" class="plus">
+                                    <img src="./images/minus-icon.svg" alt="" class="minus hidden">
+                                </button>
+                            </div>
+                            <div class="accordin_item__body hidden">
+                                <p class="pt-[5px] pb-6 text-black opacity-40 font-montserrat font-light text-base leading-[22px]">В Краснодарском крае это, конечно, Сочи. Апартаменты там полностью окупаются за несколько лет. В Крыму это Ялта и Алушта – самые популярные среди туристов города на ЮБК. Узнать больше о перспективах инвестиций можно у нашего менеджера по телефону.</p>
+                            </div>
+                        </div>
+                        <div class="accordion_item">
+                            <div class="accordion_item__head border-t border-t-[#DBDBDB] border-solid pt-[21px] pb-[19px] flex items-center justify-between">
+                                <h3 class="text-[#3D3D3D] font-argentum text-base font-extralight leading-[18px]">В каких районах Черноморского побережья самая бюджетная недвижимость?</h3>
+                                <button>
+                                    <img src="./images/plus-icon.svg" alt="" class="plus">
+                                    <img src="./images/minus-icon.svg" alt="" class="minus hidden">
+                                </button>
+                            </div>
+                            <div class="accordin_item__body hidden">
+                                <p class="pt-[5px] pb-6 text-black opacity-40 font-montserrat font-light text-base leading-[22px]">В Краснодарском крае это, конечно, Сочи. Апартаменты там полностью окупаются за несколько лет. В Крыму это Ялта и Алушта – самые популярные среди туристов города на ЮБК. Узнать больше о перспективах инвестиций можно у нашего менеджера по телефону.</p>
+                            </div>
+                        </div>
+                        <div class="accordion_item">
+                            <div class="accordion_item__head border-t border-t-[#DBDBDB] border-solid pt-[21px] pb-[19px] flex items-center justify-between">
+                                <h3 class="text-[#3D3D3D] font-argentum text-base font-extralight leading-[18px]">Где вложения в недвижимость окупятся быстрее всего?</h3>
+                                <button>
+                                    <img src="./images/plus-icon.svg" alt="" class="plus">
+                                    <img src="./images/minus-icon.svg" alt="" class="minus hidden">
+                                </button>
+                            </div>
+                            <div class="accordin_item__body hidden">
+                                <p class="pt-[5px] pb-6 text-black opacity-40 font-montserrat font-light text-base leading-[22px]">В Краснодарском крае это, конечно, Сочи. Апартаменты там полностью окупаются за несколько лет. В Крыму это Ялта и Алушта – самые популярные среди туристов города на ЮБК. Узнать больше о перспективах инвестиций можно у нашего менеджера по телефону.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-[#3C606F]">
+                <div class="container relative z-[1] pt-[89px] pb-[103px]">
+                    <h2 class="max-w-[798px] text-[36px] tracking-[1%] leading-[45px] text-white mb-5">УЗНАЙТЕ ОБ АКТУАЛЬНЫХ <br> АКЦИЯХ НА АПАРТАМЕНТЫ</h2>
+                    <p class="max-w-[450px] text-white mb-10 font-montserrat text-lg font-light leading-[22px] tracking-[1%]">Свяжитесь с нами прямо сейчас, чтобы узнать, почему мы сможем вам предложить самые <br> выгодные условия в Сочи!</p>
+                    <form action="" class="flex items-center gap-5">
+                        <input type="tel" placeholder="Телефон" class="w-[257px] h-[50px] border border-solid border-white bg-transparent rounded-[50px] font-montserrat font-medium text-[15px] leading-[18px] text-white placeholder:text-[rgba(255,255,255,0.7)] px-5 outline-none">
+                        <button type="submit" class="btn-orange !text-[#3D3D3D] !px-[51px]">Получить</button>
+                    </form>
+                    <p class="mt-9 font-montserrat text-lg font-light text-white">Доступно <a href="#" class="text-[#EF924F] underline font-montserrat font-light">3 варианта</a> с выгодой</p>
                 </div>
             </section>
             
