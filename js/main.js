@@ -5,7 +5,7 @@ if (dropdowns.length) {
         let btn = dropdown.querySelector('.dropdown-head'),
         list = dropdown.querySelector('.dropdown-body'),
         listItem = dropdown.querySelectorAll('.dropdown-body li');
-        
+
         if (btn) {
             btn.onclick = () => {
                 if (list.classList.contains('flex')) {
@@ -103,7 +103,7 @@ document.addEventListener('click', event => {
         dropdowns.forEach(el => {
             const isClickInside = el.contains(event.target);
             let list = el.querySelector('.dropdown-body');
-        
+
             if (!isClickInside) {
                 list.classList.remove('flex');
                 list.classList.add('hidden');
@@ -111,3 +111,46 @@ document.addEventListener('click', event => {
         })
     }
 })
+
+
+ymaps.ready(init);
+
+function init() {
+
+var myMap = new ymaps.Map("map", {
+    center: [44.895, 37.316],
+    zoom: 13,
+    controls: ["zoomControl", "fullscreenControl"],
+});
+
+myMap.setType("yandex#map");
+myMap.geoObjects.options.set("preset", "islands#grayIcon");
+
+  // Define the coordinates of the locations
+  var location1 = [44.89, 37.32]; // Example coordinates
+  var location2 = [44.9, 37.31]; // Example coordinates
+
+var placemark1 = new ymaps.Placemark(
+    location1,
+    {},
+    {
+    iconLayout: "default#image",
+    iconImageHref: "../images/location.png",
+    iconImageSize: [218, 59],
+    iconImageOffset: [-15, -15],
+    }
+);
+var placemark2 = new ymaps.Placemark(
+    location2,
+    {},
+    {
+    iconLayout: "default#image",
+    iconImageHref: "../images/location.png",
+    iconImageSize: [57, 82],
+    iconImageOffset: [-15, -15],
+    }
+);
+
+myMap.geoObjects.add(placemark1);
+myMap.geoObjects.add(placemark2);
+}
