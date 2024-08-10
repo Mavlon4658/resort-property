@@ -100,10 +100,11 @@ header ul a:hover::after {
     transform: translateX(5px);
 }
 
-/* .rating ul::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.4); 
-    width: 1px;
-} */
+@media (max-width: 1024px) {
+    .rating ul::-webkit-scrollbar {
+        display: none;
+    }
+}
 
 .rating ul::-webkit-scrollbar-thumb {
     background: #3D3D3D; 
