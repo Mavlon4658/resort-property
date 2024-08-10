@@ -167,47 +167,60 @@ document.addEventListener('click', (event) => {
   }
 });
 
-ymaps.ready(init);
-
-function init() {
-  var myMap = new ymaps.Map('map', {
-    center: [44.895, 37.316],
-    zoom: 13,
-    controls: ['zoomControl', 'fullscreenControl'],
+try {
+  // parahot swiper
+  var parahotSwiper = new Swiper('.parahot-slider', {
+    speed: 800,
+    spaceBetween: 32,
+    slidesPerView: 1.6,
+    navigation: {
+      nextEl: '.btn__next',
+      prevEl: '.btn__prev',
+    },
   });
+} catch (error) {}
+try {
+  ymaps.ready(init);
 
-  myMap.setType('yandex#map');
-  myMap.geoObjects.options.set('preset', 'islands#grayIcon');
+  function init() {
+    var myMap = new ymaps.Map('map', {
+      center: [44.895, 37.316],
+      zoom: 13,
+      controls: ['zoomControl', 'fullscreenControl'],
+    });
 
-  // Define the coordinates of the locations
-  var location1 = [44.89, 37.32]; // Example coordinates
-  var location2 = [44.9, 37.31]; // Example coordinates
+    myMap.setType('yandex#map');
+    myMap.geoObjects.options.set('preset', 'islands#grayIcon');
 
-  var placemark1 = new ymaps.Placemark(
-    location1,
-    {},
-    {
-      iconLayout: 'default#image',
-      iconImageHref: '../images/location.png',
-      iconImageSize: [218, 59],
-      iconImageOffset: [-15, -15],
-    }
-  );
-  var placemark2 = new ymaps.Placemark(
-    location2,
-    {},
-    {
-      iconLayout: 'default#image',
-      iconImageHref: '../images/location.png',
-      iconImageSize: [57, 82],
-      iconImageOffset: [-15, -15],
-    }
-  );
+    // Define the coordinates of the locations
+    var location1 = [44.89, 37.32]; // Example coordinates
+    var location2 = [44.9, 37.31]; // Example coordinates
 
-  myMap.geoObjects.add(placemark1);
-  myMap.geoObjects.add(placemark2);
-}
+    var placemark1 = new ymaps.Placemark(
+      location1,
+      {},
+      {
+        iconLayout: 'default#image',
+        iconImageHref: '../images/location.png',
+        iconImageSize: [218, 59],
+        iconImageOffset: [-15, -15],
+      }
+    );
+    var placemark2 = new ymaps.Placemark(
+      location2,
+      {},
+      {
+        iconLayout: 'default#image',
+        iconImageHref: '../images/location.png',
+        iconImageSize: [57, 82],
+        iconImageOffset: [-15, -15],
+      }
+    );
 
+    myMap.geoObjects.add(placemark1);
+    myMap.geoObjects.add(placemark2);
+  }
+} catch (error) {}
 try {
   ymaps.ready(init);
 
