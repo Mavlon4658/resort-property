@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курортная недвижимость</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- CSS file -->
+    <link rel="stylesheet" href="./dist/output.css">
+    <!-- font -->
+    <link rel="stylesheet" href="./fonts/Montserrat/stylesheet.css">
+</head>
+<body class="bg-[#F5F5F4]">
+    <div class="overflow-hidden">
+
+        <!-- Header -->
+        <header class="header-black border-b-line-border border-b border-solid">
+            <div class="container">
+              <button class="lg:hidden block mt-[23px] pb-[11px]">
+                <img src="./images/burger_icon.svg" alt="">
+              </button>
+              <div class="flex items-center">
+                <ul class="lg:flex hidden items-center justify-end gap-[46px] pr-[130px] ml-auto">
+                    <li>
+                        <a href="#" class="pt-[27px] pb-6 text-gray font-Montserrat font-normal text-sm relative flex">Недвижимость</a>
+                    </li>
+                    <li>
+                        <a href="#" class="pt-[27px] pb-6 text-gray font-Montserrat font-normal text-sm relative flex">Об агентстве</a>
+                    </li>
+                    <li>
+                        <a href="#" class="pt-[27px] pb-6 text-gray font-Montserrat font-normal text-sm relative flex">Отзывы</a>
+                    </li>
+                    <li>
+                        <a href="#" class="pt-[27px] pb-6 text-gray font-Montserrat font-normal text-sm relative flex">Контакты</a>
+                    </li>
+                    <li>
+                        <a href="#" class="pt-[27px] pb-6 text-gray font-Montserrat font-normal text-sm relative flex">Ипотека</a>
+                    </li>
+                    <li>
+                        <a href="#" class="pt-[27px] pb-6 text-gray font-Montserrat font-normal text-sm relative flex">Блог</a>
+                    </li>
+                </ul>
+                <a href="tel:+88002223344" class="text-gray lg:block hidden font-Montserrat font-medium text-[24px]">8 800 222 33 44</a>
+              </div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+
+        <!-- breadcrumbs -->
+        <div class="md:mt-[55px] mt-[28px] md:mb-[19px] mb-[3px]">
+          <div class="container">
+            <ul class="flex items-center">
+              <li>
+                <a href="/" class="font-montserrat sm:font-normal font-medium text-base text-gray">
+                  Главная
+                </a>
+              </li>
+              <li class="font-montserrat sm:font-normal font-medium text-base text-gray">
+                /
+              </li>
+              <li>
+                <span class="font-montserrat sm:font-normal font-medium text-base text-gray">
+                  Контакты
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- breadcrumbs -->
+
+        <main>
+
+          <!-- contact -->
+          <section>
+            <div class="container">
+              <h3 class="font-Unbounded font-medium md:text-[60px] md:leading-[74px] text-[32px] leading-[39px] md:mb-[20px] mb-[24px]">
+                Контакты
+              </h3>
+              <div class="flex justify-between gap-[20px] items-end flex-col md:flex-row">
+                  <div class="flex gap-[32px] flex-col md:flex-row w-full">
+                    <div class="border-[#0000004D] lg:w-[381px] md:w-auto w-full border-t-[1px] border-solid pt-[17px] flex flex-col">
+                      <h6 class="font-Unbounded font-normal md:text-[15px] text-[14px] md:leading-[18px] leading-[17px] md:text-gray text-gray md:mb-[20px] mb-[18px]">
+                        г. Новороссийск, п. Дзержинского, 244
+                      </h6>
+                      <a href="tel:+70000000000" class="w-max font-Montserrat text-light-gray text-base font-normal border-b-[1px] border-gray border-solid inline mb-2 opacity-[1]">
+                        +7 (000) 000-00-00
+                      </a>
+                      <a href="mailto:mail@pochta.ru" class="w-max font-Montserrat text-light-gray text-base font-normal border-b-[1px] inline border-gray border-solid">
+                        mail@pochta.ru
+                      </a>
+                    </div>
+                    <div class="lg:w-[381px] md:w-auto w-full border-t-[1px] border-[#0000004D] border-solid pt-[17px] flex flex-col">
+                      <h6 class="font-Unbounded font-normal md:text-[15px] text-[14px] md:leading-[18px] leading-[17px] md:text-gray text-gray md:mb-[20px] mb-[18px]">
+                        г. Новороссийск, п. Дзержинского, 244
+                      </h6>
+                      <a href="tel:+70000000000" class="w-max font-Montserrat text-light-gray text-base font-normal border-b-[1px] border-gray border-solid inline mb-2">
+                        +7 (000) 000-00-00
+                      </a>
+                      <a href="mailto:mail@pochta.ru" class="w-max font-Montserrat text-light-gray text-base font-normal border-b-[1px] inline border-gray border-solid">
+                        mail@pochta.ru
+                      </a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </section>
+          <!-- contact -->
+
+          <!-- map -->
+          <section>
+            <div id="map" class="h-[572px] w-full mt-[35px] md:mt-[69px]" style="filter: grayscale(100);"></div>
+          </section>
+          <!-- map -->
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer md:pt-[80px] pt-[46px] md:pb-[55px] pb-[26px]">
+          <div class="container">
+            <div class="flex md:flex-row flex-col items-start justify-between gap-[20px]">
+              <ul class="flex flex-col gap-[7px] md:mb-0 mb-[20px]">
+                <h6 class="font-Unbounded font-normal text-[18px] leading-[22px] text-gray mb-[14px]">
+                  Меню
+                </h6>
+                <li>
+                  <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+                    Об агентстве
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+                    Отзывы
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+                    Контакты
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+                    Ипотека
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+                    Блог
+                  </a>
+                </li>
+              </ul>
+              <ul class="flex flex-col gap-[7px] md:mb-0 mb-[20px]">
+                <h6 class="font-Unbounded font-normal text-[18px] leading-[22px] text-gray mb-[14px]">
+                  Города
+                </h6>
+                <li>
+                  <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+                    Сочи
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+                    Ялта
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+                    Алушта
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+                    Новороссийск
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+                    Адлер
+                  </a>
+                </li>
+              </ul>
+              <ul class="flex flex-col gap-[7px]">
+                <h6 class="font-Unbounded font-normal text-[18px] leading-[22px] text-gray mb-[14px]">
+                  Адреса
+                </h6>
+                <li>
+                  <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+                    Сочи, микрорайон Центральный,<br class="md:block hidden"> ул. Роз, 117
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+                    Ялта, ул.Васильева, 16
+                  </a>
+                </li>
+              </ul>
+              <div>
+                <a href="tel:+88002223344" class="font-semibold font-montserrat text-[24px] leading-[29px] text-coral">
+                  8 800 222 33 44
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="max-w-[1200px] mx-auto h-[1px] md:mt-[43px] mt-[20px] bg-line-border"></div>
+          <div class="container">
+            <span class="md:mt-[29px] block mt-[20px] md:text-base text-sm font-light font-montserrat text-[#36363699]">
+              © Курортная недвижимость  l 2017-2024
+            </span>
+          </div>
+        </footer>
+        <!-- Footer end -->
+
+    </div>
+
+    <!-- maps -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=en_US" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JS file -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

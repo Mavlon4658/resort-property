@@ -61,14 +61,21 @@
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    @apply max-w-[1200px] mx-auto;
 }
 
 @media (max-width: 1240px) {
     .container {
         max-width: calc(100% - 40px);
     }
+}
+
+.no-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+.no-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
 }
 
 .btn-orange {
@@ -85,6 +92,22 @@ header ul a::after {
     background: #fff;
     opacity: 0;
     transition: .3s ease all;
+}
+
+.header-black ul a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 2.58px;
+    width: calc(100% + 12px);
+    left: -6px;
+    background: #3D3D3D;
+    opacity: 0;
+    transition: .3s ease all;
+}
+
+.header-black ul a:hover::after {
+    opacity: 1;
 }
 
 header ul a:hover::after {
@@ -107,7 +130,7 @@ header ul a:hover::after {
 }
 
 .rating ul::-webkit-scrollbar-thumb {
-    background: #3D3D3D; 
+    background: #3D3D3D;
     width: 5px;
 }
 
