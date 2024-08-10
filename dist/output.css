@@ -821,6 +821,53 @@ video {
   margin-top: -3px;
 }
 
+<<<<<<< Updated upstream
+=======
+.mt-\[13px\] {
+  margin-top: 13px;
+}
+
+.mt-\[19px\] {
+  margin-top: 19px;
+}
+
+.mt-\[20px\] {
+  margin-top: 20px;
+}
+
+.mt-\[21px\] {
+  margin-top: 21px;
+}
+
+.mt-\[23px\] {
+  margin-top: 23px;
+}
+
+.mt-\[25px\] {
+  margin-top: 25px;
+}
+
+.mt-\[28px\] {
+  margin-top: 28px;
+}
+
+.mt-\[32px\] {
+  margin-top: 32px;
+}
+
+.mt-\[35px\] {
+  margin-top: 35px;
+}
+
+.mt-\[70px\] {
+  margin-top: 70px;
+}
+
+.mt-\[91px\] {
+  margin-top: 91px;
+}
+
+>>>>>>> Stashed changes
 .block {
   display: block;
 }
@@ -889,6 +936,17 @@ video {
   height: 743px;
 }
 
+<<<<<<< Updated upstream
+=======
+.h-\[744px\] {
+  height: 744px;
+}
+
+.h-\[93px\] {
+  height: 93px;
+}
+
+>>>>>>> Stashed changes
 .h-\[97px\] {
   height: 97px;
 }
@@ -965,6 +1023,14 @@ video {
   width: 100%;
 }
 
+<<<<<<< Updated upstream
+=======
+.w-max {
+  width: -moz-max-content;
+  width: max-content;
+}
+
+>>>>>>> Stashed changes
 .min-w-\[667px\] {
   min-width: 667px;
 }
@@ -997,10 +1063,21 @@ video {
   max-width: 798px;
 }
 
+.max-w-\[893px\] {
+  max-width: 893px;
+}
+
 .max-w-\[895px\] {
   max-width: 895px;
 }
 
+<<<<<<< Updated upstream
+=======
+.max-w-full {
+  max-width: 100%;
+}
+
+>>>>>>> Stashed changes
 .flex-shrink-0 {
   flex-shrink: 0;
 }
@@ -1028,6 +1105,21 @@ video {
   cursor: pointer;
 }
 
+<<<<<<< Updated upstream
+=======
+.resize-none {
+  resize: none;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+>>>>>>> Stashed changes
 .flex-col {
   flex-direction: column;
 }
@@ -1140,6 +1232,25 @@ video {
   gap: 5px;
 }
 
+<<<<<<< Updated upstream
+=======
+.gap-\[7px\] {
+  gap: 7px;
+}
+
+.space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+>>>>>>> Stashed changes
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1158,6 +1269,10 @@ video {
 
 .rounded-\[20px\] {
   border-radius: 20px;
+}
+
+.rounded-\[25px\] {
+  border-radius: 25px;
 }
 
 .rounded-\[26px\] {
@@ -1223,6 +1338,29 @@ video {
   border-color: rgba(243,243,243,0.29);
 }
 
+<<<<<<< Updated upstream
+=======
+.border-card-circle {
+  --tw-border-opacity: 1;
+  border-color: rgb(217 217 217 / var(--tw-border-opacity));
+}
+
+.border-coral {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 146 79 / var(--tw-border-opacity));
+}
+
+.border-gray {
+  --tw-border-opacity: 1;
+  border-color: rgb(61 61 61 / var(--tw-border-opacity));
+}
+
+.border-line-border {
+  --tw-border-opacity: 1;
+  border-color: rgb(219 219 219 / var(--tw-border-opacity));
+}
+
+>>>>>>> Stashed changes
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -1378,6 +1516,11 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -1388,6 +1531,29 @@ video {
   padding-bottom: 100px;
 }
 
+<<<<<<< Updated upstream
+=======
+.py-\[120px\] {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.py-\[14px\] {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.py-\[16px\] {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.py-\[8px\] {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+>>>>>>> Stashed changes
 .pb-20 {
   padding-bottom: 5rem;
 }
@@ -1458,6 +1624,10 @@ video {
 
 .pb-\[54px\] {
   padding-bottom: 54px;
+}
+
+.pb-\[73px\] {
+  padding-bottom: 73px;
 }
 
 .pb-\[77px\] {
@@ -1600,6 +1770,10 @@ video {
   padding-top: 5px;
 }
 
+.pt-\[63px\] {
+  padding-top: 63px;
+}
+
 .pt-\[7\.75px\] {
   padding-top: 7.75px;
 }
@@ -1624,6 +1798,17 @@ video {
   padding-top: 98px;
 }
 
+<<<<<<< Updated upstream
+=======
+.font-Montserrat {
+  font-family: "Montserrat";
+}
+
+.font-Unbounded {
+  font-family: "Unbounded";
+}
+
+>>>>>>> Stashed changes
 .\!text-sm {
   font-size: 0.875rem !important;
   line-height: 1.25rem !important;
@@ -1726,6 +1911,10 @@ video {
   line-height: 17px;
 }
 
+.leading-\[18\.6px\] {
+  line-height: 18.6px;
+}
+
 .leading-\[18px\] {
   line-height: 18px;
 }
@@ -1750,10 +1939,21 @@ video {
   line-height: 45px;
 }
 
+.leading-\[49\.6px\] {
+  line-height: 49.6px;
+}
+
 .leading-\[50px\] {
   line-height: 50px;
 }
 
+<<<<<<< Updated upstream
+=======
+.leading-\[74px\] {
+  line-height: 74px;
+}
+
+>>>>>>> Stashed changes
 .tracking-\[1\%\] {
   letter-spacing: 1%;
 }
