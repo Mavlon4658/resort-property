@@ -19,7 +19,6 @@ module.exports = {
         "date": "#3D3D3D99",
         "green-dark": "#3C606F",
         "input-dark": "#FFFFFFB2",
-
       },
     },
   },
