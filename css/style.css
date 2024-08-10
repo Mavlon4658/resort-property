@@ -5,152 +5,195 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
-    font-family: 'Unbounded';
-    src: url('../fonts/Unbounded/Unbounded-Light.ttf');
-    font-weight: 300;
+  font-family: 'Unbounded';
+  src: url('../fonts/Unbounded/Unbounded-Light.ttf');
+  font-weight: 300;
 }
 
 @font-face {
-    font-family: 'Unbounded';
-    src: url('../fonts/Unbounded/Unbounded-Regular.ttf');
-    font-weight: 400;
+  font-family: 'Unbounded';
+  src: url('../fonts/Unbounded/Unbounded-Regular.ttf');
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Unbounded';
-    src: url('../fonts/Unbounded/Unbounded-Medium.ttf');
-    font-weight: 500;
+  font-family: 'Unbounded';
+  src: url('../fonts/Unbounded/Unbounded-Medium.ttf');
+  font-weight: 500;
 }
 
 @font-face {
-    font-family: 'ArgentumSans';
-    src: url('../fonts/argentum-sans/ArgentumSans-Light.ttf');
-    font-weight: 300;
+  font-family: 'ArgentumSans';
+  src: url('../fonts/argentum-sans/ArgentumSans-Light.ttf');
+  font-weight: 300;
 }
 
 @font-face {
-    font-family: 'ArgentumSans';
-    src: url('../fonts/argentum-sans/ArgentumSans-Regular.ttf');
-    font-weight: 300;
+  font-family: 'ArgentumSans';
+  src: url('../fonts/argentum-sans/ArgentumSans-Regular.ttf');
+  font-weight: 300;
 }
 
 @font-face {
-    font-family: 'Muller';
-    src: url('../fonts/muller/MullerLight.ttf');
-    font-weight: 300;
+  font-family: 'Muller';
+  src: url('../fonts/muller/MullerLight.ttf');
+  font-weight: 300;
 }
 
-*, body, button, input, textarea, a {
-    font-family: "Unbounded", sans-serif;
+*,
+body,
+button,
+input,
+textarea,
+a {
+  font-family: "Unbounded", sans-serif;
 }
 
 .font-montserrat {
-    font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .font-unbounded {
-    font-family: "Unbounded", sans-serif;
+  font-family: "Unbounded", sans-serif;
 }
 
 .font-argentum {
-    font-family: 'ArgentumSans', sans-serif;
+  font-family: 'ArgentumSans', sans-serif;
 }
 
 .font-muller {
-    font-family: 'Muller', sans-serif;
+  font-family: 'Muller', sans-serif;
 }
 
 .container {
-    @apply max-w-[1200px] mx-auto;
+  @apply max-w-[1200px] mx-auto;
 }
 
 @media (max-width: 1240px) {
-    .container {
-        max-width: calc(100% - 40px);
-    }
+  .container {
+    max-width: calc(100% - 40px);
+  }
 }
 
 .no-scrollbar {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
 }
+
 .no-scrollbar::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
+  display: none;
+  /* Chrome, Safari, Opera */
 }
 
 .btn-orange {
-    @apply bg-[#E78844] text-white rounded-[40px] h-[50px] px-[33px] font-montserrat font-medium text-base tracking-[1%] cursor-pointer;
+  @apply bg-[#E78844] text-white rounded-[40px] h-[50px] px-[33px] font-montserrat font-medium text-base tracking-[1%] cursor-pointer;
 }
 
 header ul a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    height: 2.58px;
-    width: calc(100% + 12px);
-    left: -6px;
-    background: #fff;
-    opacity: 0;
-    transition: .3s ease all;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 2.58px;
+  width: calc(100% + 12px);
+  left: -6px;
+  background: #fff;
+  opacity: 0;
+  transition: .3s ease all;
 }
 
 .header-black ul a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    height: 2.58px;
-    width: calc(100% + 12px);
-    left: -6px;
-    background: #3D3D3D;
-    opacity: 0;
-    transition: .3s ease all;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 2.58px;
+  width: calc(100% + 12px);
+  left: -6px;
+  background: #3D3D3D;
+  opacity: 0;
+  transition: .3s ease all;
 }
 
 .header-black ul a:hover::after {
-    opacity: 1;
+  opacity: 1;
 }
 
 header ul a:hover::after {
-    opacity: 1;
+  opacity: 1;
 }
 
 .rating ul {
-    overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 .rating ul::-webkit-scrollbar {
-    width: 3px;
-    transform: translateX(5px);
+  width: 3px;
+  transform: translateX(5px);
 }
 
 @media (max-width: 1024px) {
-    .rating ul::-webkit-scrollbar {
-        display: none;
-    }
+  .rating ul::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .rating ul::-webkit-scrollbar-thumb {
-    background: #3D3D3D;
-    width: 5px;
+  background: #3D3D3D;
+  width: 5px;
 }
 
 .swp_pagination {
-    transform: translate(0);
+  transform: translate(0);
 }
 
 .swp_pagination span {
-    margin: 0 !important;
-    padding: 0;
-    width: 6px;
-    height: 6px;
-    @apply bg-white opacity-100
+  margin: 0 !important;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  @apply bg-white opacity-100
 }
 
 .swp_pagination span.swiper-pagination-bullet-active {
-    background: #EF924F;
+  background: #EF924F;
 }
 
 .prices .tab-head button.active {
-    border-color: #EF924F;
-    color: #EF924F;
+  border-color: #EF924F;
+  color: #EF924F;
+}
+
+.customPlacemark {
+  width: 218px;
+  height: 60px;
+  border-radius: 50px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.circle {
+  width: 26px;
+  height: 26px;
+  display: block;
+  border-radius: 50%;
+  background: #D9D9D9;
+}
+
+.customPlacemark h4 {
+  font-family: 'Montserrat';
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #3D3D3D;
+}
+
+.customPlacemark span {
+  font-family: 'Montserrat';
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #3D3D3D;
 }
