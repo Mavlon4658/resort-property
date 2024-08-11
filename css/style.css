@@ -369,3 +369,7 @@ input[type="range"]:focus {
 [class*="ymaps-"][class*="-ground-pane"] {
   filter: grayscale(100);
 }
+
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}

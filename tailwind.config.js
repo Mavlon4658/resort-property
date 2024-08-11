@@ -20,6 +20,9 @@ module.exports = {
         'green-dark': '#3C606F',
         'input-dark': '#FFFFFFB2',
       },
+      screens: {
+        'lg-plus': '992px',
+      },
     },
   },
   plugins: [],

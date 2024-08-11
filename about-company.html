@@ -51,10 +51,10 @@
     <main>
 
       <!-- Home -->
-      <section class="relative z-[1] h-[744px]">
+      <section class="relative z-[1] lg-plus:h-[744px] h-[401px]">
         <img src="./images/home-bg.png" alt="" class="object-cover absolute z-[-1] left-0 top-0 w-full h-full">
         <div class="absolute left-0 top-0 w-full h-full bg-[#000] z-[-1] opacity-[.4]"></div>
-        <div class="container relative pt-[400px] lg:pt-[256px] pb-[246px] lg:pb-[167px]">
+        <div class="container relative lg-plus:pt-[256px] pt-[200px]">
           <ul class="flex space-x-1">
             <li>
               <a class="text-white font-medium text-base" href="#!">Главная /</a>
@@ -63,61 +63,80 @@
               <a class="text-[#FFFFFFB2] font-medium text-base">О компании</a>
             </li>
           </ul>
-          <h1 class="text-[60px] font-medium leading-[74px] text-white font-Unbounded mt-[19px]">О компании</h1>
+          <h1
+            class="md:text-[60px] text-[32px] leading-[39.68px] font-medium md:leading-[74px] text-white font-Unbounded md:mt-[19px] mt-1">
+            О компании
+          </h1>
         </div>
       </section>
       <!-- Home end -->
 
-      <section class="bg-[#F5F5F4] pt-[91px] pb-[120px]">
+      <section class="bg-[#F5F5F4] lg-plus:pt-[91px] pt-[42px] lg-plus:pb-[120px] pb-[30px]">
         <div class="container">
-          <div class="flex items-start justify-between gap-[131px]">
-            <div class="max-w-[485px]">
-              <h4 class="font-Unbounded font-normal leading-6 text-lg text-gray mb-[24px]">Давно выяснено, что при
+          <div class="flex items-start justify-between lg:gap-[131px] gap-[10px] lg:flex-row flex-col">
+            <div class="lg:max-w-[485px] w-full">
+              <h4
+                class="font-Unbounded font-normal lg-plus:leading-6 lg-plus:text-lg text-sm text-gray lg-plus:mb-[24px] mb-[13px]">
+                Давно
+                выяснено, что при
                 оценке
                 дизайна и
                 композиции читаемый текст мешает
                 сосредоточиться</h4>
-              <p class="text-lg leading-6 text-gray font-normal tracking-[3%] font-Montserrat">
+              <p
+                class="lg-plus:text-lg text-sm leading-[18px] lg-plus:leading-6 text-gray font-normal tracking-[3%] font-Montserrat">
                 Черноморское побережье, безусловно, самый инвестиционно привлекательный регион нашей страны. Мягкий
                 климат,
                 целебный морской,
                 а в некоторых регионах и хвойный воздух, великолепные виды – все это делает побережье Сочи или Крыма
                 главными курортами России.
               </p>
-              <p class="text-lg leading-6 text-gray font-normal tracking-[3%] font-Montserrat py-[14px]">
+              <p
+                class="lg-plus:text-lg text-sm leading-[18px] lg-plus:leading-6 text-gray font-normal tracking-[3%] font-Montserrat lg-plus:py-[14px] pt-3">
                 Черноморское побережье, безусловно, самый инвестиционно привлекательный регион нашей страны. Мягкий
                 климат, целебный морской,
                 а в некоторых регионах и хвойный воздух, великолепные виды – все это делает побережье Сочи или Крыма
                 главными курортами России.
               </p>
-              <p class="text-lg leading-6 text-gray font-normal tracking-[3%] font-Montserrat">
+              <p
+                class="lg-plus:text-lg text-sm leading-[18px] lg-plus:leading-6 text-gray font-normal tracking-[3%] font-Montserrat">
                 Черноморское побережье, безусловно, самый инвестиционно привлекательный регион нашей страны.
               </p>
             </div>
-            <div class="">
-              <div class="rounded-[40px] w-[584px] h-[431px] overflow-hidden relative mt-[-165px] z-10">
-                <img class="rounded object-cover w-full h-full" src="images/build-img.png" alt="build-img">
+            <div class="flex flex-col lg:gap-0 gap-[30px]">
+              <div
+                class="md:rounded-[40px] rounded-[16px] lg:w-[584px] w-full md:h-[431px] h-[255px] overflow-hidden relative lg:mt-[-165px] z-10 lg:order-1 order-2">
+                <img class="object-cover w-full h-full" src="images/build-img.png" alt="build-img">
                 <div class="bg-[#00000033] absolute top-0 left-0 w-full h-full z-10">
                 </div>
                 <button class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
                   <img src="images/rounded-play-icon.svg" alt="">
                 </button>
               </div>
-              <p class="font-normal text-[#00000066] leading-[22px] font-Montserrat mt-[91px]">
-                Прибавьте к этому развитую инфраструктуру, в которую непрерывно поступают как федеральные инвестиции,
-                так
-                и частные и получите готовый прибыльный бизнес.
-              </p>
-              <p class="font-normal text-[#00000066] leading-[22px] font-Montserrat pt-[10px]">
-                Но не только для инвесторов интересен данный регион. Черноморское побережье станет прекрасным местом для
-                жизни. Современные комплексы апартаментов с премиальным уровнем комфорта под управлением отельеров
-                мирового класса сделают отпуск незабываемым.
-              </p>
+              <div class="lg:order-2 order-1">
+                <p
+                  class="font-normal text-[#00000066] lg-plus:text-base text-sm leading-[18px] lg-plus:leading-[22px] font-Montserrat lg:mt-[91px]">
+                  Прибавьте к этому развитую инфраструктуру, в которую непрерывно поступают как федеральные инвестиции,
+                  так
+                  и частные и получите готовый прибыльный бизнес.
+                </p>
+                <p
+                  class="font-normal text-[#00000066] lg-plus:text-base text-sm leading-[18px] lg-plus:leading-[22px] font-Montserrat pt-[10px]">
+                  Но не только для инвесторов интересен данный регион. Черноморское побережье станет прекрасным местом
+                  для
+                  жизни. Современные комплексы апартаментов с премиальным уровнем комфорта под управлением отельеров
+                  мирового класса сделают отпуск незабываемым.
+                </p>
+              </div>
             </div>
           </div>
-          <h3 class="text-[32px] leading-[39.68px] text-gray font-normal font-Unbounded mt-[70px]">Чем мы можем помочь:
+          <h3
+            class="md:text-[32px] text-[24.8px] leading-[24.8px] md:leading-[39.68px] text-gray font-normal font-Unbounded lg-plus:mt-[70px] mt-[30px]">
+            Чем
+            мы можем помочь:
           </h3>
-          <div class="flex mt-7 gap-4 flex-wrap">
+          <div
+            class="flex lg-plus:mt-7 mt-[23px] gap-4 lg-plus:flex-wrap lg-plus:overflow-hidden overflow-x-auto whitespace-nowrap scroll-hidden lg-plus:mr-0 -mr-5">
             <a class="bg-transparent text-gray py-3 px-4 border border-gray rounded-[40px] font-Montserrat leading-[19.5px] text-base hover:border-coral hover:text-coral duration-200"
               href="#!">Купить квартиру в
               Краснодарском крае</a>
@@ -138,85 +157,106 @@
       </section>
 
       <section>
-        <img class="w-full h-[568px] object-cover" src="images/port.png" alt="">
-        <div class="mt-[-103px] flex justify-between gap-8 container">
-          <div class="rounded-[32px] bg-white pt-9 pl-9 pb-[41px] pr-9">
-            <h4 class="font-normal text-coral text-4xl leading-[44.64px]">0%</h4>
-            <h5 class="pt-[7px] pb-3 text-base leading-[19.84px] font-normal text-gray">Комиссия</h5>
+        <img class="w-full md:h-[568px] h-[313px] object-cover" src="images/port.png" alt="">
+        <div class="mt-[-103px] flex justify-between lg-plus:gap-8 container lg-plus:flex-row flex-col gap-5">
+          <div
+            class="md:rounded-[32px] rounded-[16px] bg-white md:pt-9 md:pl-9 md:pb-[41px] py-[15px] px-[22px] md:pr-9">
+            <h4 class="font-normal text-coral md:text-4xl text-[26px] leading-[32.24px] md:leading-[44.64px]">0%</h4>
+            <h5
+              class="md:pt-[7px] pt-[3px] md:pb-3 pb-[5px] md:text-base text-sm md:leading-[19.84px] font-normal text-gray">
+              Комиссия</h5>
             <span class="text-text-grey-light text-sm leading-[17.07px] font-light">Работаем напрямую от
               застройщиков</span>
           </div>
-          <div class="rounded-[32px] bg-white pt-9 pl-9 pb-[41px] pr-9">
-            <h4 class="font-normal text-coral text-4xl leading-[44.64px]">30%</h4>
-            <h5 class="pt-[7px] pb-3 text-base leading-[19.84px] font-normal text-gray">Годовых</h5>
+          <div
+            class="md:rounded-[32px] rounded-[16px] bg-white md:pt-9 md:pl-9 md:pb-[41px] py-[15px] px-[22px] md:pr-9">
+            <h4 class="font-normal text-coral md:text-4xl text-[26px] leading-[32.24px] md:leading-[44.64px]">30%</h4>
+            <h5
+              class="md:pt-[7px] pt-[3px] md:pb-3 pb-[5px] md:text-base text-sm md:leading-[19.84px] font-normal text-gray">
+              Годовых</h5>
             <span class="text-text-grey-light text-sm leading-[17.07px] font-light">Доходность до 30% годовых</span>
           </div>
-          <div class="rounded-[32px] bg-white pt-9 pl-9 pb-[41px] pr-9">
-            <h4 class="font-normal text-coral text-4xl leading-[44.64px]">200+</h4>
-            <h5 class="pt-[7px] pb-3 text-base leading-[19.84px] font-normal text-gray">Объектов в базе</h5>
+          <div
+            class="md:rounded-[32px] rounded-[16px] bg-white md:pt-9 md:pl-9 md:pb-[41px] py-[15px] px-[22px] md:pr-9">
+            <h4 class="font-normal text-coral md:text-4xl text-[26px] leading-[32.24px] md:leading-[44.64px]">200+</h4>
+            <h5
+              class="md:pt-[7px] pt-[3px] md:pb-3 pb-[5px] md:text-base text-sm md:leading-[19.84px] font-normal text-gray">
+              Объектов в базе
+            </h5>
             <span class="text-text-grey-light text-sm leading-[17.07px] font-light">Более 200 проверенных
               объектов</span>
           </div>
         </div>
       </section>
 
-      <section class="bg-[#F5F5F4] py-[120px]">
+      <section class="bg-[#F5F5F4] lg-plus:py-[120px] pt-10 pb-[58px]">
         <div class="container">
-          <h2 class="max-w-[698px] leading-[50px] text-[40px] text-[#3D3D3D] mb-11">При сотрудничестве с нами вы
+          <h2
+            class="max-w-[698px] md:leading-[50px] md:text-[40px] leading-[24.8px] text-xl text-[#3D3D3D] md:mb-11 mb-5">
+            При
+            сотрудничестве с нами вы
             получите:</h2>
-          <ul class="grid grid-cols-2 items-stretch gap-8">
-            <li class="w-full bg-white rounded-[32px] pt-[35px] px-[27px] pb-[29px]">
+          <ul class="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-5">
+            <li
+              class="w-full bg-white md:rounded-[32px] rounded-[16px] md:pt-[35px] pt-[14px] pb-[22px] px-[23px] md:px-[27px] md:pb-[29px]">
               <span
-                class="mb-[25px] inline-flex items-center justify-center w-[50px] h-[50px] rounded-full bg-[#F3F3F3]">
+                class="md:mb-[25px] mb-3 inline-flex items-center justify-center w-[50px] h-[50px] rounded-full bg-[#F3F3F3]">
                 <svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M23 2.43917C18.7448 6.68917 14.5263 10.9761 10.2711 15.2631C9.75759 15.7805 9.24403 16.2979 8.73048 16.8153C8.4737 17.0739 8.32697 17.0739 8.07019 16.8153C5.46572 14.1544 2.82458 11.4935 0.183428 8.83265C-0.0733499 8.57395 -0.0733499 8.42613 0.183428 8.16743C0.77035 7.57613 1.35727 6.98482 1.94419 6.39352C2.20097 6.13482 2.3477 6.13482 2.60448 6.39352C4.47529 8.2783 6.34611 10.1631 8.21692 12.0479C8.29029 12.1218 8.32697 12.1957 8.36365 12.2696C8.43702 12.1957 8.51038 12.1218 8.58375 12.0848C12.5088 8.13047 16.3971 4.21308 20.3222 0.258734C20.6523 -0.0738748 20.7624 -0.0738748 21.0925 0.258734C21.6428 0.813082 22.193 1.36743 22.7432 1.92178C22.8166 1.99569 22.9267 2.10656 23 2.21743C23 2.29134 23 2.36526 23 2.43917Z"
                     fill="#EF924F"></path>
                 </svg>
               </span>
-              <h4 class="text-[13px] leading-4 text-[#3D3D3D] mb-3">Экскурсии по объектам</h4>
-              <p class="text-[#363636] opacity-60 text-[13px] leading-[15px] font-montserrat font-light">Мы проводим
+              <h4 class="text-[13px] leading-4 text-[#3D3D3D] md:mb-3 mb-2">Экскурсии по объектам</h4>
+              <p class="text-[#363636] opacity-60 md:text-[13px] text-xs leading-[15px] font-montserrat font-light">
+                Мы проводим
                 реальные и дистанционные показы – вы сможете осмотреть не только сам объект, но инфраструктуру вокруг
               </p>
             </li>
-            <li class="w-full bg-white rounded-[32px] pt-[35px] px-[27px] pb-[29px]">
+            <li
+              class="w-full bg-white md:rounded-[32px] rounded-[16px] md:pt-[35px] pt-[14px] pb-[22px] px-[23px] md:px-[27px] md:pb-[29px]">
               <span
-                class="mb-[25px] inline-flex items-center justify-center w-[50px] h-[50px] rounded-full bg-[#F3F3F3]">
+                class="md:mb-[25px] mb-3 inline-flex items-center justify-center w-[50px] h-[50px] rounded-full bg-[#F3F3F3]">
                 <svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M23 2.43917C18.7448 6.68917 14.5263 10.9761 10.2711 15.2631C9.75759 15.7805 9.24403 16.2979 8.73048 16.8153C8.4737 17.0739 8.32697 17.0739 8.07019 16.8153C5.46572 14.1544 2.82458 11.4935 0.183428 8.83265C-0.0733499 8.57395 -0.0733499 8.42613 0.183428 8.16743C0.77035 7.57613 1.35727 6.98482 1.94419 6.39352C2.20097 6.13482 2.3477 6.13482 2.60448 6.39352C4.47529 8.2783 6.34611 10.1631 8.21692 12.0479C8.29029 12.1218 8.32697 12.1957 8.36365 12.2696C8.43702 12.1957 8.51038 12.1218 8.58375 12.0848C12.5088 8.13047 16.3971 4.21308 20.3222 0.258734C20.6523 -0.0738748 20.7624 -0.0738748 21.0925 0.258734C21.6428 0.813082 22.193 1.36743 22.7432 1.92178C22.8166 1.99569 22.9267 2.10656 23 2.21743C23 2.29134 23 2.36526 23 2.43917Z"
                     fill="#EF924F"></path>
                 </svg>
               </span>
-              <h4 class="text-[13px] leading-4 text-[#3D3D3D] mb-3">Выгодные условия</h4>
-              <p class="text-[#363636] opacity-60 text-[13px] leading-[15px] font-montserrat font-light">Наши клиенты не
+              <h4 class="text-[13px] leading-4 text-[#3D3D3D] md:mb-3 mb-2">Выгодные условия</h4>
+              <p class="text-[#363636] opacity-60 md:text-[13px] text-xs leading-[15px] font-montserrat font-light">
+                Наши клиенты не
                 платят за сервис «Estadel» – мы не берем комиссию с покупателя. Наши услуги для вас бесплатны</p>
             </li>
-            <li class="w-full bg-white rounded-[32px] pt-[35px] px-[27px] pb-[29px]">
+            <li
+              class="w-full bg-white md:rounded-[32px] rounded-[16px] md:pt-[35px] pt-[14px] pb-[22px] px-[23px] md:px-[27px] md:pb-[29px]">
               <span
-                class="mb-[25px] inline-flex items-center justify-center w-[50px] h-[50px] rounded-full bg-[#F3F3F3]">
+                class="md:mb-[25px] mb-3 inline-flex items-center justify-center w-[50px] h-[50px] rounded-full bg-[#F3F3F3]">
                 <svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M23 2.43917C18.7448 6.68917 14.5263 10.9761 10.2711 15.2631C9.75759 15.7805 9.24403 16.2979 8.73048 16.8153C8.4737 17.0739 8.32697 17.0739 8.07019 16.8153C5.46572 14.1544 2.82458 11.4935 0.183428 8.83265C-0.0733499 8.57395 -0.0733499 8.42613 0.183428 8.16743C0.77035 7.57613 1.35727 6.98482 1.94419 6.39352C2.20097 6.13482 2.3477 6.13482 2.60448 6.39352C4.47529 8.2783 6.34611 10.1631 8.21692 12.0479C8.29029 12.1218 8.32697 12.1957 8.36365 12.2696C8.43702 12.1957 8.51038 12.1218 8.58375 12.0848C12.5088 8.13047 16.3971 4.21308 20.3222 0.258734C20.6523 -0.0738748 20.7624 -0.0738748 21.0925 0.258734C21.6428 0.813082 22.193 1.36743 22.7432 1.92178C22.8166 1.99569 22.9267 2.10656 23 2.21743C23 2.29134 23 2.36526 23 2.43917Z"
                     fill="#EF924F"></path>
                 </svg>
               </span>
-              <h4 class="text-[13px] leading-4 text-[#3D3D3D] mb-3">Юридическая поддержка</h4>
-              <p class="text-[#363636] opacity-60 text-[13px] leading-[15px] font-montserrat font-light">У нас вы
+              <h4 class="text-[13px] leading-4 text-[#3D3D3D] md:mb-3 mb-2">Юридическая поддержка</h4>
+              <p class="text-[#363636] opacity-60 md:text-[13px] text-xs leading-[15px] font-montserrat font-light">
+                У нас вы
                 получаете полное сопровождение сделки от момента подписания договора до передачи на руки ключей от
                 объекта</p>
             </li>
-            <li class="w-full bg-white rounded-[32px] pt-[35px] px-[27px] pb-[29px]">
+            <li
+              class="w-full bg-white md:rounded-[32px] rounded-[16px] md:pt-[35px] pt-[14px] pb-[22px] px-[23px] md:px-[27px] md:pb-[29px]">
               <span
-                class="mb-[25px] inline-flex items-center justify-center w-[50px] h-[50px] rounded-full bg-[#F3F3F3]">
+                class="md:mb-[25px] mb-3 inline-flex items-center justify-center w-[50px] h-[50px] rounded-full bg-[#F3F3F3]">
                 <svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M23 2.43917C18.7448 6.68917 14.5263 10.9761 10.2711 15.2631C9.75759 15.7805 9.24403 16.2979 8.73048 16.8153C8.4737 17.0739 8.32697 17.0739 8.07019 16.8153C5.46572 14.1544 2.82458 11.4935 0.183428 8.83265C-0.0733499 8.57395 -0.0733499 8.42613 0.183428 8.16743C0.77035 7.57613 1.35727 6.98482 1.94419 6.39352C2.20097 6.13482 2.3477 6.13482 2.60448 6.39352C4.47529 8.2783 6.34611 10.1631 8.21692 12.0479C8.29029 12.1218 8.32697 12.1957 8.36365 12.2696C8.43702 12.1957 8.51038 12.1218 8.58375 12.0848C12.5088 8.13047 16.3971 4.21308 20.3222 0.258734C20.6523 -0.0738748 20.7624 -0.0738748 21.0925 0.258734C21.6428 0.813082 22.193 1.36743 22.7432 1.92178C22.8166 1.99569 22.9267 2.10656 23 2.21743C23 2.29134 23 2.36526 23 2.43917Z"
                     fill="#EF924F"></path>
                 </svg>
               </span>
-              <h4 class="text-[13px] leading-4 text-[#3D3D3D] mb-3">Эксклюзивные объекты</h4>
-              <p class="text-[#363636] opacity-60 text-[13px] leading-[15px] font-montserrat font-light">Своим клиентам
+              <h4 class="text-[13px] leading-4 text-[#3D3D3D] md:mb-3 mb-2">Эксклюзивные объекты</h4>
+              <p class="text-[#363636] opacity-60 md:text-[13px] text-xs leading-[15px] font-montserrat font-light">
+                Своим клиентам
                 предоставляем доступ к более полной базе, где представлены эксклюзивные лоты по специальным ценам,
                 которых нет в общем доступе</p>
             </li>
