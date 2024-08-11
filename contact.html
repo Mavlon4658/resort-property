@@ -126,16 +126,17 @@
 
       <!-- map -->
       <section>
-        <div id="map" class="h-[572px] w-full mt-[35px] md:mt-[69px]" style="filter: grayscale(100);"></div>
+        <div id="map" class="md:h-[572px] h-[536px] w-full mt-[35px] md:mt-[69px]" style="filter: grayscale(100);">
+        </div>
       </section>
       <!-- map -->
 
-      <div class="text-gray pt-[63px] pb-[73px]">
+      <div class="text-gray md:pt-[63px] pt-[50px] md:pb-[73px] pb-[48px] bg-white">
         <div class="container">
           <h3 class="font-normal leading-[49.6px] text-[40px] pb-[21px]">Свяжитесь <br>
             с нами</h3>
-          <div class="flex items-end justify-between ">
-            <div>
+          <div class="flex md:items-end justify-between md:gap-[128px] gap-6 md:flex-row flex-col">
+            <div class="md:order-1 order-2">
               <span class="blok text-[15px] leading-[18.6px] font-normal font-Unbounded">Или напишите нам <br>
                 в мессенджерах:</span>
               <div class="flex space-x-5 items-center mt-[13px]">
@@ -147,8 +148,8 @@
                 </a>
               </div>
             </div>
-            <form class="max-w-[893px] w-full">
-              <div class="flex justify-between gap-8">
+            <form class="max-w-[893px] w-full md:order-2 order-1">
+              <div class="flex justify-between md:gap-8 gap-4 md:flex-row flex-col">
                 <input
                   class="font-Montserrat font-medium outline-gray leading-[18px] text-[15px] text-text-grey-light placeholder:text-grey-light border border-card-circle rounded-[50px] py-4 px-5 bg-transparent w-full"
                   type="text" placeholder="Ваше имя">
@@ -160,9 +161,9 @@
                   type="email" placeholder="Email">
               </div>
               <textarea
-                class="font-Montserrat font-medium outline-gray  leading-[18px] text-[15px] text-text-grey-light placeholder:text-grey-light border border-card-circle rounded-[25px] py-4 px-5 bg-transparent w-full h-[93px] my-[22px] resize-none"
+                class="font-Montserrat font-medium outline-gray  leading-[18px] text-[15px] text-text-grey-light placeholder:text-grey-light border border-card-circle rounded-[25px] py-4 px-5 bg-transparent w-full md:h-[93px] h-[117px] my-[22px] resize-none"
                 placeholder="Сообщение"></textarea>
-              <button class="btn-orange block ml-auto">Отправить</button>
+              <button class="btn-orange md:w-fit w-full block ml-auto">Отправить</button>
             </form>
           </div>
         </div>
@@ -171,7 +172,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer md:pt-[80px] pt-[46px] md:pb-[55px] pb-[26px]">
+    <footer class="footer md:pt-[80px] pt-[46px] md:pb-[55px] pb-[26px] md:bg-[#f5f5f4] bg-[#f4f5f5]">
       <div class="container">
         <div class="flex md:flex-row flex-col items-start justify-between gap-[20px]">
           <ul class="flex flex-col gap-[7px] md:mb-0 mb-[20px]">

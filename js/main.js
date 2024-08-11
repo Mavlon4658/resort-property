@@ -167,8 +167,209 @@ document.addEventListener('click', (event) => {
   }
 });
 
-ymaps.ready(init);
+try {
+  // parahot swiper
+  var parahotSwiper = new Swiper('.parahot-slider', {
+    speed: 800,
+    spaceBetween: 32,
+    slidesPerView: 1.6,
+    navigation: {
+      nextEl: '.btn__next',
+      prevEl: '.btn__prev',
+    },
+    breakpoints: {
+      1024: {
+        slidesPerView: 1.6,
+      },
+      0: {
+        slidesPerView: 1,
+      },
+    },
+  });
+} catch (error) {}
+// catalog-swiper
+try {
+  var catalogSwiper = new Swiper('.catalog-swiper', {
+    speed: 800,
+    spaceBetween: 32,
+    slidesPerView: 2.4,
+    navigation: {
+      nextEl: '.btn__next',
+      prevEl: '.btn__prev',
+    },
+    breakpoints: {
+      992: {
+        slidesPerView: 2.4,
+        spaceBetween: 32,
+      },
+      0: {
+        slidesPerView: 1.3,
+        spaceBetween: 20,
+      },
+    },
+  });
+} catch (error) {}
+// try {
+//   ymaps.ready(init);
 
+//   function init() {
+//     var myMap = new ymaps.Map('map', {
+//       center: [44.895, 37.316],
+//       zoom: 13,
+//       controls: ['zoomControl', 'fullscreenControl'],
+//     });
+
+//     myMap.setType('yandex#map');
+//     myMap.geoObjects.options.set('preset', 'islands#grayIcon');
+
+//     // Define the coordinates of the locations
+//     var location1 = [44.89, 37.32]; // Example coordinates
+//     var location2 = [44.9, 37.31]; // Example coordinates
+
+//     var placemark1 = new ymaps.Placemark(
+//       location1,
+//       {},
+//       {
+//         iconLayout: 'default#image',
+//         iconImageHref: '../images/location.png',
+//         iconImageSize: [218, 59],
+//         iconImageOffset: [-15, -15],
+//       }
+//     );
+//     var placemark2 = new ymaps.Placemark(
+//       location2,
+//       {},
+//       {
+//         iconLayout: 'default#image',
+//         iconImageHref: '../images/blog-card-1.png',
+//         iconImageSize: [218, 59],
+//         iconImageOffset: [-15, -15],
+//       }
+//     );
+
+//     myMap.geoObjects.add(placemark1);
+//     myMap.geoObjects.add(placemark2);
+//   }
+// } catch (error) {}
+try {
+  ymaps.ready(init);
+
+  function init() {
+    var map = new ymaps.Map('map', {
+      center: [55.751244, 37.618423], // Moskva markazi
+      zoom: 14,
+      controls: [],
+    });
+
+    // Custom HTML placemark
+    var CustomPlacemark = ymaps.templateLayoutFactory.createClass(
+      `<div class="customPlacemark-content">
+        <div className="circle-img">
+          <img src="../images/apartment-1.png" />
+        </div>
+        <div>
+          <h4>Золотой берег</h4>
+          <span>Апарт-отель</span>
+        </div>
+      </div>`
+    );
+
+    var placemark1 = new ymaps.Placemark(
+      [55.76212, 37.61556],
+      {},
+      {
+        iconLayout: CustomPlacemark,
+      }
+    );
+
+    var placemark2 = new ymaps.Placemark(
+      [55.751244, 37.618423],
+      {},
+      {
+        iconLayout: CustomPlacemark,
+      }
+    );
+
+    // Xaritada placemarklarni qo'shish
+    map.geoObjects.add(placemark1);
+    map.geoObjects.add(placemark2);
+  }
+} catch (error) {
+  console.log(error);
+}
+
+try {
+  const listProduct = document.querySelector('.list-product');
+  const groupProduct = document.querySelector('.group-product');
+  const catalogProducts = document.querySelector('.catalog-products');
+  const mapProduct = document.querySelector('.map-product');
+  const mapProductBtn = document.querySelector('.map-product__btn');
+  const catalogProductsBox = document.querySelector('.catalog-products__box');
+
+  listProduct.addEventListener('click', () => {
+    groupProduct.classList.remove('active');
+    listProduct.classList.add('active');
+    catalogProducts.classList.add('grid-cols-1', 'list');
+    catalogProducts.classList.remove('grid-cols-4');
+    catalogProductsBox.classList.remove('hidden');
+    mapProduct.classList.add('hidden');
+  });
+  groupProduct.classList.add('active');
+  groupProduct.addEventListener('click', () => {
+    groupProduct.classList.add('active');
+    listProduct.classList.remove('active');
+    catalogProducts.classList.remove('grid-cols-1', 'list');
+    catalogProducts.classList.add('grid-cols-4');
+    catalogProductsBox.classList.remove('hidden');
+    mapProduct.classList.add('hidden');
+  });
+  mapProductBtn.addEventListener('click', () => {
+    groupProduct.classList.remove('active');
+    listProduct.classList.remove('active');
+    catalogProductsBox.classList.add('hidden');
+    mapProduct.classList.remove('hidden');
+  });
+} catch (error) {}
+
+// range slider
+try {
+  function setValues(lowerInput, upperInput, lowerValue, upperValue, track) {
+    lowerValue.textContent = `${(lowerInput.value * 2 + 44.5).toFixed(1)} млн`;
+    upperValue.textContent = `${(upperInput.value * 2 + 44.5).toFixed(1)} млн`;
+    updateSliderTrack(lowerInput, upperInput, track);
+  }
+
+  function updateSliderTrack(lowerInput, upperInput, track) {
+    const min = parseInt(lowerInput.min);
+    const max = parseInt(upperInput.max);
+    const lowerValue = parseInt(lowerInput.value);
+    const upperValue = parseInt(upperInput.value);
+
+    const lowerPercent = ((lowerValue - min) / (max - min)) * 100;
+    const upperPercent = ((upperValue - min) / (max - min)) * 100;
+
+    track.style.left = `${lowerPercent}%`;
+    track.style.width = `${upperPercent - lowerPercent}%`;
+  }
+
+  document.querySelectorAll('.range-slider').forEach((slider, index) => {
+    const lowerInput = slider.querySelector(`#lower${index + 1}`);
+    const upperInput = slider.querySelector(`#upper${index + 1}`);
+    const lowerValue = slider.querySelector(`#lower-value${index + 1}`);
+    const upperValue = slider.querySelector(`#upper-value${index + 1}`);
+    const track = slider.querySelector(`#track${index + 1}`);
+
+    lowerInput.addEventListener('input', () => {
+      setValues(lowerInput, upperInput, lowerValue, upperValue, track);
+    });
+
+    upperInput.addEventListener('input', () => {
+      setValues(lowerInput, upperInput, lowerValue, upperValue, track);
+    });
+
+    // Set initial values
+    setValues(lowerInput, upperInput, lowerValue, upperValue, track);
+  });
 function init() {
   var myMap = new ymaps.Map('map', {
     center: [44.895, 37.316],
