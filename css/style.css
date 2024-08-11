@@ -212,6 +212,10 @@ header ul a:hover::after {
   color: #3D3D3D;
 }
 
+.catalog-products.list {
+  grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+}
+
 .catalog-products.list .catalog-products-swiper {
   max-width: 451px;
   margin-bottom: 0;
@@ -376,4 +380,10 @@ input[type="range"]:focus {
 
 .scroll-hidden::-webkit-scrollbar {
   display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .catalog-products.list .catalog-products-swiper {
+    max-width: 350px;
+  }
 }

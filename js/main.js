@@ -36,16 +36,16 @@ var swiper;
 function swiperCard() {
   if (window.innerWidth <= 1024) {
     if (!init) {
-    init = true;
-    swiper = new Swiper(".best_deals__paretn_swp", {
-        slidesPerView: "auto",
+      init = true;
+      swiper = new Swiper('.best_deals__paretn_swp', {
+        slidesPerView: 'auto',
         spaceBetween: 11,
         nested: true,
-    });
+      });
     }
   } else if (init) {
-      swiper.destroy();
-      init = false;
+    swiper.destroy();
+    init = false;
   }
 }
 
@@ -53,7 +53,9 @@ if (document.querySelector('.best_deals__paretn_swp')) {
   swiperCard();
 }
 
-let bestDealsChildChildSwp = document.querySelectorAll('.best_deals__child_swp');
+let bestDealsChildChildSwp = document.querySelectorAll(
+  '.best_deals__child_swp'
+);
 
 if (bestDealsChildChildSwp.length) {
   bestDealsChildChildSwp.forEach((el) => {
@@ -114,15 +116,15 @@ if (tabs.length) {
 let partnerSwp = new Swiper('.partners .swiper', {
   slidesPerView: 'auto',
   spaceBetween: 16,
-    breakpoint: {
-        1024: {
-            spaceBetween: 32,
-        }
+  breakpoint: {
+    1024: {
+      spaceBetween: 32,
     },
-    navigation: {
-        nextEl: '.partners_btn__next',
-        prevEl: '.partners_btn__prev',
-    }
+  },
+  navigation: {
+    nextEl: '.partners_btn__next',
+    prevEl: '.partners_btn__prev',
+  },
 });
 
 let reviewSwp = new Swiper('.review .swiper', {
@@ -136,19 +138,19 @@ let reviewSwp = new Swiper('.review .swiper', {
 
 let blogSwp = new Swiper('.blog .swiper', {
   slidesPerView: 1,
-    spaceBetween: 32,
-    breakpoint: {
-        768: {
-            slidesPerView: 3,
-        },
-        640: {
-            slidesPerView: 2,
-        },
+  spaceBetween: 32,
+  breakpoint: {
+    768: {
+      slidesPerView: 3,
     },
-    navigation: {
-        nextEl: '.blog_btn__next',
-        prevEl: '.blog_btn__prev',
-    }
+    640: {
+      slidesPerView: 2,
+    },
+  },
+  navigation: {
+    nextEl: '.blog_btn__next',
+    prevEl: '.blog_btn__prev',
+  },
 });
 
 let accordionItems = document.querySelectorAll('.accordion_item');
@@ -320,7 +322,7 @@ try {
   const groupProduct = document.querySelector('.group-product');
   const catalogProducts = document.querySelector('.catalog-products');
   const mapProduct = document.querySelector('.map-product');
-  const mapProductBtn = document.querySelector('.map-product__btn');
+  const mapProductBtn = document.querySelectorAll('.map-product__btn');
   const catalogProductsBox = document.querySelector('.catalog-products__box');
 
   listProduct.addEventListener('click', () => {
@@ -340,12 +342,14 @@ try {
     catalogProductsBox.classList.remove('hidden');
     mapProduct.classList.add('hidden');
   });
-  mapProductBtn.addEventListener('click', () => {
-    groupProduct.classList.remove('active');
-    listProduct.classList.remove('active');
-    catalogProductsBox.classList.add('hidden');
-    mapProduct.classList.remove('hidden');
-  });
+  mapProductBtn.forEach((btn) =>
+    btn.addEventListener('click', () => {
+      groupProduct.classList.remove('active');
+      listProduct.classList.remove('active');
+      catalogProductsBox.classList.add('hidden');
+      mapProduct.classList.remove('hidden');
+    })
+  );
 } catch (error) {}
 
 // range slider
@@ -387,87 +391,87 @@ try {
     // Set initial values
     setValues(lowerInput, upperInput, lowerValue, upperValue, track);
   });
-function init() {
-  var myMap = new ymaps.Map('map', {
-    center: [44.895, 37.316],
-    zoom: 13,
-    controls: ['zoomControl', 'fullscreenControl'],
-  });
-
-  myMap.setType('yandex#map');
-  myMap.geoObjects.options.set('preset', 'islands#grayIcon');
-
-  // Define the coordinates of the locations
-  var location1 = [44.89, 37.32]; // Example coordinates
-  var location2 = [44.9, 37.31]; // Example coordinates
-
-  var placemark1 = new ymaps.Placemark(
-    location1,
-    {},
-    {
-      iconLayout: 'default#image',
-      iconImageHref: '../images/location.png',
-      iconImageSize: [218, 59],
-      iconImageOffset: [-15, -15],
-    }
-  );
-  var placemark2 = new ymaps.Placemark(
-    location2,
-    {},
-    {
-      iconLayout: 'default#image',
-      iconImageHref: '../images/location.png',
-      iconImageSize: [57, 82],
-      iconImageOffset: [-15, -15],
-    }
-  );
-
-  myMap.geoObjects.add(placemark1);
-  myMap.geoObjects.add(placemark2);
-}
-} catch (error) {}
-
-try {
-  ymaps.ready(init);
-
   function init() {
-    var map = new ymaps.Map('map', {
-      center: [55.751244, 37.618423], // Moskva markazi
-      zoom: 14,
-      controls: [],
+    var myMap = new ymaps.Map('map', {
+      center: [44.895, 37.316],
+      zoom: 13,
+      controls: ['zoomControl', 'fullscreenControl'],
     });
 
-    // Custom HTML placemark
-    var CustomPlacemark = ymaps.templateLayoutFactory.createClass(
-      `<div class="customPlacemark">
-        <div className="circle"></div>
-        <div>
-          <h4>Главный офис</h4>
-          <span>Дзержинского, 244</span>
-        </div>
-      </div>`
-    );
+    myMap.setType('yandex#map');
+    myMap.geoObjects.options.set('preset', 'islands#grayIcon');
+
+    // Define the coordinates of the locations
+    var location1 = [44.89, 37.32]; // Example coordinates
+    var location2 = [44.9, 37.31]; // Example coordinates
 
     var placemark1 = new ymaps.Placemark(
-      [55.75222, 37.61556],
+      location1,
       {},
       {
-        iconLayout: CustomPlacemark,
+        iconLayout: 'default#image',
+        iconImageHref: '../images/location.png',
+        iconImageSize: [218, 59],
+        iconImageOffset: [-15, -15],
       }
     );
-
     var placemark2 = new ymaps.Placemark(
-      [55.751244, 37.618423],
+      location2,
       {},
       {
-        iconLayout: CustomPlacemark,
+        iconLayout: 'default#image',
+        iconImageHref: '../images/location.png',
+        iconImageSize: [57, 82],
+        iconImageOffset: [-15, -15],
       }
     );
 
-    // Xaritada placemarklarni qo'shish
-    map.geoObjects.add(placemark1);
-    map.geoObjects.add(placemark2);
+    myMap.geoObjects.add(placemark1);
+    myMap.geoObjects.add(placemark2);
   }
-} catch (error) {
-  console.log(error);
-}
+} catch (error) {}
+
+// try {
+//   ymaps.ready(init);
+
+//   function init() {
+//     var map = new ymaps.Map('map', {
+//       center: [55.751244, 37.618423], // Moskva markazi
+//       zoom: 14,
+//       controls: [],
+//     });
+
+//     // Custom HTML placemark
+//     var CustomPlacemark = ymaps.templateLayoutFactory.createClass(
+//       `<div class="customPlacemark">
+//         <div className="circle"></div>
+//         <div>
+//           <h4>Главный офис</h4>
+//           <span>Дзержинского, 244</span>
+//         </div>
+//       </div>`
+//     );
+
+//     var placemark1 = new ymaps.Placemark(
+//       [55.75222, 37.61556],
+//       {},
+//       {
+//         iconLayout: CustomPlacemark,
+//       }
+//     );
+
+//     var placemark2 = new ymaps.Placemark(
+//       [55.751244, 37.618423],
+//       {},
+//       {
+//         iconLayout: CustomPlacemark,
+//       }
+//     );
+
+//     // Xaritada placemarklarni qo'shish
+//     map.geoObjects.add(placemark1);
+//     map.geoObjects.add(placemark2);
+//   }
+// } catch (error) {
+//   console.log(error);
+// }
