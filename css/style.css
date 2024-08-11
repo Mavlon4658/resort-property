@@ -397,6 +397,22 @@ input[type="range"]:focus {
 }
 
 @media screen and (max-width: 1280px) {
+	.btn-orange.px-20 {
+		padding: 17px 20px;
+		white-space: nowrap;
+		font-size: 16px;
+		font-weight: 400;
+	}
+
+	.btn-orange.px-20 span {
+		font-family: 'Montserrat';
+	}
+
+	.btn-orange.px-20 svg {
+		width: 16px;
+		height: 16px;
+	}
+
 	.overlay {
 		position: fixed;
 		z-index: 100;

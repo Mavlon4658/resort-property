@@ -42,6 +42,7 @@ function swiperCard() {
 				spaceBetween: 11,
 				nested: true,
 			});
+			
 		}
 	} else if (init) {
 		swiper.destroy();
