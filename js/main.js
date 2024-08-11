@@ -197,6 +197,16 @@ try {
       nextEl: '.btn__next',
       prevEl: '.btn__prev',
     },
+    breakpoints: {
+      992: {
+        slidesPerView: 2.4,
+        spaceBetween: 32,
+      },
+      0: {
+        slidesPerView: 1.3,
+        spaceBetween: 20,
+      },
+    },
   });
 } catch (error) {}
 // try {
