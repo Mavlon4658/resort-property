@@ -2,1212 +2,1224 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Курортная недвижимость</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <!-- CSS file -->
-  <link rel="stylesheet" href="./dist/output.css">
-  <!-- font -->
-  <link rel="stylesheet" href="./fonts/Montserrat/stylesheet.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Курортная недвижимость</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<!-- CSS file -->
+	<link rel="stylesheet" href="./dist/output.css">
+	<!-- font -->
+	<link rel="stylesheet" href="./fonts/Montserrat/stylesheet.css">
 </head>
 
-<body class="bg-[#F5F5F4]">
-  <div class="overflow-hidden">
+<body class="bg-[#F5F5F4] relative">
+	<div class="overlay hidden"></div>
+	<div class="overflow-hidden">
 
-    <!-- Header -->
-    <header
-      class="absolute top-0 left-0 w-full z-10 lg:border-b-[rgba(255,255,255,0.38)] lg:border-b lg:border-solid pt-[23px] lg:pt-0">
-      <div class="container relative">
-        <ul class="hidden lg:flex items-center justify-center gap-[46px] pr-[130px]">
-          <li>
-            <a href="#" class="pt-[27px] pb-6 text-white font-montserrat text-sm relative flex">Недвижимость</a>
-          </li>
-          <li>
-            <a href="#" class="pt-[27px] pb-6 text-white font-montserrat text-sm relative flex">Об агентстве</a>
-          </li>
-          <li>
-            <a href="#" class="pt-[27px] pb-6 text-white font-montserrat text-sm relative flex">Отзывы</a>
-          </li>
-          <li>
-            <a href="#" class="pt-[27px] pb-6 text-white font-montserrat text-sm relative flex">Контакты</a>
-          </li>
-          <li>
-            <a href="#" class="pt-[27px] pb-6 text-white font-montserrat text-sm relative flex">Ипотека</a>
-          </li>
-          <li>
-            <a href="#" class="pt-[27px] pb-6 text-white font-montserrat text-sm relative flex">Блог</a>
-          </li>
-        </ul>
-        <a href="tel:+88002223344"
-          class="absolute hidden lg:flex right-0 top-[28px] text-white font-montserrat font-medium text-base">8 800 222
-          33 44</a>
-        <button class="lg:hidden">
-          <img src="./images/bars.svg" alt="">
-        </button>
-      </div>
-    </header>
-    <!-- Header end -->
+		<!-- Header -->
+		<header
+			class="absolute top-0 left-0 w-full z-10 lg:border-b-[rgba(255,255,255,0.38)] lg:border-b lg:border-solid pt-[23px] lg:pt-0">
+			<div class="container relative">
+				<ul class="hidden lg:flex items-center justify-center gap-[46px] pr-[130px]">
+					<li>
+						<a href="#" class="pt-[27px] pb-6 text-white font-montserrat text-sm relative flex">Недвижимость</a>
+					</li>
+					<li>
+						<a href="#" class="pt-[27px] pb-6 text-white font-montserrat text-sm relative flex">Об агентстве</a>
+					</li>
+					<li>
+						<a href="#" class="pt-[27px] pb-6 text-white font-montserrat text-sm relative flex">Отзывы</a>
+					</li>
+					<li>
+						<a href="#" class="pt-[27px] pb-6 text-white font-montserrat text-sm relative flex">Контакты</a>
+					</li>
+					<li>
+						<a href="#" class="pt-[27px] pb-6 text-white font-montserrat text-sm relative flex">Ипотека</a>
+					</li>
+					<li>
+						<a href="#" class="pt-[27px] pb-6 text-white font-montserrat text-sm relative flex">Блог</a>
+					</li>
+				</ul>
+				<a href="tel:+88002223344"
+					class="absolute hidden lg:flex right-0 top-[28px] text-white font-montserrat font-medium text-base">8 800 222
+					33 44</a>
+				<button class="lg:hidden">
+					<img src="./images/bars.svg" alt="">
+				</button>
+			</div>
+		</header>
+		<!-- Header end -->
 
-    <main>
+		<main>
 
-      <!-- Home -->
-      <section class="relative z-[1] lg-plus:pb-[145px] pb-[94px]">
-        <img src="./images/home-bg.png" alt="" class="object-cover absolute z-[-1] left-0 top-0 w-full h-full">
-        <div class="absolute left-0 top-0 w-full h-full bg-[#000] z-[-1] opacity-[.4]"></div>
-        <div class="container relative lg-plus:pt-[400px] pt-[200px] lg:pt-[256px]">
-          <ul class="flex space-x-1">
-            <li>
-              <a class="text-white font-Montserrat font-medium text-base" href="#!">Главная /</a>
-            </li>
-            <li>
-              <a class="text-[#FFFFFFB2] font-Montserrat font-medium text-base">Каталог объектов</a>
-            </li>
-          </ul>
-          <h1
-            class="lg-plus:text-[60px] text-[32px] leading-[39.68px] font-medium lg-plus:leading-[74px] text-white font-Unbounded lg-plus:mt-[19px] mt-1">
-            Каталог объектов</h1>
-        </div>
-      </section>
-      <!-- Home end -->
+			<!-- Home -->
+			<section class="relative z-[1] lg-plus:pb-[145px] pb-[94px]">
+				<img src="./images/home-bg.png" alt="" class="object-cover absolute z-[-1] left-0 top-0 w-full h-full">
+				<div class="absolute left-0 top-0 w-full h-full bg-[#000] z-[-1] opacity-[.4]"></div>
+				<div class="container relative lg-plus:pt-[400px] pt-[200px] lg:pt-[256px]">
+					<ul class="flex space-x-1">
+						<li>
+							<a class="text-white font-Montserrat font-medium text-base" href="#!">Главная /</a>
+						</li>
+						<li>
+							<a class="text-[#FFFFFFB2] font-Montserrat font-medium text-base">Каталог объектов</a>
+						</li>
+					</ul>
+					<h1
+						class="lg-plus:text-[60px] text-[32px] leading-[39.68px] font-medium lg-plus:leading-[74px] text-white font-Unbounded lg-plus:mt-[19px] mt-1">
+						Каталог объектов</h1>
+				</div>
+			</section>
+			<!-- Home end -->
 
-      <!-- blog -->
-      <section>
-        <div class="container">
-          <h3
-            class="font-Unbounded font-normal md:text-[40px] text-xl leading-[24.8px] md:leading-[49.6px] md:mt-[65px] pt-10 mb-[25px]">
-            <span class="md:text-coral">Наши апартаменты</span> <br>
-            представлены в городах:
-          </h3>
-        </div>
-        <div class="container pb-[83px]">
-          <div class="swiper overflow-visible catalog-swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div
-                  class="group lg-plus:hover:bg-coral duration-300 transition-all  relative lg-plus:rounded-[32px] overflow-hidden lg-plus:bg-white lg-plus:p-[8px]">
-                  <img class="w-full h-full md:rounded-[26px] rounded-[16px]" src="./images/blog1.png" alt="">
-                  <div class="mt-[13px] lg-plus:px-[12px] lg-plus:pb-[13px] flex items-center justify-between">
-                    <h6
-                      class="text-#363636 lg-plus:text-base text-[13px] lg-plus:leading-[19.84px] leading-[16.12px] lg-plus:group-hover:text-white font-Unbounded font-medium">
-                      Ялта, Крым
-                    </h6>
-                    <span
-                      class="font-montserrat lg-plus:group-hover:text-white duration-300 transition-all font-normal text-sm text-date block mb-[10px] whitespace-nowrap">
-                      20.06.2024
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div
-                  class="group lg-plus:hover:bg-coral duration-300 transition-all  relative lg-plus:rounded-[32px] overflow-hidden lg-plus:bg-white lg-plus:p-[8px]">
-                  <img class="w-full h-full md:rounded-[26px] rounded-[16px]" src="./images/blog1.png" alt="">
-                  <div class="mt-[13px] lg-plus:px-[12px] lg-plus:pb-[13px] flex items-center justify-between">
-                    <h6
-                      class="text-#363636 lg-plus:text-base text-[13px] lg-plus:leading-[19.84px] leading-[16.12px] lg-plus:group-hover:text-white font-Unbounded font-medium">
-                      Сочи, Краснодарский край
-                    </h6>
-                    <span
-                      class="font-montserrat lg-plus:group-hover:text-white duration-300 transition-all font-normal text-sm text-date block mb-[10px] whitespace-nowrap">
-                      97 объектов
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div
-                  class="group lg-plus:hover:bg-coral duration-300 transition-all  relative lg-plus:rounded-[32px] overflow-hidden lg-plus:bg-white lg-plus:p-[8px]">
-                  <img class="w-full h-full md:rounded-[26px] rounded-[16px]" src="./images/blog1.png" alt="">
-                  <div class="mt-[13px] lg-plus:px-[12px] lg-plus:pb-[13px] flex items-center justify-between">
-                    <h6
-                      class="text-#363636 lg-plus:text-base text-[13px] lg-plus:leading-[19.84px] leading-[16.12px] lg-plus:group-hover:text-white font-Unbounded font-medium">
-                      Пятигорск, Северный Кавказ
-                    </h6>
-                    <span
-                      class="font-montserrat lg-plus:group-hover:text-white duration-300 transition-all font-normal text-sm text-date block mb-[10px] whitespace-nowrap">
-                      20.06.2024
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div
-                  class="group lg-plus:hover:bg-coral duration-300 transition-all  relative lg-plus:rounded-[32px] overflow-hidden lg-plus:bg-white lg-plus:p-[8px]">
-                  <img class="w-full h-full md:rounded-[26px] rounded-[16px]" src="./images/blog1.png" alt="">
-                  <div class="mt-[13px] lg-plus:px-[12px] lg-plus:pb-[13px] flex items-center justify-between">
-                    <h6
-                      class="text-#363636 lg-plus:text-base text-[13px] lg-plus:leading-[19.84px] leading-[16.12px] lg-plus:group-hover:text-white font-Unbounded font-medium">
-                      Сочи, Краснодарский край
-                    </h6>
-                    <span
-                      class="font-montserrat lg-plus:group-hover:text-white duration-300 transition-all font-normal text-sm text-date block mb-[10px] whitespace-nowrap">
-                      97 объектов
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+			<!-- blog -->
+			<section>
+				<div class="container">
+					<h3
+						class="font-Unbounded font-normal md:text-[40px] text-xl leading-[24.8px] md:leading-[49.6px] md:mt-[65px] pt-10 mb-[25px]">
+						<span class="md:text-coral">Наши апартаменты</span> <br>
+						представлены в городах:
+					</h3>
+				</div>
+				<div class="container pb-[83px]">
+					<div class="swiper overflow-visible catalog-swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div
+									class="group lg-plus:hover:bg-coral duration-300 transition-all  relative lg-plus:rounded-[32px] overflow-hidden lg-plus:bg-white lg-plus:p-[8px]">
+									<img class="w-full h-full md:rounded-[26px] rounded-[16px]" src="./images/blog1.png" alt="">
+									<div class="mt-[13px] lg-plus:px-[12px] lg-plus:pb-[13px] flex items-center justify-between">
+										<h6
+											class="text-#363636 lg-plus:text-base text-[13px] lg-plus:leading-[19.84px] leading-[16.12px] lg-plus:group-hover:text-white font-Unbounded font-medium">
+											Ялта, Крым
+										</h6>
+										<span
+											class="font-montserrat lg-plus:group-hover:text-white duration-300 transition-all font-normal text-sm text-date block mb-[10px] whitespace-nowrap">
+											20.06.2024
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div
+									class="group lg-plus:hover:bg-coral duration-300 transition-all  relative lg-plus:rounded-[32px] overflow-hidden lg-plus:bg-white lg-plus:p-[8px]">
+									<img class="w-full h-full md:rounded-[26px] rounded-[16px]" src="./images/blog1.png" alt="">
+									<div class="mt-[13px] lg-plus:px-[12px] lg-plus:pb-[13px] flex items-center justify-between">
+										<h6
+											class="text-#363636 lg-plus:text-base text-[13px] lg-plus:leading-[19.84px] leading-[16.12px] lg-plus:group-hover:text-white font-Unbounded font-medium">
+											Сочи, Краснодарский край
+										</h6>
+										<span
+											class="font-montserrat lg-plus:group-hover:text-white duration-300 transition-all font-normal text-sm text-date block mb-[10px] whitespace-nowrap">
+											97 объектов
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div
+									class="group lg-plus:hover:bg-coral duration-300 transition-all  relative lg-plus:rounded-[32px] overflow-hidden lg-plus:bg-white lg-plus:p-[8px]">
+									<img class="w-full h-full md:rounded-[26px] rounded-[16px]" src="./images/blog1.png" alt="">
+									<div class="mt-[13px] lg-plus:px-[12px] lg-plus:pb-[13px] flex items-center justify-between">
+										<h6
+											class="text-#363636 lg-plus:text-base text-[13px] lg-plus:leading-[19.84px] leading-[16.12px] lg-plus:group-hover:text-white font-Unbounded font-medium">
+											Пятигорск, Северный Кавказ
+										</h6>
+										<span
+											class="font-montserrat lg-plus:group-hover:text-white duration-300 transition-all font-normal text-sm text-date block mb-[10px] whitespace-nowrap">
+											20.06.2024
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div
+									class="group lg-plus:hover:bg-coral duration-300 transition-all  relative lg-plus:rounded-[32px] overflow-hidden lg-plus:bg-white lg-plus:p-[8px]">
+									<img class="w-full h-full md:rounded-[26px] rounded-[16px]" src="./images/blog1.png" alt="">
+									<div class="mt-[13px] lg-plus:px-[12px] lg-plus:pb-[13px] flex items-center justify-between">
+										<h6
+											class="text-#363636 lg-plus:text-base text-[13px] lg-plus:leading-[19.84px] leading-[16.12px] lg-plus:group-hover:text-white font-Unbounded font-medium">
+											Сочи, Краснодарский край
+										</h6>
+										<span
+											class="font-montserrat lg-plus:group-hover:text-white duration-300 transition-all font-normal text-sm text-date block mb-[10px] whitespace-nowrap">
+											97 объектов
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-          <div class="bg-white py-3 px-6 rounded-[40px] xl:flex hidden items-center gap-8 justify-between mt-[74px]">
-            <div class="relative dropdown w-[173px]">
-              <button
-                class="flex items-center justify-between text-[13px] text-[#36363699] dropdown-head border border-[#36363699] rounded-[50px] bg-white py-3 px-5 w-full">
-                <span>Регион</span>
-                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M4.8102 5.73977C4.71548 5.73977 4.63091 5.70256 4.55649 5.62814L0.152196 1.26443C0.0507145 1.18325 -2.67388e-05 1.08177 -2.67335e-05 0.959987C-2.67293e-05 0.865271 0.0371828 0.780704 0.111603 0.706284L0.487084 0.34095C0.541208 0.286827 0.602097 0.259765 0.669751 0.259765C0.757702 0.259765 0.862566 0.320654 0.984344 0.442432L4.80005 4.21754L8.6259 0.493173C8.74768 0.371395 8.85254 0.310506 8.94049 0.310506C9.00815 0.310506 9.07918 0.347716 9.1536 0.422136L9.55953 0.828062C9.62718 0.895716 9.66101 0.959988 9.66101 1.02088C9.66101 1.06147 9.64071 1.10544 9.60012 1.1528C9.55953 1.20693 9.51217 1.26105 9.45805 1.31517L5.13494 5.57739C5.02669 5.68564 4.91844 5.73977 4.8102 5.73977Z"
-                    fill="#3D3D3D"></path>
-                </svg>
-              </button>
-              <ul
-                class="flex-col bg-white gap-6 absolute left-0 bottom-[-10px] pt-[15px] px-[22px] pb-4  translate-y-full w-full dropdown-body hidden">
-                <li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Квартира</li>
-                <li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Апартаменты</li>
-                <li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Дом</li>
-              </ul>
-            </div>
-            <div class="relative dropdown w-[154px]">
-              <button
-                class="flex items-center justify-between text-[13px] text-[#36363699] dropdown-head border border-[#36363699] rounded-[50px] bg-white py-3 px-5 w-full">
-                <span>Город</span>
-                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M4.8102 5.73977C4.71548 5.73977 4.63091 5.70256 4.55649 5.62814L0.152196 1.26443C0.0507145 1.18325 -2.67388e-05 1.08177 -2.67335e-05 0.959987C-2.67293e-05 0.865271 0.0371828 0.780704 0.111603 0.706284L0.487084 0.34095C0.541208 0.286827 0.602097 0.259765 0.669751 0.259765C0.757702 0.259765 0.862566 0.320654 0.984344 0.442432L4.80005 4.21754L8.6259 0.493173C8.74768 0.371395 8.85254 0.310506 8.94049 0.310506C9.00815 0.310506 9.07918 0.347716 9.1536 0.422136L9.55953 0.828062C9.62718 0.895716 9.66101 0.959988 9.66101 1.02088C9.66101 1.06147 9.64071 1.10544 9.60012 1.1528C9.55953 1.20693 9.51217 1.26105 9.45805 1.31517L5.13494 5.57739C5.02669 5.68564 4.91844 5.73977 4.8102 5.73977Z"
-                    fill="#3D3D3D"></path>
-                </svg>
-              </button>
-              <ul
-                class="flex-col bg-white gap-6 absolute left-0 bottom-[-10px] pt-[15px] px-[22px] pb-4  translate-y-full w-full dropdown-body hidden">
-                <li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Квартира</li>
-                <li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Апартаменты</li>
-                <li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Дом</li>
-              </ul>
-            </div>
-            <button
-              class="flex w-[169px] items-center justify-between text-[13px] text-[#36363699] border border-[#36363699] rounded-[50px] bg-white py-3 px-5">
-              <span>Срок сдачи</span>
-              <img src="./images/calendar.svg" alt="">
-            </button>
-            <div class="relative dropdown w-[152px]">
-              <button
-                class="flex items-center justify-between text-[13px] text-[#36363699] dropdown-head border border-[#36363699] rounded-[50px] bg-white py-3 px-5 w-full">
-                <span>Тип объекта</span>
-                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M4.8102 5.73977C4.71548 5.73977 4.63091 5.70256 4.55649 5.62814L0.152196 1.26443C0.0507145 1.18325 -2.67388e-05 1.08177 -2.67335e-05 0.959987C-2.67293e-05 0.865271 0.0371828 0.780704 0.111603 0.706284L0.487084 0.34095C0.541208 0.286827 0.602097 0.259765 0.669751 0.259765C0.757702 0.259765 0.862566 0.320654 0.984344 0.442432L4.80005 4.21754L8.6259 0.493173C8.74768 0.371395 8.85254 0.310506 8.94049 0.310506C9.00815 0.310506 9.07918 0.347716 9.1536 0.422136L9.55953 0.828062C9.62718 0.895716 9.66101 0.959988 9.66101 1.02088C9.66101 1.06147 9.64071 1.10544 9.60012 1.1528C9.55953 1.20693 9.51217 1.26105 9.45805 1.31517L5.13494 5.57739C5.02669 5.68564 4.91844 5.73977 4.8102 5.73977Z"
-                    fill="#3D3D3D"></path>
-                </svg>
-              </button>
-              <ul
-                class="flex-col bg-white gap-6 absolute left-0 bottom-[-10px] pt-[15px] px-[22px] pb-4  translate-y-full w-full dropdown-body hidden">
-                <li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Квартира</li>
-                <li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Апартаменты</li>
-                <li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Дом</li>
-              </ul>
-            </div>
-            <div class="check-box">
-              <input class="hidden" checked type="checkbox" id="one-checkbox">
-              <label class="text-[13px] leading-[18px] font-Montserrat font-medium text-gray" for="one-checkbox">С
-                отделкой</label>
-            </div>
-            <div class="range-slider filter-box">
-              <span class="text-[13px] leading-6 text-[#36363699] font-Montserrat block mb-[10px]">Стоимость</span>
-              <span class="multi-range block h-2 relative">
-                <input type="range" min="0" max="50" value="0" id="lower1">
-                <input type="range" min="0" max="50" value="35" id="upper1">
-                <div class="slider-track" id="track1"></div>
-              </span>
-              <div class="flex items-center justify-between w-[237px]">
-                <span id="lower-value1"
-                  class="text-[13px] font-light font-Montserrat text-[#36363699] leading-6 text-light-brown block">3.2млн</span>
-                <span id="upper-value1"
-                  class="text-[13px] font-light font-Montserrat text-[#36363699] leading-6 text-light-brown block">15.6
-                  млн</span>
-              </div>
-            </div>
-          </div>
+					<div
+						class="bg-white py-3 px-6 rounded-[40px] xl:flex items-center gap-8 justify-between mt-[74px] hidden media-filter">
+						<h3 class="leading-[22.32px] text-lg font-Unbounded text-gray mb-5 xl:hidden block">Фильтры</h3>
+						<button class="close-filter__btn xl:hidden flex">
+							<img src="images/close.svg" alt="">
+						</button>
+						<div class="relative dropdown w-[173px]">
+							<button
+								class="flex items-center justify-between text-[13px] text-[#36363699] dropdown-head border border-[#36363699] rounded-[50px] bg-white py-3 px-5 w-full">
+								<span>Регион</span>
+								<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M4.8102 5.73977C4.71548 5.73977 4.63091 5.70256 4.55649 5.62814L0.152196 1.26443C0.0507145 1.18325 -2.67388e-05 1.08177 -2.67335e-05 0.959987C-2.67293e-05 0.865271 0.0371828 0.780704 0.111603 0.706284L0.487084 0.34095C0.541208 0.286827 0.602097 0.259765 0.669751 0.259765C0.757702 0.259765 0.862566 0.320654 0.984344 0.442432L4.80005 4.21754L8.6259 0.493173C8.74768 0.371395 8.85254 0.310506 8.94049 0.310506C9.00815 0.310506 9.07918 0.347716 9.1536 0.422136L9.55953 0.828062C9.62718 0.895716 9.66101 0.959988 9.66101 1.02088C9.66101 1.06147 9.64071 1.10544 9.60012 1.1528C9.55953 1.20693 9.51217 1.26105 9.45805 1.31517L5.13494 5.57739C5.02669 5.68564 4.91844 5.73977 4.8102 5.73977Z"
+										fill="#3D3D3D"></path>
+								</svg>
+							</button>
+							<ul
+								class="flex-col bg-white gap-6 absolute left-0 bottom-[-10px] pt-[15px] px-[22px] pb-4  translate-y-full w-full dropdown-body hidden">
+								<li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Квартира</li>
+								<li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Апартаменты</li>
+								<li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Дом</li>
+							</ul>
+						</div>
+						<div class="relative dropdown w-[154px]">
+							<button
+								class="flex items-center justify-between text-[13px] text-[#36363699] dropdown-head border border-[#36363699] rounded-[50px] bg-white py-3 px-5 w-full">
+								<span>Город</span>
+								<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M4.8102 5.73977C4.71548 5.73977 4.63091 5.70256 4.55649 5.62814L0.152196 1.26443C0.0507145 1.18325 -2.67388e-05 1.08177 -2.67335e-05 0.959987C-2.67293e-05 0.865271 0.0371828 0.780704 0.111603 0.706284L0.487084 0.34095C0.541208 0.286827 0.602097 0.259765 0.669751 0.259765C0.757702 0.259765 0.862566 0.320654 0.984344 0.442432L4.80005 4.21754L8.6259 0.493173C8.74768 0.371395 8.85254 0.310506 8.94049 0.310506C9.00815 0.310506 9.07918 0.347716 9.1536 0.422136L9.55953 0.828062C9.62718 0.895716 9.66101 0.959988 9.66101 1.02088C9.66101 1.06147 9.64071 1.10544 9.60012 1.1528C9.55953 1.20693 9.51217 1.26105 9.45805 1.31517L5.13494 5.57739C5.02669 5.68564 4.91844 5.73977 4.8102 5.73977Z"
+										fill="#3D3D3D"></path>
+								</svg>
+							</button>
+							<ul
+								class="flex-col bg-white gap-6 absolute left-0 bottom-[-10px] pt-[15px] px-[22px] pb-4  translate-y-full w-full dropdown-body hidden">
+								<li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Квартира</li>
+								<li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Апартаменты</li>
+								<li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Дом</li>
+							</ul>
+						</div>
+						<button
+							class="flex xl:w-[169px] xl:mb-0 mb-8 w-full items-center justify-between text-[13px] text-[#36363699] border border-[#36363699] rounded-[50px] bg-white py-3 px-5">
+							<span>Срок сдачи</span>
+							<img src="./images/calendar.svg" alt="">
+						</button>
+						<div class="relative dropdown xl:w-[152px] w-full">
+							<button
+								class="flex items-center justify-between text-[13px] text-[#36363699] dropdown-head border border-[#36363699] rounded-[50px] bg-white py-3 px-5 w-full">
+								<span>Тип объекта</span>
+								<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M4.8102 5.73977C4.71548 5.73977 4.63091 5.70256 4.55649 5.62814L0.152196 1.26443C0.0507145 1.18325 -2.67388e-05 1.08177 -2.67335e-05 0.959987C-2.67293e-05 0.865271 0.0371828 0.780704 0.111603 0.706284L0.487084 0.34095C0.541208 0.286827 0.602097 0.259765 0.669751 0.259765C0.757702 0.259765 0.862566 0.320654 0.984344 0.442432L4.80005 4.21754L8.6259 0.493173C8.74768 0.371395 8.85254 0.310506 8.94049 0.310506C9.00815 0.310506 9.07918 0.347716 9.1536 0.422136L9.55953 0.828062C9.62718 0.895716 9.66101 0.959988 9.66101 1.02088C9.66101 1.06147 9.64071 1.10544 9.60012 1.1528C9.55953 1.20693 9.51217 1.26105 9.45805 1.31517L5.13494 5.57739C5.02669 5.68564 4.91844 5.73977 4.8102 5.73977Z"
+										fill="#3D3D3D"></path>
+								</svg>
+							</button>
+							<ul
+								class="flex-col bg-white gap-6 absolute left-0 bottom-[-10px] pt-[15px] px-[22px] pb-4  translate-y-full w-full dropdown-body hidden">
+								<li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Квартира</li>
+								<li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Апартаменты</li>
+								<li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Дом</li>
+							</ul>
+						</div>
+						<div class="check-box mb-8 xl:mb-0">
+							<input class="hidden" checked type="checkbox" id="one-checkbox">
+							<label class="text-[13px] leading-[18px] font-Montserrat font-medium text-gray" for="one-checkbox">С
+								отделкой</label>
+						</div>
+						<div class="range-slider filter-box">
+							<span class="text-[13px] leading-6 text-[#36363699] font-Montserrat block mb-[10px]">Стоимость</span>
+							<span class="multi-range block h-2 relative">
+								<input type="range" min="0" max="50" value="0" id="lower1">
+								<input type="range" min="0" max="50" value="35" id="upper1">
+								<div class="slider-track" id="track1"></div>
+							</span>
+							<div class="flex items-center justify-between w-[237px]">
+								<span id="lower-value1"
+									class="text-[13px] font-light font-Montserrat text-[#36363699] leading-6 text-light-brown block">3.2млн</span>
+								<span id="upper-value1"
+									class="text-[13px] font-light font-Montserrat text-[#36363699] leading-6 text-light-brown block">15.6
+									млн</span>
+							</div>
+						</div>
+						<div class="space-y-[16px] mt-[43px] xl:hidden block">
+							<button class="btn-orange w-full">Применить</button>
+							<button
+								class="w-full h-[50px] flex items-center justify-center border border-coral text-base leading-[18px] font-Montserrat font-medium text-coral rounded-[50px]">Сбросить</button>
+						</div>
+					</div>
 
-          <div class="pt-[74px] pb-[38px]">
-            <div class="flex justify-between items-center md:mb-0 mb-6">
-              <span class="text-sm xl:block hidden leading-[17.36px] font-Unbounded font-light text-gray">Найдено
-                объектов: 230</span>
-              <button class="rounded-full w-10 h-10 flex xl:hidden items-center justify-center bg-coral">
-                <img src="images/settings.svg" alt="">
-              </button>
-              <div class="flex gap-6 items-center">
-                <div class="relative dropdown w-[173px]">
-                  <button
-                    class="flex items-center justify-between text-[13px] text-[#36363699] dropdown-head border border-[#36363699] rounded-[50px] py-3 px-5 w-full">
-                    <span>Сортировать</span>
-                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M4.8102 5.73977C4.71548 5.73977 4.63091 5.70256 4.55649 5.62814L0.152196 1.26443C0.0507145 1.18325 -2.67388e-05 1.08177 -2.67335e-05 0.959987C-2.67293e-05 0.865271 0.0371828 0.780704 0.111603 0.706284L0.487084 0.34095C0.541208 0.286827 0.602097 0.259765 0.669751 0.259765C0.757702 0.259765 0.862566 0.320654 0.984344 0.442432L4.80005 4.21754L8.6259 0.493173C8.74768 0.371395 8.85254 0.310506 8.94049 0.310506C9.00815 0.310506 9.07918 0.347716 9.1536 0.422136L9.55953 0.828062C9.62718 0.895716 9.66101 0.959988 9.66101 1.02088C9.66101 1.06147 9.64071 1.10544 9.60012 1.1528C9.55953 1.20693 9.51217 1.26105 9.45805 1.31517L5.13494 5.57739C5.02669 5.68564 4.91844 5.73977 4.8102 5.73977Z"
-                        fill="#3D3D3D"></path>
-                    </svg>
-                  </button>
-                  <ul
-                    class="flex-col bg-white gap-6 absolute left-0 bottom-[-10px] pt-[15px] px-[22px] pb-4  translate-y-full w-full dropdown-body hidden">
-                    <li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Квартира</li>
-                    <li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Апартаменты</li>
-                    <li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Дом</li>
-                  </ul>
-                </div>
-                <button class="md:flex hidden group-product">
-                  <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect y="0.5" width="6" height="6" fill="#3D3D3D" />
-                    <rect y="13.5" width="6" height="6" fill="#3D3D3D" />
-                    <rect x="13" y="0.5" width="6" height="6" fill="#3D3D3D" />
-                    <rect x="13" y="13.5" width="6" height="6" fill="#3D3D3D" />
-                  </svg>
-                </button>
-                <button class="md:flex hidden list-product">
-                  <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 0.5H22V1.5H0V0.5Z" fill="#3D3D3D" />
-                    <rect y="8.5" width="22" height="1" fill="#3D3D3D" />
-                    <rect y="16.5" width="22" height="1" fill="#3D3D3D" />
-                  </svg>
-                </button>
-                <button
-                  class="text-coral border-b border-coral text-sm leading-[17.36px] font-light map-product__btn md:block hidden">
-                  Показать на карте
-                </button>
-              </div>
-            </div>
-            <span class="text-sm md:hidden block leading-[17.36px] font-Unbounded font-light text-gray">Найдено
-              объектов: 230</span>
-            <button
-              class="text-coral md:hidden block mt-[6px] border-b border-coral text-sm leading-[17.36px] font-light map-product__btn">
-              Показать на карте
-            </button>
-          </div>
+					<div class="pt-[74px] pb-[38px]">
+						<div class="flex justify-between items-center md:mb-0 mb-6">
+							<span class="text-sm xl:block hidden leading-[17.36px] font-Unbounded font-light text-gray">Найдено
+								объектов: 230</span>
+							<button
+								class="rounded-full w-10 h-10 flex xl:hidden items-center justify-center bg-coral open-filter__btn">
+								<img src="images/settings.svg" alt="">
+							</button>
+							<div class="flex gap-6 items-center">
+								<div class="relative dropdown w-[173px]">
+									<button
+										class="flex items-center justify-between text-[13px] text-[#36363699] dropdown-head border border-[#36363699] rounded-[50px] py-3 px-5 w-full">
+										<span>Сортировать</span>
+										<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M4.8102 5.73977C4.71548 5.73977 4.63091 5.70256 4.55649 5.62814L0.152196 1.26443C0.0507145 1.18325 -2.67388e-05 1.08177 -2.67335e-05 0.959987C-2.67293e-05 0.865271 0.0371828 0.780704 0.111603 0.706284L0.487084 0.34095C0.541208 0.286827 0.602097 0.259765 0.669751 0.259765C0.757702 0.259765 0.862566 0.320654 0.984344 0.442432L4.80005 4.21754L8.6259 0.493173C8.74768 0.371395 8.85254 0.310506 8.94049 0.310506C9.00815 0.310506 9.07918 0.347716 9.1536 0.422136L9.55953 0.828062C9.62718 0.895716 9.66101 0.959988 9.66101 1.02088C9.66101 1.06147 9.64071 1.10544 9.60012 1.1528C9.55953 1.20693 9.51217 1.26105 9.45805 1.31517L5.13494 5.57739C5.02669 5.68564 4.91844 5.73977 4.8102 5.73977Z"
+												fill="#3D3D3D"></path>
+										</svg>
+									</button>
+									<ul
+										class="flex-col bg-white gap-6 absolute left-0 bottom-[-10px] pt-[15px] px-[22px] pb-4  translate-y-full w-full dropdown-body hidden">
+										<li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Квартира</li>
+										<li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Апартаменты</li>
+										<li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Дом</li>
+									</ul>
+								</div>
+								<button class="md:flex hidden group-product">
+									<svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect y="0.5" width="6" height="6" fill="#3D3D3D" />
+										<rect y="13.5" width="6" height="6" fill="#3D3D3D" />
+										<rect x="13" y="0.5" width="6" height="6" fill="#3D3D3D" />
+										<rect x="13" y="13.5" width="6" height="6" fill="#3D3D3D" />
+									</svg>
+								</button>
+								<button class="md:flex hidden list-product">
+									<svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0 0.5H22V1.5H0V0.5Z" fill="#3D3D3D" />
+										<rect y="8.5" width="22" height="1" fill="#3D3D3D" />
+										<rect y="16.5" width="22" height="1" fill="#3D3D3D" />
+									</svg>
+								</button>
+								<button
+									class="text-coral border-b border-coral text-sm leading-[17.36px] font-light map-product__btn md:block hidden">
+									Показать на карте
+								</button>
+							</div>
+						</div>
+						<span class="text-sm md:hidden block leading-[17.36px] font-Unbounded font-light text-gray">Найдено
+							объектов: 230</span>
+						<button
+							class="text-coral md:hidden block mt-[6px] border-b border-coral text-sm leading-[17.36px] font-light map-product__btn">
+							Показать на карте
+						</button>
+					</div>
 
-          <div class="catalog-products__box">
-            <div
-              class="grid lg:grid-cols-4 lg-plus:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-8 gap-5 catalog-products">
-              <div class="bg-white rounded-[32px] list-flex items-center">
-                <div class="relative max-w-[1200px]">
-                  <div
-                    class="swiper mx-2 pt-2 mb-5 best_deals__child_swp swiper-fade catalog-products-swiper sm:h-auto h-[202px]">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-1.png" alt=""
-                          class="w-full">
-                      </div>
-                      <div class="swiper-slide swiper-slide-next">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-2.png" alt=""
-                          class="w-full">
-                      </div>
-                      <div class="swiper-slide">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-3.png" alt=""
-                          class="w-full">
-                      </div>
-                      <div class="swiper-slide">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-4.png" alt=""
-                          class="w-full">
-                      </div>
-                    </div>
-                    <div
-                      class="swp_pagination flex items-center justify-center !top-auto absolute left-0 !bottom-[9px] w-full !z-[1] gap-[5px]">
-                    </div>
-                    <button class="absolute right-[14px] top-[50%] -translate-y-2/4 z-[1]">
-                      <img src="./images/arrow-circle-right.svg" alt="">
-                    </button>
-                    <button class="absolute left-[14px] top-[50%] -translate-y-2/4 z-[1]">
-                      <img src="./images/arrow-circle-left.svg" alt="">
-                    </button>
-                  </div>
-                </div>
-                <div class="px-[15px] pb-[29px] content-box">
-                  <div class="list-flex parent">
-                    <div class="list-flex flex-col gap-[2px] justify-start">
-                      <p
-                        class="text-[13px] text-[#363636] opacity-[0.6] font-light leading-4 mb-[6px] list-mb-20 list-order">
-                        Апарт-отель</p>
-                      <h4 class="text-[15px] font-medium leading-[19px] text-[#363636] mb-[7px] mb-none">Золотой берег
-                      </h4>
-                    </div>
-                    <div class="list-flex flex-col gap-[2px] justify-start">
-                      <h3 class="text-[#EF924F] text-4 leading-5 mb-[6px]">от 6.700.000 руб.</h3>
-                      <p class="text-[#3D3D3D] text-xs font-light mb-[15px] list-mb-20 list-text-end">120.000 руб / м2
-                      </p>
-                    </div>
-                  </div>
-                  <div class="hidden list-flex flex-col gap-2 pb-[39px]">
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                  </div>
-                  <p class="text-[#363636] text-[13px] font-light leading-4 opacity-[0.6]">Крым, Евпатория</p>
-                </div>
-              </div>
-              <div class="bg-white rounded-[32px] list-flex items-center">
-                <div class="relative max-w-[1200px]">
-                  <div class="swiper mx-2 pt-2 mb-5 best_deals__child_swp swiper-fade catalog-products-swiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-1.png" alt=""
-                          class="w-full">
-                      </div>
-                      <div class="swiper-slide swiper-slide-next">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-2.png" alt=""
-                          class="w-full">
-                      </div>
-                      <div class="swiper-slide">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-3.png" alt=""
-                          class="w-full">
-                      </div>
-                      <div class="swiper-slide">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-4.png" alt=""
-                          class="w-full">
-                      </div>
-                    </div>
-                    <div
-                      class="swp_pagination flex items-center justify-center !top-auto absolute left-0 !bottom-[9px] w-full !z-[1] gap-[5px]">
-                    </div>
-                    <button class="absolute right-[14px] top-[50%] -translate-y-2/4 z-[1]">
-                      <img src="./images/arrow-circle-right.svg" alt="">
-                    </button>
-                    <button class="absolute left-[14px] top-[50%] -translate-y-2/4 z-[1]">
-                      <img src="./images/arrow-circle-left.svg" alt="">
-                    </button>
-                  </div>
-                </div>
-                <div class="px-[15px] pb-[29px] content-box">
-                  <div class="list-flex parent">
-                    <div class="list-flex flex-col gap-[2px] justify-start">
-                      <p
-                        class="text-[13px] text-[#363636] opacity-[0.6] font-light leading-4 mb-[6px] list-mb-20 list-order">
-                        Апарт-отель</p>
-                      <h4 class="text-[15px] font-medium leading-[19px] text-[#363636] mb-[7px] mb-none">Золотой берег
-                      </h4>
-                    </div>
-                    <div class="list-flex flex-col gap-[2px] justify-start">
-                      <h3 class="text-[#EF924F] text-4 leading-5 mb-[6px]">от 6.700.000 руб.</h3>
-                      <p class="text-[#3D3D3D] text-xs font-light mb-[15px] list-mb-20 list-text-end">120.000 руб / м2
-                      </p>
-                    </div>
-                  </div>
-                  <div class="hidden list-flex flex-col gap-2 pb-[39px]">
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                  </div>
-                  <p class="text-[#363636] text-[13px] font-light leading-4 opacity-[0.6]">Крым, Евпатория</p>
-                </div>
-              </div>
-              <div class="bg-white rounded-[32px] list-flex items-center">
-                <div class="relative max-w-[1200px]">
-                  <div class="swiper mx-2 pt-2 mb-5 best_deals__child_swp swiper-fade catalog-products-swiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-1.png" alt=""
-                          class="w-full">
-                      </div>
-                      <div class="swiper-slide swiper-slide-next">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-2.png" alt=""
-                          class="w-full">
-                      </div>
-                      <div class="swiper-slide">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-3.png" alt=""
-                          class="w-full">
-                      </div>
-                      <div class="swiper-slide">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-4.png" alt=""
-                          class="w-full">
-                      </div>
-                    </div>
-                    <div
-                      class="swp_pagination flex items-center justify-center !top-auto absolute left-0 !bottom-[9px] w-full !z-[1] gap-[5px]">
-                    </div>
-                    <button class="absolute right-[14px] top-[50%] -translate-y-2/4 z-[1]">
-                      <img src="./images/arrow-circle-right.svg" alt="">
-                    </button>
-                    <button class="absolute left-[14px] top-[50%] -translate-y-2/4 z-[1]">
-                      <img src="./images/arrow-circle-left.svg" alt="">
-                    </button>
-                  </div>
-                </div>
-                <div class="px-[15px] pb-[29px] content-box">
-                  <div class="list-flex parent">
-                    <div class="list-flex flex-col gap-[2px] justify-start">
-                      <p
-                        class="text-[13px] text-[#363636] opacity-[0.6] font-light leading-4 mb-[6px] list-mb-20 list-order">
-                        Апарт-отель</p>
-                      <h4 class="text-[15px] font-medium leading-[19px] text-[#363636] mb-[7px] mb-none">Золотой берег
-                      </h4>
-                    </div>
-                    <div class="list-flex flex-col gap-[2px] justify-start">
-                      <h3 class="text-[#EF924F] text-4 leading-5 mb-[6px]">от 6.700.000 руб.</h3>
-                      <p class="text-[#3D3D3D] text-xs font-light mb-[15px] list-mb-20 list-text-end">120.000 руб / м2
-                      </p>
-                    </div>
-                  </div>
-                  <div class="hidden list-flex flex-col gap-2 pb-[39px]">
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                  </div>
-                  <p class="text-[#363636] text-[13px] font-light leading-4 opacity-[0.6]">Крым, Евпатория</p>
-                </div>
-              </div>
-              <div class="bg-white rounded-[32px] list-flex items-center">
-                <div class="relative max-w-[1200px]">
-                  <div class="swiper mx-2 pt-2 mb-5 best_deals__child_swp swiper-fade catalog-products-swiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-1.png" alt=""
-                          class="w-full">
-                      </div>
-                      <div class="swiper-slide swiper-slide-next">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-2.png" alt=""
-                          class="w-full">
-                      </div>
-                      <div class="swiper-slide">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-3.png" alt=""
-                          class="w-full">
-                      </div>
-                      <div class="swiper-slide">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-4.png" alt=""
-                          class="w-full">
-                      </div>
-                    </div>
-                    <div
-                      class="swp_pagination flex items-center justify-center !top-auto absolute left-0 !bottom-[9px] w-full !z-[1] gap-[5px]">
-                    </div>
-                    <button class="absolute right-[14px] top-[50%] -translate-y-2/4 z-[1]">
-                      <img src="./images/arrow-circle-right.svg" alt="">
-                    </button>
-                    <button class="absolute left-[14px] top-[50%] -translate-y-2/4 z-[1]">
-                      <img src="./images/arrow-circle-left.svg" alt="">
-                    </button>
-                  </div>
-                </div>
-                <div class="px-[15px] pb-[29px] content-box">
-                  <div class="list-flex parent">
-                    <div class="list-flex flex-col gap-[2px] justify-start">
-                      <p
-                        class="text-[13px] text-[#363636] opacity-[0.6] font-light leading-4 mb-[6px] list-mb-20 list-order">
-                        Апарт-отель</p>
-                      <h4 class="text-[15px] font-medium leading-[19px] text-[#363636] mb-[7px] mb-none">Золотой берег
-                      </h4>
-                    </div>
-                    <div class="list-flex flex-col gap-[2px] justify-start">
-                      <h3 class="text-[#EF924F] text-4 leading-5 mb-[6px]">от 6.700.000 руб.</h3>
-                      <p class="text-[#3D3D3D] text-xs font-light mb-[15px] list-mb-20 list-text-end">120.000 руб / м2
-                      </p>
-                    </div>
-                  </div>
-                  <div class="hidden list-flex flex-col gap-2 pb-[39px]">
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                  </div>
-                  <p class="text-[#363636] text-[13px] font-light leading-4 opacity-[0.6]">Крым, Евпатория</p>
-                </div>
-              </div>
-              <div class="bg-white rounded-[32px] list-flex items-center">
-                <div class="relative max-w-[1200px]">
-                  <div class="swiper mx-2 pt-2 mb-5 best_deals__child_swp swiper-fade catalog-products-swiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-1.png" alt=""
-                          class="w-full">
-                      </div>
-                      <div class="swiper-slide swiper-slide-next">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-2.png" alt=""
-                          class="w-full">
-                      </div>
-                      <div class="swiper-slide">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-3.png" alt=""
-                          class="w-full">
-                      </div>
-                      <div class="swiper-slide">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-4.png" alt=""
-                          class="w-full">
-                      </div>
-                    </div>
-                    <div
-                      class="swp_pagination flex items-center justify-center !top-auto absolute left-0 !bottom-[9px] w-full !z-[1] gap-[5px]">
-                    </div>
-                    <button class="absolute right-[14px] top-[50%] -translate-y-2/4 z-[1]">
-                      <img src="./images/arrow-circle-right.svg" alt="">
-                    </button>
-                    <button class="absolute left-[14px] top-[50%] -translate-y-2/4 z-[1]">
-                      <img src="./images/arrow-circle-left.svg" alt="">
-                    </button>
-                  </div>
-                </div>
-                <div class="px-[15px] pb-[29px] content-box">
-                  <div class="list-flex parent">
-                    <div class="list-flex flex-col gap-[2px] justify-start">
-                      <p
-                        class="text-[13px] text-[#363636] opacity-[0.6] font-light leading-4 mb-[6px] list-mb-20 list-order">
-                        Апарт-отель</p>
-                      <h4 class="text-[15px] font-medium leading-[19px] text-[#363636] mb-[7px] mb-none">Золотой берег
-                      </h4>
-                    </div>
-                    <div class="list-flex flex-col gap-[2px] justify-start">
-                      <h3 class="text-[#EF924F] text-4 leading-5 mb-[6px]">от 6.700.000 руб.</h3>
-                      <p class="text-[#3D3D3D] text-xs font-light mb-[15px] list-mb-20 list-text-end">120.000 руб / м2
-                      </p>
-                    </div>
-                  </div>
-                  <div class="hidden list-flex flex-col gap-2 pb-[39px]">
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                  </div>
-                  <p class="text-[#363636] text-[13px] font-light leading-4 opacity-[0.6]">Крым, Евпатория</p>
-                </div>
-              </div>
-              <div class="bg-white rounded-[32px] list-flex items-center">
-                <div class="relative max-w-[1200px]">
-                  <div class="swiper mx-2 pt-2 mb-5 best_deals__child_swp swiper-fade catalog-products-swiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-1.png" alt=""
-                          class="w-full">
-                      </div>
-                      <div class="swiper-slide swiper-slide-next">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-2.png" alt=""
-                          class="w-full">
-                      </div>
-                      <div class="swiper-slide">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-3.png" alt=""
-                          class="w-full">
-                      </div>
-                      <div class="swiper-slide">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-4.png" alt=""
-                          class="w-full">
-                      </div>
-                    </div>
-                    <div
-                      class="swp_pagination flex items-center justify-center !top-auto absolute left-0 !bottom-[9px] w-full !z-[1] gap-[5px]">
-                    </div>
-                    <button class="absolute right-[14px] top-[50%] -translate-y-2/4 z-[1]">
-                      <img src="./images/arrow-circle-right.svg" alt="">
-                    </button>
-                    <button class="absolute left-[14px] top-[50%] -translate-y-2/4 z-[1]">
-                      <img src="./images/arrow-circle-left.svg" alt="">
-                    </button>
-                  </div>
-                </div>
-                <div class="px-[15px] pb-[29px] content-box">
-                  <div class="list-flex parent">
-                    <div class="list-flex flex-col gap-[2px] justify-start">
-                      <p
-                        class="text-[13px] text-[#363636] opacity-[0.6] font-light leading-4 mb-[6px] list-mb-20 list-order">
-                        Апарт-отель</p>
-                      <h4 class="text-[15px] font-medium leading-[19px] text-[#363636] mb-[7px] mb-none">Золотой берег
-                      </h4>
-                    </div>
-                    <div class="list-flex flex-col gap-[2px] justify-start">
-                      <h3 class="text-[#EF924F] text-4 leading-5 mb-[6px]">от 6.700.000 руб.</h3>
-                      <p class="text-[#3D3D3D] text-xs font-light mb-[15px] list-mb-20 list-text-end">120.000 руб / м2
-                      </p>
-                    </div>
-                  </div>
-                  <div class="hidden list-flex flex-col gap-2 pb-[39px]">
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                  </div>
-                  <p class="text-[#363636] text-[13px] font-light leading-4 opacity-[0.6]">Крым, Евпатория</p>
-                </div>
-              </div>
-              <div class="bg-white rounded-[32px] list-flex items-center">
-                <div class="relative max-w-[1200px]">
-                  <div class="swiper mx-2 pt-2 mb-5 best_deals__child_swp swiper-fade catalog-products-swiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-1.png" alt=""
-                          class="w-full">
-                      </div>
-                      <div class="swiper-slide swiper-slide-next">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-2.png" alt=""
-                          class="w-full">
-                      </div>
-                      <div class="swiper-slide">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-3.png" alt=""
-                          class="w-full">
-                      </div>
-                      <div class="swiper-slide">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-4.png" alt=""
-                          class="w-full">
-                      </div>
-                    </div>
-                    <div
-                      class="swp_pagination flex items-center justify-center !top-auto absolute left-0 !bottom-[9px] w-full !z-[1] gap-[5px]">
-                    </div>
-                    <button class="absolute right-[14px] top-[50%] -translate-y-2/4 z-[1]">
-                      <img src="./images/arrow-circle-right.svg" alt="">
-                    </button>
-                    <button class="absolute left-[14px] top-[50%] -translate-y-2/4 z-[1]">
-                      <img src="./images/arrow-circle-left.svg" alt="">
-                    </button>
-                  </div>
-                </div>
-                <div class="px-[15px] pb-[29px] content-box">
-                  <div class="list-flex parent">
-                    <div class="list-flex flex-col gap-[2px] justify-start">
-                      <p
-                        class="text-[13px] text-[#363636] opacity-[0.6] font-light leading-4 mb-[6px] list-mb-20 list-order">
-                        Апарт-отель</p>
-                      <h4 class="text-[15px] font-medium leading-[19px] text-[#363636] mb-[7px] mb-none">Золотой берег
-                      </h4>
-                    </div>
-                    <div class="list-flex flex-col gap-[2px] justify-start">
-                      <h3 class="text-[#EF924F] text-4 leading-5 mb-[6px]">от 6.700.000 руб.</h3>
-                      <p class="text-[#3D3D3D] text-xs font-light mb-[15px] list-mb-20 list-text-end">120.000 руб / м2
-                      </p>
-                    </div>
-                  </div>
-                  <div class="hidden list-flex flex-col gap-2 pb-[39px]">
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                  </div>
-                  <p class="text-[#363636] text-[13px] font-light leading-4 opacity-[0.6]">Крым, Евпатория</p>
-                </div>
-              </div>
-              <div class="bg-white rounded-[32px] list-flex items-center">
-                <div class="relative max-w-[1200px]">
-                  <div class="swiper mx-2 pt-2 mb-5 best_deals__child_swp swiper-fade catalog-products-swiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-1.png" alt=""
-                          class="w-full">
-                      </div>
-                      <div class="swiper-slide swiper-slide-next">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-2.png" alt=""
-                          class="w-full">
-                      </div>
-                      <div class="swiper-slide">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-3.png" alt=""
-                          class="w-full">
-                      </div>
-                      <div class="swiper-slide">
-                        <img class="w-full rounded-[26px] apartment-img" src="./images/apartment-4.png" alt=""
-                          class="w-full">
-                      </div>
-                    </div>
-                    <div
-                      class="swp_pagination flex items-center justify-center !top-auto absolute left-0 !bottom-[9px] w-full !z-[1] gap-[5px]">
-                    </div>
-                    <button class="absolute right-[14px] top-[50%] -translate-y-2/4 z-[1]">
-                      <img src="./images/arrow-circle-right.svg" alt="">
-                    </button>
-                    <button class="absolute left-[14px] top-[50%] -translate-y-2/4 z-[1]">
-                      <img src="./images/arrow-circle-left.svg" alt="">
-                    </button>
-                  </div>
-                </div>
-                <div class="px-[15px] pb-[29px] content-box">
-                  <div class="list-flex parent">
-                    <div class="list-flex flex-col gap-[2px] justify-start">
-                      <p
-                        class="text-[13px] text-[#363636] opacity-[0.6] font-light leading-4 mb-[6px] list-mb-20 list-order">
-                        Апарт-отель</p>
-                      <h4 class="text-[15px] font-medium leading-[19px] text-[#363636] mb-[7px] mb-none">Золотой берег
-                      </h4>
-                    </div>
-                    <div class="list-flex flex-col gap-[2px] justify-start">
-                      <h3 class="text-[#EF924F] text-4 leading-5 mb-[6px]">от 6.700.000 руб.</h3>
-                      <p class="text-[#3D3D3D] text-xs font-light mb-[15px] list-mb-20 list-text-end">120.000 руб / м2
-                      </p>
-                    </div>
-                  </div>
-                  <div class="hidden list-flex flex-col gap-2 pb-[39px]">
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                    <div class="flex items-baseline gap-1">
-                      <span
-                        class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                      <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                      <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                        1.5
-                        млн</span>
-                    </div>
-                  </div>
-                  <p class="text-[#363636] text-[13px] font-light leading-4 opacity-[0.6]">Крым, Евпатория</p>
-                </div>
-              </div>
-            </div>
-            <div class="text-center mt-[50px]">
-              <button class="btn-orange">Показать ещё</button>
-            </div>
-          </div>
-        </div>
+					<div class="catalog-products__box">
+						<div
+							class="grid lg:grid-cols-4 lg-plus:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-8 gap-5 catalog-products">
+							<div class="bg-white rounded-[32px] list-flex items-center">
+								<div class="relative max-w-[1200px]">
+									<div
+										class="swiper mx-2 pt-2 mb-5 best_deals__child_swp swiper-fade catalog-products-swiper sm:h-auto h-[202px]">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-1.png" alt=""
+													class="w-full">
+											</div>
+											<div class="swiper-slide swiper-slide-next">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-2.png" alt=""
+													class="w-full">
+											</div>
+											<div class="swiper-slide">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-3.png" alt=""
+													class="w-full">
+											</div>
+											<div class="swiper-slide">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-4.png" alt=""
+													class="w-full">
+											</div>
+										</div>
+										<div
+											class="swp_pagination flex items-center justify-center !top-auto absolute left-0 !bottom-[9px] w-full !z-[1] gap-[5px]">
+										</div>
+										<button class="absolute right-[14px] top-[50%] -translate-y-2/4 z-[1]">
+											<img src="./images/arrow-circle-right.svg" alt="">
+										</button>
+										<button class="absolute left-[14px] top-[50%] -translate-y-2/4 z-[1]">
+											<img src="./images/arrow-circle-left.svg" alt="">
+										</button>
+									</div>
+								</div>
+								<div class="px-[15px] pb-[29px] content-box">
+									<div class="list-flex parent">
+										<div class="list-flex flex-col gap-[2px] justify-start">
+											<p
+												class="text-[13px] text-[#363636] opacity-[0.6] font-light leading-4 mb-[6px] list-mb-20 list-order">
+												Апарт-отель</p>
+											<h4 class="text-[15px] font-medium leading-[19px] text-[#363636] mb-[7px] mb-none">Золотой берег
+											</h4>
+										</div>
+										<div class="list-flex flex-col gap-[2px] justify-start">
+											<h3 class="text-[#EF924F] text-4 leading-5 mb-[6px]">от 6.700.000 руб.</h3>
+											<p class="text-[#3D3D3D] text-xs font-light mb-[15px] list-mb-20 list-text-end">120.000 руб / м2
+											</p>
+										</div>
+									</div>
+									<div class="hidden list-flex flex-col gap-2 pb-[39px]">
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+									</div>
+									<p class="text-[#363636] text-[13px] font-light leading-4 opacity-[0.6]">Крым, Евпатория</p>
+								</div>
+							</div>
+							<div class="bg-white rounded-[32px] list-flex items-center">
+								<div class="relative max-w-[1200px]">
+									<div class="swiper mx-2 pt-2 mb-5 best_deals__child_swp swiper-fade catalog-products-swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-1.png" alt=""
+													class="w-full">
+											</div>
+											<div class="swiper-slide swiper-slide-next">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-2.png" alt=""
+													class="w-full">
+											</div>
+											<div class="swiper-slide">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-3.png" alt=""
+													class="w-full">
+											</div>
+											<div class="swiper-slide">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-4.png" alt=""
+													class="w-full">
+											</div>
+										</div>
+										<div
+											class="swp_pagination flex items-center justify-center !top-auto absolute left-0 !bottom-[9px] w-full !z-[1] gap-[5px]">
+										</div>
+										<button class="absolute right-[14px] top-[50%] -translate-y-2/4 z-[1]">
+											<img src="./images/arrow-circle-right.svg" alt="">
+										</button>
+										<button class="absolute left-[14px] top-[50%] -translate-y-2/4 z-[1]">
+											<img src="./images/arrow-circle-left.svg" alt="">
+										</button>
+									</div>
+								</div>
+								<div class="px-[15px] pb-[29px] content-box">
+									<div class="list-flex parent">
+										<div class="list-flex flex-col gap-[2px] justify-start">
+											<p
+												class="text-[13px] text-[#363636] opacity-[0.6] font-light leading-4 mb-[6px] list-mb-20 list-order">
+												Апарт-отель</p>
+											<h4 class="text-[15px] font-medium leading-[19px] text-[#363636] mb-[7px] mb-none">Золотой берег
+											</h4>
+										</div>
+										<div class="list-flex flex-col gap-[2px] justify-start">
+											<h3 class="text-[#EF924F] text-4 leading-5 mb-[6px]">от 6.700.000 руб.</h3>
+											<p class="text-[#3D3D3D] text-xs font-light mb-[15px] list-mb-20 list-text-end">120.000 руб / м2
+											</p>
+										</div>
+									</div>
+									<div class="hidden list-flex flex-col gap-2 pb-[39px]">
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+									</div>
+									<p class="text-[#363636] text-[13px] font-light leading-4 opacity-[0.6]">Крым, Евпатория</p>
+								</div>
+							</div>
+							<div class="bg-white rounded-[32px] list-flex items-center">
+								<div class="relative max-w-[1200px]">
+									<div class="swiper mx-2 pt-2 mb-5 best_deals__child_swp swiper-fade catalog-products-swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-1.png" alt=""
+													class="w-full">
+											</div>
+											<div class="swiper-slide swiper-slide-next">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-2.png" alt=""
+													class="w-full">
+											</div>
+											<div class="swiper-slide">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-3.png" alt=""
+													class="w-full">
+											</div>
+											<div class="swiper-slide">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-4.png" alt=""
+													class="w-full">
+											</div>
+										</div>
+										<div
+											class="swp_pagination flex items-center justify-center !top-auto absolute left-0 !bottom-[9px] w-full !z-[1] gap-[5px]">
+										</div>
+										<button class="absolute right-[14px] top-[50%] -translate-y-2/4 z-[1]">
+											<img src="./images/arrow-circle-right.svg" alt="">
+										</button>
+										<button class="absolute left-[14px] top-[50%] -translate-y-2/4 z-[1]">
+											<img src="./images/arrow-circle-left.svg" alt="">
+										</button>
+									</div>
+								</div>
+								<div class="px-[15px] pb-[29px] content-box">
+									<div class="list-flex parent">
+										<div class="list-flex flex-col gap-[2px] justify-start">
+											<p
+												class="text-[13px] text-[#363636] opacity-[0.6] font-light leading-4 mb-[6px] list-mb-20 list-order">
+												Апарт-отель</p>
+											<h4 class="text-[15px] font-medium leading-[19px] text-[#363636] mb-[7px] mb-none">Золотой берег
+											</h4>
+										</div>
+										<div class="list-flex flex-col gap-[2px] justify-start">
+											<h3 class="text-[#EF924F] text-4 leading-5 mb-[6px]">от 6.700.000 руб.</h3>
+											<p class="text-[#3D3D3D] text-xs font-light mb-[15px] list-mb-20 list-text-end">120.000 руб / м2
+											</p>
+										</div>
+									</div>
+									<div class="hidden list-flex flex-col gap-2 pb-[39px]">
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+									</div>
+									<p class="text-[#363636] text-[13px] font-light leading-4 opacity-[0.6]">Крым, Евпатория</p>
+								</div>
+							</div>
+							<div class="bg-white rounded-[32px] list-flex items-center">
+								<div class="relative max-w-[1200px]">
+									<div class="swiper mx-2 pt-2 mb-5 best_deals__child_swp swiper-fade catalog-products-swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-1.png" alt=""
+													class="w-full">
+											</div>
+											<div class="swiper-slide swiper-slide-next">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-2.png" alt=""
+													class="w-full">
+											</div>
+											<div class="swiper-slide">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-3.png" alt=""
+													class="w-full">
+											</div>
+											<div class="swiper-slide">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-4.png" alt=""
+													class="w-full">
+											</div>
+										</div>
+										<div
+											class="swp_pagination flex items-center justify-center !top-auto absolute left-0 !bottom-[9px] w-full !z-[1] gap-[5px]">
+										</div>
+										<button class="absolute right-[14px] top-[50%] -translate-y-2/4 z-[1]">
+											<img src="./images/arrow-circle-right.svg" alt="">
+										</button>
+										<button class="absolute left-[14px] top-[50%] -translate-y-2/4 z-[1]">
+											<img src="./images/arrow-circle-left.svg" alt="">
+										</button>
+									</div>
+								</div>
+								<div class="px-[15px] pb-[29px] content-box">
+									<div class="list-flex parent">
+										<div class="list-flex flex-col gap-[2px] justify-start">
+											<p
+												class="text-[13px] text-[#363636] opacity-[0.6] font-light leading-4 mb-[6px] list-mb-20 list-order">
+												Апарт-отель</p>
+											<h4 class="text-[15px] font-medium leading-[19px] text-[#363636] mb-[7px] mb-none">Золотой берег
+											</h4>
+										</div>
+										<div class="list-flex flex-col gap-[2px] justify-start">
+											<h3 class="text-[#EF924F] text-4 leading-5 mb-[6px]">от 6.700.000 руб.</h3>
+											<p class="text-[#3D3D3D] text-xs font-light mb-[15px] list-mb-20 list-text-end">120.000 руб / м2
+											</p>
+										</div>
+									</div>
+									<div class="hidden list-flex flex-col gap-2 pb-[39px]">
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+									</div>
+									<p class="text-[#363636] text-[13px] font-light leading-4 opacity-[0.6]">Крым, Евпатория</p>
+								</div>
+							</div>
+							<div class="bg-white rounded-[32px] list-flex items-center">
+								<div class="relative max-w-[1200px]">
+									<div class="swiper mx-2 pt-2 mb-5 best_deals__child_swp swiper-fade catalog-products-swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-1.png" alt=""
+													class="w-full">
+											</div>
+											<div class="swiper-slide swiper-slide-next">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-2.png" alt=""
+													class="w-full">
+											</div>
+											<div class="swiper-slide">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-3.png" alt=""
+													class="w-full">
+											</div>
+											<div class="swiper-slide">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-4.png" alt=""
+													class="w-full">
+											</div>
+										</div>
+										<div
+											class="swp_pagination flex items-center justify-center !top-auto absolute left-0 !bottom-[9px] w-full !z-[1] gap-[5px]">
+										</div>
+										<button class="absolute right-[14px] top-[50%] -translate-y-2/4 z-[1]">
+											<img src="./images/arrow-circle-right.svg" alt="">
+										</button>
+										<button class="absolute left-[14px] top-[50%] -translate-y-2/4 z-[1]">
+											<img src="./images/arrow-circle-left.svg" alt="">
+										</button>
+									</div>
+								</div>
+								<div class="px-[15px] pb-[29px] content-box">
+									<div class="list-flex parent">
+										<div class="list-flex flex-col gap-[2px] justify-start">
+											<p
+												class="text-[13px] text-[#363636] opacity-[0.6] font-light leading-4 mb-[6px] list-mb-20 list-order">
+												Апарт-отель</p>
+											<h4 class="text-[15px] font-medium leading-[19px] text-[#363636] mb-[7px] mb-none">Золотой берег
+											</h4>
+										</div>
+										<div class="list-flex flex-col gap-[2px] justify-start">
+											<h3 class="text-[#EF924F] text-4 leading-5 mb-[6px]">от 6.700.000 руб.</h3>
+											<p class="text-[#3D3D3D] text-xs font-light mb-[15px] list-mb-20 list-text-end">120.000 руб / м2
+											</p>
+										</div>
+									</div>
+									<div class="hidden list-flex flex-col gap-2 pb-[39px]">
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+									</div>
+									<p class="text-[#363636] text-[13px] font-light leading-4 opacity-[0.6]">Крым, Евпатория</p>
+								</div>
+							</div>
+							<div class="bg-white rounded-[32px] list-flex items-center">
+								<div class="relative max-w-[1200px]">
+									<div class="swiper mx-2 pt-2 mb-5 best_deals__child_swp swiper-fade catalog-products-swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-1.png" alt=""
+													class="w-full">
+											</div>
+											<div class="swiper-slide swiper-slide-next">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-2.png" alt=""
+													class="w-full">
+											</div>
+											<div class="swiper-slide">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-3.png" alt=""
+													class="w-full">
+											</div>
+											<div class="swiper-slide">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-4.png" alt=""
+													class="w-full">
+											</div>
+										</div>
+										<div
+											class="swp_pagination flex items-center justify-center !top-auto absolute left-0 !bottom-[9px] w-full !z-[1] gap-[5px]">
+										</div>
+										<button class="absolute right-[14px] top-[50%] -translate-y-2/4 z-[1]">
+											<img src="./images/arrow-circle-right.svg" alt="">
+										</button>
+										<button class="absolute left-[14px] top-[50%] -translate-y-2/4 z-[1]">
+											<img src="./images/arrow-circle-left.svg" alt="">
+										</button>
+									</div>
+								</div>
+								<div class="px-[15px] pb-[29px] content-box">
+									<div class="list-flex parent">
+										<div class="list-flex flex-col gap-[2px] justify-start">
+											<p
+												class="text-[13px] text-[#363636] opacity-[0.6] font-light leading-4 mb-[6px] list-mb-20 list-order">
+												Апарт-отель</p>
+											<h4 class="text-[15px] font-medium leading-[19px] text-[#363636] mb-[7px] mb-none">Золотой берег
+											</h4>
+										</div>
+										<div class="list-flex flex-col gap-[2px] justify-start">
+											<h3 class="text-[#EF924F] text-4 leading-5 mb-[6px]">от 6.700.000 руб.</h3>
+											<p class="text-[#3D3D3D] text-xs font-light mb-[15px] list-mb-20 list-text-end">120.000 руб / м2
+											</p>
+										</div>
+									</div>
+									<div class="hidden list-flex flex-col gap-2 pb-[39px]">
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+									</div>
+									<p class="text-[#363636] text-[13px] font-light leading-4 opacity-[0.6]">Крым, Евпатория</p>
+								</div>
+							</div>
+							<div class="bg-white rounded-[32px] list-flex items-center">
+								<div class="relative max-w-[1200px]">
+									<div class="swiper mx-2 pt-2 mb-5 best_deals__child_swp swiper-fade catalog-products-swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-1.png" alt=""
+													class="w-full">
+											</div>
+											<div class="swiper-slide swiper-slide-next">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-2.png" alt=""
+													class="w-full">
+											</div>
+											<div class="swiper-slide">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-3.png" alt=""
+													class="w-full">
+											</div>
+											<div class="swiper-slide">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-4.png" alt=""
+													class="w-full">
+											</div>
+										</div>
+										<div
+											class="swp_pagination flex items-center justify-center !top-auto absolute left-0 !bottom-[9px] w-full !z-[1] gap-[5px]">
+										</div>
+										<button class="absolute right-[14px] top-[50%] -translate-y-2/4 z-[1]">
+											<img src="./images/arrow-circle-right.svg" alt="">
+										</button>
+										<button class="absolute left-[14px] top-[50%] -translate-y-2/4 z-[1]">
+											<img src="./images/arrow-circle-left.svg" alt="">
+										</button>
+									</div>
+								</div>
+								<div class="px-[15px] pb-[29px] content-box">
+									<div class="list-flex parent">
+										<div class="list-flex flex-col gap-[2px] justify-start">
+											<p
+												class="text-[13px] text-[#363636] opacity-[0.6] font-light leading-4 mb-[6px] list-mb-20 list-order">
+												Апарт-отель</p>
+											<h4 class="text-[15px] font-medium leading-[19px] text-[#363636] mb-[7px] mb-none">Золотой берег
+											</h4>
+										</div>
+										<div class="list-flex flex-col gap-[2px] justify-start">
+											<h3 class="text-[#EF924F] text-4 leading-5 mb-[6px]">от 6.700.000 руб.</h3>
+											<p class="text-[#3D3D3D] text-xs font-light mb-[15px] list-mb-20 list-text-end">120.000 руб / м2
+											</p>
+										</div>
+									</div>
+									<div class="hidden list-flex flex-col gap-2 pb-[39px]">
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+									</div>
+									<p class="text-[#363636] text-[13px] font-light leading-4 opacity-[0.6]">Крым, Евпатория</p>
+								</div>
+							</div>
+							<div class="bg-white rounded-[32px] list-flex items-center">
+								<div class="relative max-w-[1200px]">
+									<div class="swiper mx-2 pt-2 mb-5 best_deals__child_swp swiper-fade catalog-products-swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-1.png" alt=""
+													class="w-full">
+											</div>
+											<div class="swiper-slide swiper-slide-next">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-2.png" alt=""
+													class="w-full">
+											</div>
+											<div class="swiper-slide">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-3.png" alt=""
+													class="w-full">
+											</div>
+											<div class="swiper-slide">
+												<img class="w-full rounded-[26px] apartment-img" src="./images/apartment-4.png" alt=""
+													class="w-full">
+											</div>
+										</div>
+										<div
+											class="swp_pagination flex items-center justify-center !top-auto absolute left-0 !bottom-[9px] w-full !z-[1] gap-[5px]">
+										</div>
+										<button class="absolute right-[14px] top-[50%] -translate-y-2/4 z-[1]">
+											<img src="./images/arrow-circle-right.svg" alt="">
+										</button>
+										<button class="absolute left-[14px] top-[50%] -translate-y-2/4 z-[1]">
+											<img src="./images/arrow-circle-left.svg" alt="">
+										</button>
+									</div>
+								</div>
+								<div class="px-[15px] pb-[29px] content-box">
+									<div class="list-flex parent">
+										<div class="list-flex flex-col gap-[2px] justify-start">
+											<p
+												class="text-[13px] text-[#363636] opacity-[0.6] font-light leading-4 mb-[6px] list-mb-20 list-order">
+												Апарт-отель</p>
+											<h4 class="text-[15px] font-medium leading-[19px] text-[#363636] mb-[7px] mb-none">Золотой берег
+											</h4>
+										</div>
+										<div class="list-flex flex-col gap-[2px] justify-start">
+											<h3 class="text-[#EF924F] text-4 leading-5 mb-[6px]">от 6.700.000 руб.</h3>
+											<p class="text-[#3D3D3D] text-xs font-light mb-[15px] list-mb-20 list-text-end">120.000 руб / м2
+											</p>
+										</div>
+									</div>
+									<div class="hidden list-flex flex-col gap-2 pb-[39px]">
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+										<div class="flex items-baseline gap-1">
+											<span
+												class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+											<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+											<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+												1.5
+												млн</span>
+										</div>
+									</div>
+									<p class="text-[#363636] text-[13px] font-light leading-4 opacity-[0.6]">Крым, Евпатория</p>
+								</div>
+							</div>
+						</div>
+						<div class="text-center mt-[50px]">
+							<button class="btn-orange">Показать ещё</button>
+						</div>
+					</div>
+				</div>
 
-        <div class="relative lg-plus:h-[768px] map-product hidden mt-[-80px] lg-plus:pb-0 pb-[64px]">
-          <div id="map" class="lg-plus:h-full h-[752px] w-full"></div>
-          <div
-            class="bg-white rounded-[32px] list-flex items-center lg-plus:absolute relative z-10 lg-plus:mt-0 mt-[-100px] lg-plus:mx-0 mx-5 lg-plus:top-[37px] lg-plus:left-[120px] md:max-w-[380px] max-w-[350px] w-full">
-            <div class="relative">
-              <div
-                class="swiper mx-2 pt-2 mb-5 best_deals__child_swp swiper-fade catalog-products-swiper md:w-[364px] w-[335px] h-[202px]">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img class="w-full h-full rounded-[26px] apartment-img" src="./images/apartment-1.png" alt=""
-                      class="w-full">
-                  </div>
-                  <div class="swiper-slide swiper-slide-next">
-                    <img class="w-full h-full rounded-[26px] apartment-img" src="./images/apartment-2.png" alt=""
-                      class="w-full">
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="w-full h-full rounded-[26px] apartment-img" src="./images/apartment-3.png" alt=""
-                      class="w-full">
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="w-full h-full rounded-[26px] apartment-img" src="./images/apartment-4.png" alt=""
-                      class="w-full">
-                  </div>
-                </div>
-                <div
-                  class="swp_pagination flex items-center justify-center !top-auto absolute left-0 !bottom-[9px] w-full !z-[1] gap-[5px]">
-                </div>
-                <button class="absolute right-[14px] top-[50%] -translate-y-2/4 z-[1]">
-                  <img src="./images/arrow-circle-right.svg" alt="">
-                </button>
-                <button class="absolute left-[14px] top-[50%] -translate-y-2/4 z-[1]">
-                  <img src="./images/arrow-circle-left.svg" alt="">
-                </button>
-              </div>
-            </div>
-            <div class="px-[15px] pb-[29px] content-box">
-              <div class="list-flex parent">
-                <div class="list-flex flex-col gap-[2px] justify-start">
-                  <div class="flex items-center justify-between">
-                    <p
-                      class="text-[13px] text-[#363636] opacity-[0.6] font-light leading-4 mb-[6px] list-mb-20 list-order">
-                      Апарт-отель</p>
-                    <p
-                      class="text-[13px] text-[#363636] opacity-[0.6] font-light leading-4 mb-[6px] list-mb-20 list-order">
-                      Крым, Евпатория
-                    </p>
-                  </div>
-                  <h4 class="text-[15px] font-medium leading-[19px] text-[#363636] mb-[7px] mb-none">Золотой берег
-                  </h4>
-                </div>
-                <div class="list-flex flex-col gap-[2px] justify-start">
-                  <h3 class="text-[#EF924F] text-4 leading-5 mb-[6px]">от 6.700.000 руб.</h3>
-                  <p class="text-[#3D3D3D] text-xs font-light mb-[15px] list-mb-20 list-text-end">120.000 руб / м2</p>
-                </div>
-              </div>
-              <div class="hidden list-flex flex-col gap-2 pb-[39px]">
-                <div class="flex items-baseline gap-1">
-                  <span
-                    class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                  <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                  <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от 1.5
-                    млн</span>
-                </div>
-                <div class="flex items-baseline gap-1">
-                  <span
-                    class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                  <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                  <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от 1.5
-                    млн</span>
-                </div>
-                <div class="flex items-baseline gap-1">
-                  <span
-                    class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                  <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                  <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от 1.5
-                    млн</span>
-                </div>
-                <div class="flex items-baseline gap-1">
-                  <span
-                    class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
-                  <div class="w-full border border-[#D9D9D9] border-dashed"></div>
-                  <span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
-                    1.5
-                    млн</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- blog -->
+				<div class="relative lg-plus:h-[768px] map-product hidden mt-[-80px] lg-plus:pb-0 pb-[64px]">
+					<div id="map" class="lg-plus:h-full h-[752px] w-full"></div>
+					<div
+						class="bg-white rounded-[32px] list-flex items-center lg-plus:absolute relative z-10 lg-plus:mt-0 mt-[-100px] lg-plus:mx-0 mx-5 lg-plus:top-[37px] lg-plus:left-[120px] md:max-w-[380px] max-w-[350px] w-full">
+						<div class="relative">
+							<div
+								class="swiper mx-2 pt-2 mb-5 best_deals__child_swp swiper-fade catalog-products-swiper md:w-[364px] w-[335px] h-[202px]">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img class="w-full h-full rounded-[26px] apartment-img" src="./images/apartment-1.png" alt=""
+											class="w-full">
+									</div>
+									<div class="swiper-slide swiper-slide-next">
+										<img class="w-full h-full rounded-[26px] apartment-img" src="./images/apartment-2.png" alt=""
+											class="w-full">
+									</div>
+									<div class="swiper-slide">
+										<img class="w-full h-full rounded-[26px] apartment-img" src="./images/apartment-3.png" alt=""
+											class="w-full">
+									</div>
+									<div class="swiper-slide">
+										<img class="w-full h-full rounded-[26px] apartment-img" src="./images/apartment-4.png" alt=""
+											class="w-full">
+									</div>
+								</div>
+								<div
+									class="swp_pagination flex items-center justify-center !top-auto absolute left-0 !bottom-[9px] w-full !z-[1] gap-[5px]">
+								</div>
+								<button class="absolute right-[14px] top-[50%] -translate-y-2/4 z-[1]">
+									<img src="./images/arrow-circle-right.svg" alt="">
+								</button>
+								<button class="absolute left-[14px] top-[50%] -translate-y-2/4 z-[1]">
+									<img src="./images/arrow-circle-left.svg" alt="">
+								</button>
+							</div>
+						</div>
+						<div class="px-[15px] pb-[29px] content-box">
+							<div class="list-flex parent">
+								<div class="list-flex flex-col gap-[2px] justify-start">
+									<div class="flex items-center justify-between">
+										<p
+											class="text-[13px] text-[#363636] opacity-[0.6] font-light leading-4 mb-[6px] list-mb-20 list-order">
+											Апарт-отель</p>
+										<p
+											class="text-[13px] text-[#363636] opacity-[0.6] font-light leading-4 mb-[6px] list-mb-20 list-order">
+											Крым, Евпатория
+										</p>
+									</div>
+									<h4 class="text-[15px] font-medium leading-[19px] text-[#363636] mb-[7px] mb-none">Золотой берег
+									</h4>
+								</div>
+								<div class="list-flex flex-col gap-[2px] justify-start">
+									<h3 class="text-[#EF924F] text-4 leading-5 mb-[6px]">от 6.700.000 руб.</h3>
+									<p class="text-[#3D3D3D] text-xs font-light mb-[15px] list-mb-20 list-text-end">120.000 руб / м2</p>
+								</div>
+							</div>
+							<div class="hidden list-flex flex-col gap-2 pb-[39px]">
+								<div class="flex items-baseline gap-1">
+									<span
+										class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+									<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+									<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от 1.5
+										млн</span>
+								</div>
+								<div class="flex items-baseline gap-1">
+									<span
+										class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+									<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+									<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от 1.5
+										млн</span>
+								</div>
+								<div class="flex items-baseline gap-1">
+									<span
+										class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+									<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+									<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от 1.5
+										млн</span>
+								</div>
+								<div class="flex items-baseline gap-1">
+									<span
+										class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">Студии</span>
+									<div class="w-full border border-[#D9D9D9] border-dashed"></div>
+									<span class="leading-[17.36px] whitespace-nowrap text-sm font-light font-Unbounded text-gray">от
+										1.5
+										млн</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- blog -->
 
-      <!-- statistic -->
-      <section class="bg-green-dark">
-        <div class="container">
-          <div
-            class="flex lg:flex-row flex-col justify-between gap-[32px] md:pt-[78px] pt-[36px] md:pb-[33px] pb-[35px]">
-            <div>
-              <h6
-                class="font-unbounded font-normal md:text-[36px] md:leading-[44px] text-[22px] leading-[27px] md:mb-[37px] mb-[22px] text-white uppercase">
-                Узнайте срок окупаемости инвестиций в гостиничный бизнес
-              </h6>
-              <div class="flex md:flex-row flex-col items-start md:items-center md:gap-[40px] gap-[20px]">
-                <div class="md:max-w-[195px] flex md:items-start items-center flex-row md:flex-col gap-[17px]">
-                  <div class="flex-shrink-0 w-[12px] h-[12px] bg-coral rounded-[50%]"></div>
-                  <p class="font-Montserrat font-light text-sm text-white">
-                    Расчет среднего годового роста цен на номера
-                  </p>
-                </div>
-                <div class="md:max-w-[195px] flex md:items-start items-center flex-row md:flex-col gap-[17px]">
-                  <div class="flex-shrink-0 w-[12px] h-[12px] bg-coral rounded-[50%]"></div>
-                  <p class="font-Montserrat font-light text-sm text-white">
-                    Расчет сроков окупаемости инвестиций
-                  </p>
-                </div>
-                <div class="md:max-w-[195px] flex md:items-start items-center flex-row md:flex-col gap-[17px]">
-                  <div class="flex-shrink-0 w-[12px] h-[12px] bg-coral rounded-[50%]"></div>
-                  <p class="font-Montserrat font-light text-sm text-white">
-                    Подробный анализ объекта для инвесторов
-                  </p>
-                </div>
-              </div>
-              <form action="#" class="flex items-center gap-[21px] md:mt-[65px] mt-[25px] lg:flex-row flex-col">
-                <input type="tel" placeholder="Телефон"
-                  class="lg:w-[257px] w-full font-Montserrat px-[20px] py-[16px] font-medium text-[15px] leading-[18px] text-input-dark border-white border-[1px] border-solid rounded-[50px] bg-transparent h-[50px] focus:outline-none">
-                <button class="btn-orange lg:w-[185px] w-full">
-                  Получить
-                </button>
-              </form>
-            </div>
-            <div class="lg:max-w-[412px] max-w-full">
-              <img class="w-full" src="./images/statistic_img.png" alt="">
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- statistic -->
+			<!-- statistic -->
+			<section class="bg-green-dark">
+				<div class="container">
+					<div
+						class="flex lg:flex-row flex-col justify-between gap-[32px] md:pt-[78px] pt-[36px] md:pb-[33px] pb-[35px]">
+						<div>
+							<h6
+								class="font-unbounded font-normal md:text-[36px] md:leading-[44px] text-[22px] leading-[27px] md:mb-[37px] mb-[22px] text-white uppercase">
+								Узнайте срок окупаемости инвестиций в гостиничный бизнес
+							</h6>
+							<div class="flex md:flex-row flex-col items-start md:items-center md:gap-[40px] gap-[20px]">
+								<div class="md:max-w-[195px] flex md:items-start items-center flex-row md:flex-col gap-[17px]">
+									<div class="flex-shrink-0 w-[12px] h-[12px] bg-coral rounded-[50%]"></div>
+									<p class="font-Montserrat font-light text-sm text-white">
+										Расчет среднего годового роста цен на номера
+									</p>
+								</div>
+								<div class="md:max-w-[195px] flex md:items-start items-center flex-row md:flex-col gap-[17px]">
+									<div class="flex-shrink-0 w-[12px] h-[12px] bg-coral rounded-[50%]"></div>
+									<p class="font-Montserrat font-light text-sm text-white">
+										Расчет сроков окупаемости инвестиций
+									</p>
+								</div>
+								<div class="md:max-w-[195px] flex md:items-start items-center flex-row md:flex-col gap-[17px]">
+									<div class="flex-shrink-0 w-[12px] h-[12px] bg-coral rounded-[50%]"></div>
+									<p class="font-Montserrat font-light text-sm text-white">
+										Подробный анализ объекта для инвесторов
+									</p>
+								</div>
+							</div>
+							<form action="#" class="flex items-center gap-[21px] md:mt-[65px] mt-[25px] lg:flex-row flex-col">
+								<input type="tel" placeholder="Телефон"
+									class="lg:w-[257px] w-full font-Montserrat px-[20px] py-[16px] font-medium text-[15px] leading-[18px] text-input-dark border-white border-[1px] border-solid rounded-[50px] bg-transparent h-[50px] focus:outline-none">
+								<button class="btn-orange lg:w-[185px] w-full">
+									Получить
+								</button>
+							</form>
+						</div>
+						<div class="lg:max-w-[412px] max-w-full">
+							<img class="w-full" src="./images/statistic_img.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- statistic -->
 
-    </main>
+		</main>
 
-    <!-- Footer -->
-    <footer class="footer md:pt-[80px] pt-[46px] md:pb-[55px] pb-[26px]">
-      <div class="container">
-        <div class="flex md:flex-row flex-col items-start justify-between gap-[20px]">
-          <ul class="flex flex-col gap-[7px] md:mb-0 mb-[20px]">
-            <h6 class="font-Unbounded font-normal text-[18px] leading-[22px] text-gray mb-[14px]">
-              Меню
-            </h6>
-            <li>
-              <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
-                Об агентстве
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
-                Отзывы
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
-                Контакты
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
-                Ипотека
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
-                Блог
-              </a>
-            </li>
-          </ul>
-          <ul class="flex flex-col gap-[7px] md:mb-0 mb-[20px]">
-            <h6 class="font-Unbounded font-normal text-[18px] leading-[22px] text-gray mb-[14px]">
-              Города
-            </h6>
-            <li>
-              <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
-                Сочи
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
-                Ялта
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
-                Алушта
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
-                Новороссийск
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
-                Адлер
-              </a>
-            </li>
-          </ul>
-          <ul class="flex flex-col gap-[7px]">
-            <h6 class="font-Unbounded font-normal text-[18px] leading-[22px] text-gray mb-[14px]">
-              Адреса
-            </h6>
-            <li>
-              <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
-                Сочи, микрорайон Центральный,<br class="md:block hidden"> ул. Роз, 117
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
-                Ялта, ул.Васильева, 16
-              </a>
-            </li>
-          </ul>
-          <div>
-            <a href="tel:+88002223344" class="font-semibold font-montserrat text-[24px] leading-[29px] text-coral">
-              8 800 222 33 44
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="max-w-[1200px] mx-auto h-[1px] md:mt-[43px] mt-[20px] bg-line-border"></div>
-      <div class="container">
-        <span class="md:mt-[29px] block mt-[20px] md:text-base text-sm font-light font-montserrat text-[#36363699]">
-          © Курортная недвижимость l 2017-2024
-        </span>
-      </div>
-    </footer>
-    <!-- Footer end -->
+		<!-- Footer -->
+		<footer class="footer md:pt-[80px] pt-[46px] md:pb-[55px] pb-[26px]">
+			<div class="container">
+				<div class="flex md:flex-row flex-col items-start justify-between gap-[20px]">
+					<ul class="flex flex-col gap-[7px] md:mb-0 mb-[20px]">
+						<h6 class="font-Unbounded font-normal text-[18px] leading-[22px] text-gray mb-[14px]">
+							Меню
+						</h6>
+						<li>
+							<a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+								Об агентстве
+							</a>
+						</li>
+						<li>
+							<a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+								Отзывы
+							</a>
+						</li>
+						<li>
+							<a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+								Контакты
+							</a>
+						</li>
+						<li>
+							<a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+								Ипотека
+							</a>
+						</li>
+						<li>
+							<a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+								Блог
+							</a>
+						</li>
+					</ul>
+					<ul class="flex flex-col gap-[7px] md:mb-0 mb-[20px]">
+						<h6 class="font-Unbounded font-normal text-[18px] leading-[22px] text-gray mb-[14px]">
+							Города
+						</h6>
+						<li>
+							<a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+								Сочи
+							</a>
+						</li>
+						<li>
+							<a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+								Ялта
+							</a>
+						</li>
+						<li>
+							<a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+								Алушта
+							</a>
+						</li>
+						<li>
+							<a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+								Новороссийск
+							</a>
+						</li>
+						<li>
+							<a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+								Адлер
+							</a>
+						</li>
+					</ul>
+					<ul class="flex flex-col gap-[7px]">
+						<h6 class="font-Unbounded font-normal text-[18px] leading-[22px] text-gray mb-[14px]">
+							Адреса
+						</h6>
+						<li>
+							<a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+								Сочи, микрорайон Центральный,<br class="md:block hidden"> ул. Роз, 117
+							</a>
+						</li>
+						<li>
+							<a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+								Ялта, ул.Васильева, 16
+							</a>
+						</li>
+					</ul>
+					<div>
+						<a href="tel:+88002223344" class="font-semibold font-montserrat text-[24px] leading-[29px] text-coral">
+							8 800 222 33 44
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="max-w-[1200px] mx-auto h-[1px] md:mt-[43px] mt-[20px] bg-line-border"></div>
+			<div class="container">
+				<span class="md:mt-[29px] block mt-[20px] md:text-base text-sm font-light font-montserrat text-[#36363699]">
+					© Курортная недвижимость l 2017-2024
+				</span>
+			</div>
+		</footer>
+		<!-- Footer end -->
 
-  </div>
+	</div>
 
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <!-- JS file -->
-  <script src="./js/main.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- JS file -->
+	<script src="./js/main.js"></script>
 </body>
 
 </html>

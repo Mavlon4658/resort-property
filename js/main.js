@@ -573,3 +573,24 @@ try {
 } catch (error) {
 
 }
+try {
+	const mediaFilter = document.querySelector('.media-filter');
+	const mediaFilterCloseBtn = document.querySelector('.close-filter__btn');
+	const mediaFilterOpenBtn = document.querySelector('.open-filter__btn');
+	const overlay = document.querySelector('.overlay');
+
+	mediaFilterOpenBtn.addEventListener('click', () => {
+		mediaFilter.classList.add('block');
+		mediaFilter.classList.remove('hidden');
+		overlay.classList.remove('hidden');
+		document.body.classList.add('overflow-hidden');
+	})
+	mediaFilterCloseBtn.addEventListener('click', () => {
+		mediaFilter.classList.remove('block');
+		mediaFilter.classList.add('hidden');
+		overlay.classList.add('hidden');
+		document.body.classList.remove('overflow-hidden');
+	})
+} catch (error) {
+
+}
