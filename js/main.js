@@ -370,6 +370,86 @@ try {
     // Set initial values
     setValues(lowerInput, upperInput, lowerValue, upperValue, track);
   });
+function init() {
+  var myMap = new ymaps.Map('map', {
+    center: [44.895, 37.316],
+    zoom: 13,
+    controls: ['zoomControl', 'fullscreenControl'],
+  });
+
+  myMap.setType('yandex#map');
+  myMap.geoObjects.options.set('preset', 'islands#grayIcon');
+
+  // Define the coordinates of the locations
+  var location1 = [44.89, 37.32]; // Example coordinates
+  var location2 = [44.9, 37.31]; // Example coordinates
+
+  var placemark1 = new ymaps.Placemark(
+    location1,
+    {},
+    {
+      iconLayout: 'default#image',
+      iconImageHref: '../images/location.png',
+      iconImageSize: [218, 59],
+      iconImageOffset: [-15, -15],
+    }
+  );
+  var placemark2 = new ymaps.Placemark(
+    location2,
+    {},
+    {
+      iconLayout: 'default#image',
+      iconImageHref: '../images/location.png',
+      iconImageSize: [57, 82],
+      iconImageOffset: [-15, -15],
+    }
+  );
+
+  myMap.geoObjects.add(placemark1);
+  myMap.geoObjects.add(placemark2);
+}
+
+try {
+  ymaps.ready(init);
+
+  function init() {
+    var map = new ymaps.Map('map', {
+      center: [55.751244, 37.618423], // Moskva markazi
+      zoom: 14,
+      controls: [],
+    });
+
+    // Custom HTML placemark
+    var CustomPlacemark = ymaps.templateLayoutFactory.createClass(
+      `<div class="customPlacemark">
+        <div className="circle"></div>
+        <div>
+          <h4>Главный офис</h4>
+          <span>Дзержинского, 244</span>
+        </div>
+      </div>`
+    );
+
+    var placemark1 = new ymaps.Placemark(
+      [55.75222, 37.61556],
+      {},
+      {
+        iconLayout: CustomPlacemark,
+      }
+    );
+
+    var placemark2 = new ymaps.Placemark(
+      [55.751244, 37.618423],
+      {},
+      {
+        iconLayout: CustomPlacemark,
+      }
+    );
+
+    // Xaritada placemarklarni qo'shish
+    map.geoObjects.add(placemark1);
+    map.geoObjects.add(placemark2);
+  }
 } catch (error) {
   console.log(error);
 }
