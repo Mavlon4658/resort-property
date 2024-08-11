@@ -38,12 +38,46 @@
                     </li>
                 </ul>
                 <a href="tel:+88002223344" class="absolute hidden lg:flex right-0 top-[28px] text-white font-montserrat font-medium text-base">8 800 222 33 44</a>
-                <button class="lg:hidden">
+                <button class="lg:hidden header_bars">
                     <img src="./images/bars.svg" alt="">
                 </button>
             </div>
         </header>
         <!-- Header end -->
+
+        <!-- Mobile menu -->
+        <section class="mobile_menu fixed hidden top-0 left-0 w-full h-full z-20">
+            <div class="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.6)]"></div>
+            <div class="absolute top-0 left-0 w-[300px] h-full bg-white">
+                <button class="absolute top-[38px] right-4 mobile_menu__close">
+                    <img src="./images/plus-icon.svg" class="rotate-45" alt="">
+                </button>
+                <ul class="flex flex-col py-8 px-5 gap-5">
+                    <li>
+                        <a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Недвижимость</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Об агентстве</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Отзывы</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Контакты</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Ипотека</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Блог</a>
+                    </li>
+                    <li>
+                        <a href="tel:+88002223344" class="text-[#E78844] text-base font-semibold font-montserrat">8 800 222 33 44</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Mobile menu end -->
 
         <main>
             
@@ -136,8 +170,33 @@
             </section>
             <!-- Home end -->
 
-            <section class="bg-[#F5F5F4] h-[743px]">
-
+            <section class="bg-[#F5F5F4] h-[743px] lg:h-[985px]">
+                <div class="container pt-[128px] lg:pt-[85px]">
+                    <h2 class="lg:mb-[511px] text-xl lg:text-[40px] leading-[25px] lg:leading-[50px] text-[#3D3D3D]"><span class="block text-[#EF924F]">Наши апартаменты</span> представлены в городах:</h2>
+                    <ul class="hidden lg:flex flex-col gap-2">
+                        <li>
+                            <a href="#" class="text-base text-[#EF924F] font-montserrat font-medium">Сочи</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-base text-[#EF924F] font-montserrat font-medium">Ялта</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-base text-[#EF924F] font-montserrat font-medium">Коктебель</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-base text-[#EF924F] font-montserrat font-medium">Алушта</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-base text-[#EF924F] font-montserrat font-medium">Керчь</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-base text-[#EF924F] font-montserrat font-medium">Геленджик</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-base text-[#EF924F] font-montserrat font-medium">Кисловодск</a>
+                        </li>
+                    </ul>
+                </div>
             </section>
 
             <!-- Rating -->
@@ -1869,8 +1928,97 @@
         </main>
 
         <!-- Footer -->
-        <footer class="footer">
-
+        <footer class="footer md:pt-[80px] pt-[46px] md:pb-[55px] pb-[26px]">
+            <div class="container">
+            <div class="flex md:flex-row flex-col items-start justify-between gap-[20px]">
+                <ul class="flex flex-col gap-[7px] md:mb-0 mb-[20px]">
+                <h6 class="font-Unbounded font-normal text-[18px] leading-[22px] text-gray mb-[14px]">
+                    Меню
+                </h6>
+                <li>
+                    <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+                    Об агентстве
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+                    Отзывы
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+                    Контакты
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+                    Ипотека
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+                    Блог
+                    </a>
+                </li>
+                </ul>
+                <ul class="flex flex-col gap-[7px] md:mb-0 mb-[20px]">
+                <h6 class="font-Unbounded font-normal text-[18px] leading-[22px] text-gray mb-[14px]">
+                    Города
+                </h6>
+                <li>
+                    <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+                    Сочи
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+                    Ялта
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+                    Алушта
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+                    Новороссийск
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+                    Адлер
+                    </a>
+                </li>
+                </ul>
+                <ul class="flex flex-col gap-[7px]">
+                <h6 class="font-Unbounded font-normal text-[18px] leading-[22px] text-gray mb-[14px]">
+                    Адреса
+                </h6>
+                <li>
+                    <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+                    Сочи, микрорайон Центральный,<br class="md:block hidden"> ул. Роз, 117
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+                    Ялта, ул.Васильева, 16
+                    </a>
+                </li>
+                </ul>
+                <div>
+                <a href="tel:+88002223344" class="font-semibold font-montserrat text-[24px] leading-[29px] text-coral">
+                    8 800 222 33 44
+                </a>
+                </div>
+            </div>
+            </div>
+            <div class="max-w-[1200px] mx-auto h-[1px] md:mt-[43px] mt-[20px] bg-line-border"></div>
+            <div class="container">
+            <span class="md:mt-[29px] block mt-[20px] md:text-base text-sm font-light font-montserrat text-[#36363699]">
+                © Курортная недвижимость l 2017-2024
+            </span>
+            </div>
         </footer>
         <!-- Footer end -->
 

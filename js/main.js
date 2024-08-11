@@ -169,6 +169,19 @@ if (accordionItems.length) {
   });
 }
 
+let headerBars = document.querySelector('.header_bars'),
+    mobileMenu = document.querySelector('.mobile_menu'),
+    mobileMenuClose = document.querySelector('.mobile_menu__close');
+
+if (headerBars) {
+  headerBars.onclick = () => {
+    mobileMenu.classList.toggle('hidden');
+  }
+  mobileMenuClose.onclick = () => {
+    mobileMenu.classList.add('hidden');
+  }
+}
+
 document.addEventListener('click', (event) => {
   if (dropdowns.length) {
     dropdowns.forEach((el) => {
