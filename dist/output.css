@@ -1141,6 +1141,14 @@ video {
   height: 255px;
 }
 
+.h-\[536px\] {
+  height: 536px;
+}
+
+.h-\[117px\] {
+  height: 117px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1534,6 +1542,14 @@ video {
   gap: 7px;
 }
 
+.gap-\[100px\] {
+  gap: 100px;
+}
+
+.gap-\[128px\] {
+  gap: 128px;
+}
+
 .space-x-1 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.25rem * var(--tw-space-x-reverse));
@@ -1817,6 +1833,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f4f5f5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 245 245 / var(--tw-bg-opacity));
 }
 
 .object-contain {
@@ -2321,6 +2342,14 @@ video {
 
 .pb-\[58px\] {
   padding-bottom: 58px;
+}
+
+.pb-\[48px\] {
+  padding-bottom: 48px;
+}
+
+.pt-\[50px\] {
+  padding-top: 50px;
 }
 
 .text-center {
@@ -3240,6 +3269,14 @@ input[type="range"]:focus {
 }
 
 @media (min-width: 768px) {
+  .md\:order-2 {
+    order: 2;
+  }
+
+  .md\:order-1 {
+    order: 1;
+  }
+
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -3328,6 +3365,14 @@ input[type="range"]:focus {
     height: 431px;
   }
 
+  .md\:h-\[572px\] {
+    height: 572px;
+  }
+
+  .md\:h-\[93px\] {
+    height: 93px;
+  }
+
   .md\:w-\[97px\] {
     width: 97px;
   }
@@ -3338,6 +3383,11 @@ input[type="range"]:focus {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .md\:max-w-\[195px\] {
@@ -3360,6 +3410,10 @@ input[type="range"]:focus {
     align-items: flex-start;
   }
 
+  .md\:items-end {
+    align-items: flex-end;
+  }
+
   .md\:items-center {
     align-items: center;
   }
@@ -3376,6 +3430,10 @@ input[type="range"]:focus {
     gap: 2rem;
   }
 
+  .md\:gap-\[128px\] {
+    gap: 128px;
+  }
+
   .md\:rounded-\[26px\] {
     border-radius: 26px;
   }
@@ -3386,6 +3444,15 @@ input[type="range"]:focus {
 
   .md\:rounded-\[40px\] {
     border-radius: 40px;
+  }
+
+  .md\:bg-\[\] {
+    background-color: ;
+  }
+
+  .md\:bg-\[\#f5f5f4\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(245 245 244 / var(--tw-bg-opacity));
   }
 
   .md\:px-\[40px\] {
@@ -3449,6 +3516,14 @@ input[type="range"]:focus {
 
   .md\:pb-\[29px\] {
     padding-bottom: 29px;
+  }
+
+  .md\:pb-\[73px\] {
+    padding-bottom: 73px;
+  }
+
+  .md\:pt-\[63px\] {
+    padding-top: 63px;
   }
 
   .md\:text-\[15px\] {
