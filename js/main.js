@@ -41,8 +41,11 @@ function swiperCard() {
 				slidesPerView: 'auto',
 				spaceBetween: 11,
 				nested: true,
+				navigation: {
+					nextEl: '.next-btn_swp',
+					prevEl: '.prev-btn_swp',
+				},
 			});
-			
 		}
 	} else if (init) {
 		swiper.destroy();
@@ -173,16 +176,16 @@ if (accordionItems.length) {
 }
 
 let headerBars = document.querySelector('.header_bars'),
-    mobileMenu = document.querySelector('.mobile_menu'),
-    mobileMenuClose = document.querySelector('.mobile_menu__close');
+	mobileMenu = document.querySelector('.mobile_menu'),
+	mobileMenuClose = document.querySelector('.mobile_menu__close');
 
 if (headerBars) {
-  headerBars.onclick = () => {
-    mobileMenu.classList.toggle('hidden');
-  }
-  mobileMenuClose.onclick = () => {
-    mobileMenu.classList.add('hidden');
-  }
+	headerBars.onclick = () => {
+		mobileMenu.classList.toggle('hidden');
+	}
+	mobileMenuClose.onclick = () => {
+		mobileMenu.classList.add('hidden');
+	}
 }
 
 document.addEventListener('click', (event) => {
