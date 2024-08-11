@@ -177,6 +177,14 @@ try {
       nextEl: '.btn__next',
       prevEl: '.btn__prev',
     },
+    breakpoints: {
+      1024: {
+        slidesPerView: 1.6,
+      },
+      0: {
+        slidesPerView: 1,
+      },
+    },
   });
 } catch (error) {}
 // catalog-swiper
