@@ -191,48 +191,48 @@ try {
     },
   });
 } catch (error) {}
-try {
-  ymaps.ready(init);
+// try {
+//   ymaps.ready(init);
 
-  function init() {
-    var myMap = new ymaps.Map('map', {
-      center: [44.895, 37.316],
-      zoom: 13,
-      controls: ['zoomControl', 'fullscreenControl'],
-    });
+//   function init() {
+//     var myMap = new ymaps.Map('map', {
+//       center: [44.895, 37.316],
+//       zoom: 13,
+//       controls: ['zoomControl', 'fullscreenControl'],
+//     });
 
-    myMap.setType('yandex#map');
-    myMap.geoObjects.options.set('preset', 'islands#grayIcon');
+//     myMap.setType('yandex#map');
+//     myMap.geoObjects.options.set('preset', 'islands#grayIcon');
 
-    // Define the coordinates of the locations
-    var location1 = [44.89, 37.32]; // Example coordinates
-    var location2 = [44.9, 37.31]; // Example coordinates
+//     // Define the coordinates of the locations
+//     var location1 = [44.89, 37.32]; // Example coordinates
+//     var location2 = [44.9, 37.31]; // Example coordinates
 
-    var placemark1 = new ymaps.Placemark(
-      location1,
-      {},
-      {
-        iconLayout: 'default#image',
-        iconImageHref: '../images/location.png',
-        iconImageSize: [218, 59],
-        iconImageOffset: [-15, -15],
-      }
-    );
-    var placemark2 = new ymaps.Placemark(
-      location2,
-      {},
-      {
-        iconLayout: 'default#image',
-        iconImageHref: '../images/location.png',
-        iconImageSize: [57, 82],
-        iconImageOffset: [-15, -15],
-      }
-    );
+//     var placemark1 = new ymaps.Placemark(
+//       location1,
+//       {},
+//       {
+//         iconLayout: 'default#image',
+//         iconImageHref: '../images/location.png',
+//         iconImageSize: [218, 59],
+//         iconImageOffset: [-15, -15],
+//       }
+//     );
+//     var placemark2 = new ymaps.Placemark(
+//       location2,
+//       {},
+//       {
+//         iconLayout: 'default#image',
+//         iconImageHref: '../images/blog-card-1.png',
+//         iconImageSize: [218, 59],
+//         iconImageOffset: [-15, -15],
+//       }
+//     );
 
-    myMap.geoObjects.add(placemark1);
-    myMap.geoObjects.add(placemark2);
-  }
-} catch (error) {}
+//     myMap.geoObjects.add(placemark1);
+//     myMap.geoObjects.add(placemark2);
+//   }
+// } catch (error) {}
 try {
   ymaps.ready(init);
 
@@ -245,17 +245,19 @@ try {
 
     // Custom HTML placemark
     var CustomPlacemark = ymaps.templateLayoutFactory.createClass(
-      `<div class="customPlacemark">
-        <div className="circle"></div>
+      `<div class="customPlacemark-content">
+        <div className="circle-img">
+          <img src="../images/apartment-1.png" />
+        </div>
         <div>
-          <h4>Главный офис</h4>
-          <span>Дзержинского, 244</span>
+          <h4>Золотой берег</h4>
+          <span>Апарт-отель</span>
         </div>
       </div>`
     );
 
     var placemark1 = new ymaps.Placemark(
-      [55.75222, 37.61556],
+      [55.76212, 37.61556],
       {},
       {
         iconLayout: CustomPlacemark,
@@ -282,11 +284,17 @@ try {
   const listProduct = document.querySelector('.list-product');
   const groupProduct = document.querySelector('.group-product');
   const catalogProducts = document.querySelector('.catalog-products');
+  const mapProduct = document.querySelector('.map-product');
+  const mapProductBtn = document.querySelector('.map-product__btn');
+  const catalogProductsBox = document.querySelector('.catalog-products__box');
+
   listProduct.addEventListener('click', () => {
     groupProduct.classList.remove('active');
     listProduct.classList.add('active');
     catalogProducts.classList.add('grid-cols-1', 'list');
     catalogProducts.classList.remove('grid-cols-4');
+    catalogProductsBox.classList.remove('hidden');
+    mapProduct.classList.add('hidden');
   });
   groupProduct.classList.add('active');
   groupProduct.addEventListener('click', () => {
@@ -294,6 +302,14 @@ try {
     listProduct.classList.remove('active');
     catalogProducts.classList.remove('grid-cols-1', 'list');
     catalogProducts.classList.add('grid-cols-4');
+    catalogProductsBox.classList.remove('hidden');
+    mapProduct.classList.add('hidden');
+  });
+  mapProductBtn.addEventListener('click', () => {
+    groupProduct.classList.remove('active');
+    listProduct.classList.remove('active');
+    catalogProductsBox.classList.add('hidden');
+    mapProduct.classList.remove('hidden');
   });
 } catch (error) {}
 

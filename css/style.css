@@ -164,14 +164,24 @@ header ul a:hover::after {
   color: #EF924F;
 }
 
-.customPlacemark {
+.customPlacemark-content {
   width: 218px;
-  height: 60px;
+  height: 82px;
+  padding: 6px 7px;
   border-radius: 50px;
   background: #fff;
   display: flex;
   align-items: center;
   gap: 16px;
+}
+
+.customPlacemark-content img {
+  border-radius: 50%;
+  max-width: 68px;
+  max-height: 68px;
+  min-width: 68px;
+  min-height: 68px;
+  filter: grayscale(0);
 }
 
 .circle {
@@ -182,7 +192,7 @@ header ul a:hover::after {
   background: #D9D9D9;
 }
 
-.customPlacemark h4 {
+.customPlacemark-content h4 {
   font-family: 'Montserrat';
   font-size: 13px;
   font-weight: 500;
@@ -190,7 +200,7 @@ header ul a:hover::after {
   color: #3D3D3D;
 }
 
-.customPlacemark span {
+.customPlacemark-content span {
   font-family: 'Montserrat';
   font-size: 13px;
   font-weight: 400;
@@ -354,4 +364,8 @@ input[type="range"]:focus {
   height: 1px;
   background: #EF924F;
   z-index: 1;
+}
+
+[class*="ymaps-"][class*="-ground-pane"] {
+  filter: grayscale(100);
 }
