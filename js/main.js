@@ -34,17 +34,18 @@ if (dropdowns.length) {
 var init = false;
 var swiper;
 function swiperCard() {
-  if (window.innerWidth <= 768) {
+  if (window.innerWidth <= 1024) {
     if (!init) {
-      init = true;
-      swiper = new Swiper('.slider-cards-js', {
-        slidesPerView: 'auto',
+    init = true;
+    swiper = new Swiper(".best_deals__paretn_swp", {
+        slidesPerView: "auto",
         spaceBetween: 11,
-      });
+        nested: true,
+    });
     }
   } else if (init) {
-    swiper.destroy();
-    init = false;
+      swiper.destroy();
+      init = false;
   }
 }
 
@@ -52,9 +53,7 @@ if (document.querySelector('.best_deals__paretn_swp')) {
   swiperCard();
 }
 
-let bestDealsChildChildSwp = document.querySelectorAll(
-  '.best_deals__child_swp'
-);
+let bestDealsChildChildSwp = document.querySelectorAll('.best_deals__child_swp');
 
 if (bestDealsChildChildSwp.length) {
   bestDealsChildChildSwp.forEach((el) => {
@@ -63,6 +62,7 @@ if (bestDealsChildChildSwp.length) {
       spaceBetween: 0,
       effect: 'fade',
       loop: true,
+      nested: true,
       pagination: {
         el: el.querySelector('.swp_pagination'),
         clickable: true,
@@ -113,11 +113,16 @@ if (tabs.length) {
 
 let partnerSwp = new Swiper('.partners .swiper', {
   slidesPerView: 'auto',
-  spaceBetween: 32,
-  navigation: {
-    nextEl: '.partners_btn__next',
-    prevEl: '.partners_btn__prev',
-  },
+  spaceBetween: 16,
+    breakpoint: {
+        1024: {
+            spaceBetween: 32,
+        }
+    },
+    navigation: {
+        nextEl: '.partners_btn__next',
+        prevEl: '.partners_btn__prev',
+    }
 });
 
 let reviewSwp = new Swiper('.review .swiper', {
@@ -130,8 +135,20 @@ let reviewSwp = new Swiper('.review .swiper', {
 });
 
 let blogSwp = new Swiper('.blog .swiper', {
-  slidesPerView: 3,
-  spaceBetween: 32,
+  slidesPerView: 1,
+    spaceBetween: 32,
+    breakpoint: {
+        768: {
+            slidesPerView: 3,
+        },
+        640: {
+            slidesPerView: 2,
+        },
+    },
+    navigation: {
+        nextEl: '.blog_btn__next',
+        prevEl: '.blog_btn__prev',
+    }
 });
 
 let accordionItems = document.querySelectorAll('.accordion_item');
@@ -408,6 +425,7 @@ function init() {
   myMap.geoObjects.add(placemark1);
   myMap.geoObjects.add(placemark2);
 }
+} catch (error) {}
 
 try {
   ymaps.ready(init);
