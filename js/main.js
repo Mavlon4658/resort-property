@@ -179,6 +179,18 @@ try {
     },
   });
 } catch (error) {}
+// catalog-swiper
+try {
+  var catalogSwiper = new Swiper('.catalog-swiper', {
+    speed: 800,
+    spaceBetween: 32,
+    slidesPerView: 2.4,
+    navigation: {
+      nextEl: '.btn__next',
+      prevEl: '.btn__prev',
+    },
+  });
+} catch (error) {}
 try {
   ymaps.ready(init);
 
@@ -262,6 +274,68 @@ try {
     map.geoObjects.add(placemark1);
     map.geoObjects.add(placemark2);
   }
+} catch (error) {
+  console.log(error);
+}
+
+try {
+  const listProduct = document.querySelector('.list-product');
+  const groupProduct = document.querySelector('.group-product');
+  const catalogProducts = document.querySelector('.catalog-products');
+  listProduct.addEventListener('click', () => {
+    groupProduct.classList.remove('active');
+    listProduct.classList.add('active');
+    catalogProducts.classList.add('grid-cols-1', 'list');
+    catalogProducts.classList.remove('grid-cols-4');
+  });
+  groupProduct.classList.add('active');
+  groupProduct.addEventListener('click', () => {
+    groupProduct.classList.add('active');
+    listProduct.classList.remove('active');
+    catalogProducts.classList.remove('grid-cols-1', 'list');
+    catalogProducts.classList.add('grid-cols-4');
+  });
+} catch (error) {}
+
+// range slider
+try {
+  function setValues(lowerInput, upperInput, lowerValue, upperValue, track) {
+    lowerValue.textContent = `${(lowerInput.value * 2 + 44.5).toFixed(1)} млн`;
+    upperValue.textContent = `${(upperInput.value * 2 + 44.5).toFixed(1)} млн`;
+    updateSliderTrack(lowerInput, upperInput, track);
+  }
+
+  function updateSliderTrack(lowerInput, upperInput, track) {
+    const min = parseInt(lowerInput.min);
+    const max = parseInt(upperInput.max);
+    const lowerValue = parseInt(lowerInput.value);
+    const upperValue = parseInt(upperInput.value);
+
+    const lowerPercent = ((lowerValue - min) / (max - min)) * 100;
+    const upperPercent = ((upperValue - min) / (max - min)) * 100;
+
+    track.style.left = `${lowerPercent}%`;
+    track.style.width = `${upperPercent - lowerPercent}%`;
+  }
+
+  document.querySelectorAll('.range-slider').forEach((slider, index) => {
+    const lowerInput = slider.querySelector(`#lower${index + 1}`);
+    const upperInput = slider.querySelector(`#upper${index + 1}`);
+    const lowerValue = slider.querySelector(`#lower-value${index + 1}`);
+    const upperValue = slider.querySelector(`#upper-value${index + 1}`);
+    const track = slider.querySelector(`#track${index + 1}`);
+
+    lowerInput.addEventListener('input', () => {
+      setValues(lowerInput, upperInput, lowerValue, upperValue, track);
+    });
+
+    upperInput.addEventListener('input', () => {
+      setValues(lowerInput, upperInput, lowerValue, upperValue, track);
+    });
+
+    // Set initial values
+    setValues(lowerInput, upperInput, lowerValue, upperValue, track);
+  });
 } catch (error) {
   console.log(error);
 }
