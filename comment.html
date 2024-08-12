@@ -18,7 +18,7 @@
     <!-- Header -->
     <header class="header-black border-b-line-border border-b border-solid">
       <div class="container">
-        <button class="lg:hidden block mt-[23px] pb-[11px]">
+        <button class="lg:hidden block mt-[23px] pb-[11px] header_bars">
           <img src="./images/burger_icon.svg" alt="">
         </button>
         <div class="flex items-center">
@@ -52,6 +52,40 @@
       </div>
     </header>
     <!-- Header end -->
+
+    <!-- Mobile menu -->
+    <section class="mobile_menu fixed hidden top-0 left-0 w-full h-full z-20">
+        <div class="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.6)]"></div>
+        <div class="absolute top-0 left-0 w-[300px] h-full bg-white">
+            <button class="absolute top-[38px] right-4 mobile_menu__close">
+                <img src="./images/plus-icon.svg" class="rotate-45" alt="">
+            </button>
+            <ul class="flex flex-col py-8 px-5 gap-5">
+                <li>
+                    <a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Недвижимость</a>
+                </li>
+                <li>
+                    <a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Об агентстве</a>
+                </li>
+                <li>
+                    <a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Отзывы</a>
+                </li>
+                <li>
+                    <a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Контакты</a>
+                </li>
+                <li>
+                    <a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Ипотека</a>
+                </li>
+                <li>
+                    <a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Блог</a>
+                </li>
+                <li>
+                    <a href="tel:+88002223344" class="text-[#E78844] text-base font-semibold font-montserrat">8 800 222 33 44</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Mobile menu end -->
 
     <!-- breadcrumbs -->
     <div class="md:mt-[55px] mt-[28px] md:mb-[19px] mb-[3px]">

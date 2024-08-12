@@ -82,7 +82,7 @@
         <main>
             
             <!-- Home -->
-            <section class="relative z-[1]">
+            <section class="relative z-[2]">
                 <img src="./images/home-bg.png" alt="" class="object-cover absolute z-[-1] left-0 top-0 w-full h-full">
                 <div class="absolute left-0 top-0 w-full h-full bg-[#000] z-[-1] opacity-[.4]"></div>
                 <div class="container relative pt-[400px] lg:pt-[256px] pb-[342px] lg:pb-[167px]">
@@ -170,10 +170,11 @@
             </section>
             <!-- Home end -->
 
-            <section class="bg-[#F5F5F4] h-[743px] lg:h-[985px]">
-                <div class="container pt-[128px] lg:pt-[85px]">
-                    <h2 class="lg:mb-[511px] text-xl lg:text-[40px] leading-[25px] lg:leading-[50px] text-[#3D3D3D]"><span class="block text-[#EF924F]">Наши апартаменты</span> представлены в городах:</h2>
-                    <ul class="hidden lg:flex flex-col gap-2">
+            <section class="bg-[#F5F5F4] relative z-[1] pt-[128px] lg:pt-[85px] h-[743px] lg:h-[985px]">
+                <div id="map-1" class="absolute top-0 left-0 w-full h-full z-[-1]"></div>
+                <div class="container relative">
+                    <h2 class="inline-block text-xl lg:text-[40px] leading-[25px] lg:leading-[50px] text-[#3D3D3D]"><span class="block text-[#EF924F]">Наши апартаменты</span> представлены в городах:</h2>
+                    <ul class="hidden absolute top-[611px] left-0 lg:flex flex-col gap-2">
                         <li>
                             <a href="#" class="text-base text-[#EF924F] font-montserrat font-medium">Сочи</a>
                         </li>
@@ -1092,12 +1093,12 @@
                     </div>
                     <div class="lg:hidden mt-6">
                         <div class="mb-8 flex items-center gap-[34px]">
-                            <button class="prev-btn_swp">
+                            <button>
                                 <svg width="29" height="16" viewBox="0 0 29 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.292892 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM29 7L1 7V9L29 9V7Z" fill="#3D3D3D"/>
                                 </svg>
                             </button>
-                            <button class="next-btn_swp">
+                            <button>
                                 <svg width="29" height="16" viewBox="0 0 29 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M28.7071 7.29289C29.0976 7.68342 29.0976 8.31658 28.7071 8.70711L22.3431 15.0711C21.9526 15.4616 21.3195 15.4616 20.9289 15.0711C20.5384 14.6805 20.5384 14.0474 20.9289 13.6569L26.5858 8L20.9289 2.34315C20.5384 1.95262 20.5384 1.31946 20.9289 0.928932C21.3195 0.538408 21.9526 0.538408 22.3431 0.928932L28.7071 7.29289ZM0 7L28 7V9L0 9L0 7Z" fill="#3D3D3D"/>
                                 </svg>
@@ -2024,6 +2025,7 @@
 
     </div>
 
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- JS file -->
     <script src="./js/main.js"></script>

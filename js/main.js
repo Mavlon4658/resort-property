@@ -41,10 +41,6 @@ function swiperCard() {
 				slidesPerView: 'auto',
 				spaceBetween: 11,
 				nested: true,
-				navigation: {
-					nextEl: '.next-btn_swp',
-					prevEl: '.prev-btn_swp',
-				},
 			});
 		}
 	} else if (init) {
@@ -176,16 +172,16 @@ if (accordionItems.length) {
 }
 
 let headerBars = document.querySelector('.header_bars'),
-	mobileMenu = document.querySelector('.mobile_menu'),
-	mobileMenuClose = document.querySelector('.mobile_menu__close');
+    mobileMenu = document.querySelector('.mobile_menu'),
+    mobileMenuClose = document.querySelector('.mobile_menu__close');
 
 if (headerBars) {
-	headerBars.onclick = () => {
-		mobileMenu.classList.toggle('hidden');
-	}
-	mobileMenuClose.onclick = () => {
-		mobileMenu.classList.add('hidden');
-	}
+  headerBars.onclick = () => {
+    mobileMenu.classList.toggle('hidden');
+  }
+  mobileMenuClose.onclick = () => {
+    mobileMenu.classList.add('hidden');
+  }
 }
 
 document.addEventListener('click', (event) => {
@@ -610,4 +606,62 @@ try {
 	})
 } catch (error) {
 
+}
+
+function init1 () {
+  const map = new ymaps.Map('map-1', {
+      center: [45.02060925348547,33.88774223860815],
+      zoom: 9,
+      controls: []
+  });
+
+  let placemark = [
+      new ymaps.Placemark([55.24176914865566,37.749417254452574], {}, {
+          iconLayout: 'default#image',
+          iconImageHref: './images/mark.svg',
+          iconImageSize: [66.67, 83.33],
+          iconImageOffset: [-33, -83]
+      }),
+      new ymaps.Placemark([55.24449080482076,37.74694962215887], {}, {
+          iconLayout: 'default#image',
+          iconImageHref: './images/mark.svg',
+          iconImageSize: [66.67, 83.33],
+          iconImageOffset: [-33, -83]
+      }),
+      new ymaps.Placemark([55.24480954510336,37.75049013805854], {}, {
+          iconLayout: 'default#image',
+          iconImageHref: './images/mark.svg',
+          iconImageSize: [66.67, 83.33],
+          iconImageOffset: [-33, -83]
+      }),
+      new ymaps.Placemark([55.24672193289917,37.752635905270445], {}, {
+          iconLayout: 'default#image',
+          iconImageHref: './images/mark.svg',
+          iconImageSize: [66.67, 83.33],
+          iconImageOffset: [-33, -83]
+      }),
+      new ymaps.Placemark([55.24331389538892,37.75443834972846], {}, {
+          iconLayout: 'default#image',
+          iconImageHref: './images/mark.svg',
+          iconImageSize: [66.67, 83.33],
+          iconImageOffset: [-33, -83]
+      }),
+  ];
+
+  map.controls.remove('geolocationControl');
+  map.controls.remove('searchControl');
+  map.controls.remove('trafficControl');
+  map.controls.remove('typeSelector');
+  map.controls.remove('fullscreenControl');
+  map.controls.remove('rulerControl');
+
+  placemark.forEach(mark => {
+      map.geoObjects.add(mark);
+  })
+
+  placemark[5].balloon.open();
+}
+
+if (document.querySelector('#map-1')) {
+  ymaps.ready(init1)
 }
