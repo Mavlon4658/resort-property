@@ -1084,6 +1084,14 @@ video {
   margin-top: 74px;
 }
 
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.mr-\[6px\] {
+  margin-right: 6px;
+}
+
 .block {
   display: block;
 }
@@ -1402,10 +1410,6 @@ video {
   max-width: 1200px;
 }
 
-.max-w-\[169px\] {
-  max-width: 169px;
-}
-
 .max-w-\[350px\] {
   max-width: 350px;
 }
@@ -1710,6 +1714,10 @@ video {
 
 .gap-\[9px\] {
   gap: 9px;
+}
+
+.gap-\[3px\] {
+  gap: 3px;
 }
 
 .gap-x-6 {
@@ -2105,6 +2113,10 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\] {
+  background-color: ;
 }
 
 .bg-\[url\(\'\.\.\/images\/video-bg\.png\'\)\] {
