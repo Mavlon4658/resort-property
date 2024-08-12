@@ -48,7 +48,9 @@ function swiperCard() {
 			});
 		}
 	} else if (init) {
-		swiper.destroy();
+		if (swiper) {
+			swiper.destroy();
+		}
 		init = false;
 	}
 }
@@ -120,7 +122,7 @@ if (tabs.length) {
 let partnerSwp = new Swiper('.partners .swiper', {
 	slidesPerView: 'auto',
 	spaceBetween: 16,
-	breakpoint: {
+	breakpoints: {
 		1024: {
 			spaceBetween: 32,
 		},
@@ -143,17 +145,17 @@ let reviewSwp = new Swiper('.review .swiper', {
 let blogSwp = new Swiper('.blog .swiper', {
 	slidesPerView: 1,
 	spaceBetween: 32,
-	breakpoint: {
+	navigation: {
+		nextEl: '.blog_btn__next',
+		prevEl: '.blog_btn__prev',
+	},
+	breakpoints: {
 		768: {
 			slidesPerView: 3,
 		},
 		640: {
 			slidesPerView: 2,
 		},
-	},
-	navigation: {
-		nextEl: '.blog_btn__next',
-		prevEl: '.blog_btn__prev',
 	},
 });
 
@@ -663,7 +665,6 @@ function init1() {
 		map.geoObjects.add(mark);
 	})
 
-	placemark[5].balloon.open();
 }
 
 if (document.querySelector('#map-1')) {
