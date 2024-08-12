@@ -414,10 +414,6 @@ input[type="range"]:focus {
 		background: #00000066;
 	}
 
-	.datepicker {
-		width: 100%;
-	}
-
 	.close-filter__btn {
 		display: block;
 		position: absolute;
@@ -452,4 +448,8 @@ input[type="range"]:focus {
 	.media-filter::-webkit-scrollbar {
 		width: 3px;
 	}
+}
+
+.datepicker {
+	width: 100%;
 }

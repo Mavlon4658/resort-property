@@ -1312,10 +1312,6 @@ video {
   width: 335px;
 }
 
-.w-\[351px\] {
-  width: 351px;
-}
-
 .w-\[47px\] {
   width: 47px;
 }
@@ -1404,6 +1400,10 @@ video {
 
 .max-w-\[1200px\] {
   max-width: 1200px;
+}
+
+.max-w-\[169px\] {
+  max-width: 169px;
 }
 
 .max-w-\[350px\] {
@@ -1536,10 +1536,6 @@ video {
   resize: none;
 }
 
-.resize {
-  resize: both;
-}
-
 .list-outside {
   list-style-position: outside;
 }
@@ -1550,10 +1546,6 @@ video {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -3545,10 +3537,6 @@ input[type="range"]:focus {
     background: #00000066;
   }
 
-  .datepicker {
-    width: 100%;
-  }
-
   .close-filter__btn {
     display: block;
     position: absolute;
@@ -3583,6 +3571,10 @@ input[type="range"]:focus {
   .media-filter::-webkit-scrollbar {
     width: 3px;
   }
+}
+
+.datepicker {
+  width: 100%;
 }
 
 .marker\:text-coral *::marker {
@@ -5409,10 +5401,6 @@ input[type="range"]:focus {
 
   .xl\:w-\[152px\] {
     width: 152px;
-  }
-
-  .xl\:w-\[169px\] {
-    width: 169px;
   }
 
   .xl\:w-\[80px\] {
