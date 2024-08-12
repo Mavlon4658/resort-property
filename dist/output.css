@@ -5406,4 +5406,8 @@ input[type="range"]:focus {
   .xl\:w-\[80px\] {
     width: 80px;
   }
+
+  .xl\:max-w-\[169px\] {
+    max-width: 169px;
+  }
 }
