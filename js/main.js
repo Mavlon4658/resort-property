@@ -41,6 +41,10 @@ function swiperCard() {
 				slidesPerView: 'auto',
 				spaceBetween: 11,
 				nested: true,
+				navigation: {
+					nextEl: '.next-btn_swp',
+					prevEl: '.prev-btn_swp',
+				},
 			});
 		}
 	} else if (init) {
@@ -172,16 +176,16 @@ if (accordionItems.length) {
 }
 
 let headerBars = document.querySelector('.header_bars'),
-    mobileMenu = document.querySelector('.mobile_menu'),
-    mobileMenuClose = document.querySelector('.mobile_menu__close');
+	mobileMenu = document.querySelector('.mobile_menu'),
+	mobileMenuClose = document.querySelector('.mobile_menu__close');
 
 if (headerBars) {
-  headerBars.onclick = () => {
-    mobileMenu.classList.toggle('hidden');
-  }
-  mobileMenuClose.onclick = () => {
-    mobileMenu.classList.add('hidden');
-  }
+	headerBars.onclick = () => {
+		mobileMenu.classList.toggle('hidden');
+	}
+	mobileMenuClose.onclick = () => {
+		mobileMenu.classList.add('hidden');
+	}
 }
 
 document.addEventListener('click', (event) => {
@@ -608,60 +612,140 @@ try {
 
 }
 
-function init1 () {
-  const map = new ymaps.Map('map-1', {
-      center: [45.02060925348547,33.88774223860815],
-      zoom: 9,
-      controls: []
-  });
+function init1() {
+	const map = new ymaps.Map('map-1', {
+		center: [45.02060925348547, 33.88774223860815],
+		zoom: 9,
+		controls: []
+	});
 
-  let placemark = [
-      new ymaps.Placemark([55.24176914865566,37.749417254452574], {}, {
-          iconLayout: 'default#image',
-          iconImageHref: './images/mark.svg',
-          iconImageSize: [66.67, 83.33],
-          iconImageOffset: [-33, -83]
-      }),
-      new ymaps.Placemark([55.24449080482076,37.74694962215887], {}, {
-          iconLayout: 'default#image',
-          iconImageHref: './images/mark.svg',
-          iconImageSize: [66.67, 83.33],
-          iconImageOffset: [-33, -83]
-      }),
-      new ymaps.Placemark([55.24480954510336,37.75049013805854], {}, {
-          iconLayout: 'default#image',
-          iconImageHref: './images/mark.svg',
-          iconImageSize: [66.67, 83.33],
-          iconImageOffset: [-33, -83]
-      }),
-      new ymaps.Placemark([55.24672193289917,37.752635905270445], {}, {
-          iconLayout: 'default#image',
-          iconImageHref: './images/mark.svg',
-          iconImageSize: [66.67, 83.33],
-          iconImageOffset: [-33, -83]
-      }),
-      new ymaps.Placemark([55.24331389538892,37.75443834972846], {}, {
-          iconLayout: 'default#image',
-          iconImageHref: './images/mark.svg',
-          iconImageSize: [66.67, 83.33],
-          iconImageOffset: [-33, -83]
-      }),
-  ];
+	let placemark = [
+		new ymaps.Placemark([55.24176914865566, 37.749417254452574], {}, {
+			iconLayout: 'default#image',
+			iconImageHref: './images/mark.svg',
+			iconImageSize: [66.67, 83.33],
+			iconImageOffset: [-33, -83]
+		}),
+		new ymaps.Placemark([55.24449080482076, 37.74694962215887], {}, {
+			iconLayout: 'default#image',
+			iconImageHref: './images/mark.svg',
+			iconImageSize: [66.67, 83.33],
+			iconImageOffset: [-33, -83]
+		}),
+		new ymaps.Placemark([55.24480954510336, 37.75049013805854], {}, {
+			iconLayout: 'default#image',
+			iconImageHref: './images/mark.svg',
+			iconImageSize: [66.67, 83.33],
+			iconImageOffset: [-33, -83]
+		}),
+		new ymaps.Placemark([55.24672193289917, 37.752635905270445], {}, {
+			iconLayout: 'default#image',
+			iconImageHref: './images/mark.svg',
+			iconImageSize: [66.67, 83.33],
+			iconImageOffset: [-33, -83]
+		}),
+		new ymaps.Placemark([55.24331389538892, 37.75443834972846], {}, {
+			iconLayout: 'default#image',
+			iconImageHref: './images/mark.svg',
+			iconImageSize: [66.67, 83.33],
+			iconImageOffset: [-33, -83]
+		}),
+	];
 
-  map.controls.remove('geolocationControl');
-  map.controls.remove('searchControl');
-  map.controls.remove('trafficControl');
-  map.controls.remove('typeSelector');
-  map.controls.remove('fullscreenControl');
-  map.controls.remove('rulerControl');
+	map.controls.remove('geolocationControl');
+	map.controls.remove('searchControl');
+	map.controls.remove('trafficControl');
+	map.controls.remove('typeSelector');
+	map.controls.remove('fullscreenControl');
+	map.controls.remove('rulerControl');
 
-  placemark.forEach(mark => {
-      map.geoObjects.add(mark);
-  })
+	placemark.forEach(mark => {
+		map.geoObjects.add(mark);
+	})
 
-  placemark[5].balloon.open();
+	placemark[5].balloon.open();
 }
 
 if (document.querySelector('#map-1')) {
-  ymaps.ready(init1)
+	ymaps.ready(init1)
+}
+try {
+	var simple = new Datepicker('#simple-date');
+} catch (error) {
+
+}
+try {
+	// Elementlarni olish
+	const fromSlider1 = document.getElementById('fromSlider1');
+	const toSlider1 = document.getElementById('toSlider1');
+	const fromSlider2 = document.getElementById('fromSlider2');
+	const toSlider2 = document.getElementById('toSlider2');
+	const fromSlider3 = document.getElementById('fromSlider3');
+	const toSlider3 = document.getElementById('toSlider3');
+
+	const toSliderTooltip1 = document.getElementById('toSliderTooltip1');
+	const toSliderTooltip2 = document.getElementById('toSliderTooltip2');
+	const toSliderTooltip3 = document.getElementById('toSliderTooltip3');
+	const totalPriceElement = document.querySelector('.total-price');
+	const trackArea1 = document.getElementById('track-area1');
+	const trackArea2 = document.getElementById('track-area2');
+	const trackArea3 = document.getElementById('track-area3');
+
+	// Slider qiymatlarini formatlash
+	function formatCurrency(value) {
+		return `${value} руб.`;
+	}
+
+	function formatYears(value) {
+		return `${value} лет`;
+	}
+
+	function calculateMonthlyPayment(propertyValue, downPayment, loanTerm) {
+		const loanAmount = propertyValue - downPayment;
+		const interestRate = 0.05; // Yillik foiz stavkasi (5% o'rnatilgan)
+		const monthlyRate = interestRate / 12;
+		const numPayments = loanTerm * 12;
+		return (loanAmount * monthlyRate) / (1 - Math.pow(1 + monthlyRate, -numPayments));
+	}
+
+	// Progres barni yangilash
+	function updateTrack(slider1, slider2, trackArea) {
+		const minValue = parseInt(slider1.value);
+		const maxValue = parseInt(slider2.value);
+
+		trackArea.style.left = (minValue / slider1.max) * 100 + '%';
+		trackArea.style.right = 100 - (maxValue / slider2.max) * 100 + '%';
+	}
+
+	// Slider qiymatlarini yangilash
+	function updateSliders() {
+		const propertyValue = toSlider1.value * 100000;
+		const downPayment = toSlider2.value * 100000;
+		const loanTerm = toSlider3.value;
+
+		toSliderTooltip1.textContent = formatCurrency(propertyValue);
+		toSliderTooltip2.textContent = formatCurrency(downPayment);
+		toSliderTooltip3.textContent = formatYears(loanTerm);
+
+		const monthlyPayment = calculateMonthlyPayment(propertyValue, downPayment, loanTerm);
+		totalPriceElement.textContent = `${monthlyPayment.toFixed(2)} руб / мес`;
+
+		// Progres barni yangilash
+		updateTrack(fromSlider1, toSlider1, trackArea1);
+		updateTrack(fromSlider2, toSlider2, trackArea2);
+		updateTrack(fromSlider3, toSlider3, trackArea3);
+	}
+
+	// Slider qiymatlari o'zgarganda yangilash
+	fromSlider1.addEventListener('input', updateSliders);
+	toSlider1.addEventListener('input', updateSliders);
+	fromSlider2.addEventListener('input', updateSliders);
+	toSlider2.addEventListener('input', updateSliders);
+	fromSlider3.addEventListener('input', updateSliders);
+	toSlider3.addEventListener('input', updateSliders);
+
+	// Dastlabki qiymatlarni yangilash
+	updateSliders();
+} catch (error) {
+
 }
