@@ -6,10 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Курортная недвижимость</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-	<!-- CSS file -->
-	<link rel="stylesheet" href="./dist/output.css">
+	<link rel="stylesheet" href="./css/datepicker.minimal.css">
 	<!-- font -->
 	<link rel="stylesheet" href="./fonts/Montserrat/stylesheet.css">
+	<!-- CSS file -->
+	<link rel="stylesheet" href="./dist/output.css">
 </head>
 
 <body class="bg-[#F5F5F4] relative">
@@ -17,69 +18,73 @@
 	<div class="overflow-hidden">
 
 		<!-- Header -->
-        <header class="absolute top-0 left-0 w-full z-10 lg:border-b-[rgba(255,255,255,0.38)] lg:border-b lg:border-solid pt-[23px] lg:pt-0">
-            <div class="container relative">
-                <ul class="hidden lg:flex items-center justify-center gap-[46px] pr-[130px]">
-                    <li>
-                        <a href="#" class="pt-[27px] pb-6 text-white font-montserrat text-sm relative flex">Недвижимость</a>
-                    </li>
-                    <li>
-                        <a href="#" class="pt-[27px] pb-6 text-white font-montserrat text-sm relative flex">Об агентстве</a>
-                    </li>
-                    <li>
-                        <a href="#" class="pt-[27px] pb-6 text-white font-montserrat text-sm relative flex">Отзывы</a>
-                    </li>
-                    <li>
-                        <a href="#" class="pt-[27px] pb-6 text-white font-montserrat text-sm relative flex">Контакты</a>
-                    </li>
-                    <li>
-                        <a href="#" class="pt-[27px] pb-6 text-white font-montserrat text-sm relative flex">Ипотека</a>
-                    </li>
-                    <li>
-                        <a href="#" class="pt-[27px] pb-6 text-white font-montserrat text-sm relative flex">Блог</a>
-                    </li>
-                </ul>
-                <a href="tel:+88002223344" class="absolute hidden lg:flex right-0 top-[28px] text-white font-montserrat font-medium text-base">8 800 222 33 44</a>
-                <button class="lg:hidden header_bars">
-                    <img src="./images/bars.svg" alt="">
-                </button>
-            </div>
-        </header>
-        <!-- Header end -->
+		<header
+			class="absolute top-0 left-0 w-full z-10 lg:border-b-[rgba(255,255,255,0.38)] lg:border-b lg:border-solid pt-[23px] lg:pt-0">
+			<div class="container relative">
+				<ul class="hidden lg:flex items-center justify-center gap-[46px] pr-[130px]">
+					<li>
+						<a href="#" class="pt-[27px] pb-6 text-white font-montserrat text-sm relative flex">Недвижимость</a>
+					</li>
+					<li>
+						<a href="#" class="pt-[27px] pb-6 text-white font-montserrat text-sm relative flex">Об агентстве</a>
+					</li>
+					<li>
+						<a href="#" class="pt-[27px] pb-6 text-white font-montserrat text-sm relative flex">Отзывы</a>
+					</li>
+					<li>
+						<a href="#" class="pt-[27px] pb-6 text-white font-montserrat text-sm relative flex">Контакты</a>
+					</li>
+					<li>
+						<a href="#" class="pt-[27px] pb-6 text-white font-montserrat text-sm relative flex">Ипотека</a>
+					</li>
+					<li>
+						<a href="#" class="pt-[27px] pb-6 text-white font-montserrat text-sm relative flex">Блог</a>
+					</li>
+				</ul>
+				<a href="tel:+88002223344"
+					class="absolute hidden lg:flex right-0 top-[28px] text-white font-montserrat font-medium text-base">8 800 222
+					33 44</a>
+				<button class="lg:hidden header_bars">
+					<img src="./images/bars.svg" alt="">
+				</button>
+			</div>
+		</header>
+		<!-- Header end -->
 
-        <!-- Mobile menu -->
-        <section class="mobile_menu fixed hidden top-0 left-0 w-full h-full z-20">
-            <div class="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.6)]"></div>
-            <div class="absolute top-0 left-0 w-[300px] h-full bg-white">
-                <button class="absolute top-[38px] right-4 mobile_menu__close">
-                    <img src="./images/plus-icon.svg" class="rotate-45" alt="">
-                </button>
-                <ul class="flex flex-col py-8 px-5 gap-5">
-                    <li>
-                        <a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Недвижимость</a>
-                    </li>
-                    <li>
-                        <a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Об агентстве</a>
-                    </li>
-                    <li>
-                        <a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Отзывы</a>
-                    </li>
-                    <li>
-                        <a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Контакты</a>
-                    </li>
-                    <li>
-                        <a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Ипотека</a>
-                    </li>
-                    <li>
-                        <a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Блог</a>
-                    </li>
-                    <li>
-                        <a href="tel:+88002223344" class="text-[#E78844] text-base font-semibold font-montserrat">8 800 222 33 44</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- Mobile menu end -->
+		<!-- Mobile menu -->
+		<section class="mobile_menu fixed hidden top-0 left-0 w-full h-full z-20">
+			<div class="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.6)]"></div>
+			<div class="absolute top-0 left-0 w-[300px] h-full bg-white">
+				<button class="absolute top-[38px] right-4 mobile_menu__close">
+					<img src="./images/plus-icon.svg" class="rotate-45" alt="">
+				</button>
+				<ul class="flex flex-col py-8 px-5 gap-5">
+					<li>
+						<a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Недвижимость</a>
+					</li>
+					<li>
+						<a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Об агентстве</a>
+					</li>
+					<li>
+						<a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Отзывы</a>
+					</li>
+					<li>
+						<a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Контакты</a>
+					</li>
+					<li>
+						<a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Ипотека</a>
+					</li>
+					<li>
+						<a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Блог</a>
+					</li>
+					<li>
+						<a href="tel:+88002223344" class="text-[#E78844] text-base font-semibold font-montserrat">8 800 222 33
+							44</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- Mobile menu end -->
 
 		<main>
 
@@ -121,7 +126,7 @@
 									<img class="w-full h-full md:rounded-[26px] rounded-[16px]" src="./images/blog1.png" alt="">
 									<div class="mt-[13px] lg-plus:px-[12px] lg-plus:pb-[13px] flex items-center justify-between">
 										<h6
-											class="text-#363636 lg-plus:text-base text-[13px] lg-plus:leading-[19.84px] leading-[16.12px] lg-plus:group-hover:text-white font-Unbounded font-medium">
+											class="text-#363636 lg-plus:text-base text-[13px] lg-plus:leading-[19.84px] leading-[16.12px] lg-plus:group-hover:text-white duration-300 font-Unbounded font-medium">
 											Ялта, Крым
 										</h6>
 										<span
@@ -137,7 +142,7 @@
 									<img class="w-full h-full md:rounded-[26px] rounded-[16px]" src="./images/blog1.png" alt="">
 									<div class="mt-[13px] lg-plus:px-[12px] lg-plus:pb-[13px] flex items-center justify-between">
 										<h6
-											class="text-#363636 lg-plus:text-base text-[13px] lg-plus:leading-[19.84px] leading-[16.12px] lg-plus:group-hover:text-white font-Unbounded font-medium">
+											class="text-#363636 lg-plus:text-base text-[13px] lg-plus:leading-[19.84px] leading-[16.12px] lg-plus:group-hover:text-white duration-300 font-Unbounded font-medium">
 											Сочи, Краснодарский край
 										</h6>
 										<span
@@ -153,7 +158,7 @@
 									<img class="w-full h-full md:rounded-[26px] rounded-[16px]" src="./images/blog1.png" alt="">
 									<div class="mt-[13px] lg-plus:px-[12px] lg-plus:pb-[13px] flex items-center justify-between">
 										<h6
-											class="text-#363636 lg-plus:text-base text-[13px] lg-plus:leading-[19.84px] leading-[16.12px] lg-plus:group-hover:text-white font-Unbounded font-medium">
+											class="text-#363636 lg-plus:text-base text-[13px] lg-plus:leading-[19.84px] leading-[16.12px] lg-plus:group-hover:text-white duration-300 font-Unbounded font-medium">
 											Пятигорск, Северный Кавказ
 										</h6>
 										<span
@@ -169,7 +174,7 @@
 									<img class="w-full h-full md:rounded-[26px] rounded-[16px]" src="./images/blog1.png" alt="">
 									<div class="mt-[13px] lg-plus:px-[12px] lg-plus:pb-[13px] flex items-center justify-between">
 										<h6
-											class="text-#363636 lg-plus:text-base text-[13px] lg-plus:leading-[19.84px] leading-[16.12px] lg-plus:group-hover:text-white font-Unbounded font-medium">
+											class="text-#363636 lg-plus:text-base text-[13px] lg-plus:leading-[19.84px] leading-[16.12px] lg-plus:group-hover:text-white duration-300 font-Unbounded font-medium">
 											Сочи, Краснодарский край
 										</h6>
 										<span
@@ -191,7 +196,7 @@
 						<div class="relative dropdown w-[173px]">
 							<button
 								class="flex items-center justify-between text-[13px] text-[#36363699] dropdown-head border border-[#36363699] rounded-[50px] bg-white py-3 px-5 w-full">
-								<span>Регион</span>
+								<span class="text-ellipsis xl:w-[80px] overflow-hidden whitespace-nowrap text-left">Регион</span>
 								<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
 										d="M4.8102 5.73977C4.71548 5.73977 4.63091 5.70256 4.55649 5.62814L0.152196 1.26443C0.0507145 1.18325 -2.67388e-05 1.08177 -2.67335e-05 0.959987C-2.67293e-05 0.865271 0.0371828 0.780704 0.111603 0.706284L0.487084 0.34095C0.541208 0.286827 0.602097 0.259765 0.669751 0.259765C0.757702 0.259765 0.862566 0.320654 0.984344 0.442432L4.80005 4.21754L8.6259 0.493173C8.74768 0.371395 8.85254 0.310506 8.94049 0.310506C9.00815 0.310506 9.07918 0.347716 9.1536 0.422136L9.55953 0.828062C9.62718 0.895716 9.66101 0.959988 9.66101 1.02088C9.66101 1.06147 9.64071 1.10544 9.60012 1.1528C9.55953 1.20693 9.51217 1.26105 9.45805 1.31517L5.13494 5.57739C5.02669 5.68564 4.91844 5.73977 4.8102 5.73977Z"
@@ -208,7 +213,7 @@
 						<div class="relative dropdown w-[154px]">
 							<button
 								class="flex items-center justify-between text-[13px] text-[#36363699] dropdown-head border border-[#36363699] rounded-[50px] bg-white py-3 px-5 w-full">
-								<span>Город</span>
+								<span class="text-ellipsis xl:w-[80px] overflow-hidden whitespace-nowrap text-left">Город</span>
 								<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
 										d="M4.8102 5.73977C4.71548 5.73977 4.63091 5.70256 4.55649 5.62814L0.152196 1.26443C0.0507145 1.18325 -2.67388e-05 1.08177 -2.67335e-05 0.959987C-2.67293e-05 0.865271 0.0371828 0.780704 0.111603 0.706284L0.487084 0.34095C0.541208 0.286827 0.602097 0.259765 0.669751 0.259765C0.757702 0.259765 0.862566 0.320654 0.984344 0.442432L4.80005 4.21754L8.6259 0.493173C8.74768 0.371395 8.85254 0.310506 8.94049 0.310506C9.00815 0.310506 9.07918 0.347716 9.1536 0.422136L9.55953 0.828062C9.62718 0.895716 9.66101 0.959988 9.66101 1.02088C9.66101 1.06147 9.64071 1.10544 9.60012 1.1528C9.55953 1.20693 9.51217 1.26105 9.45805 1.31517L5.13494 5.57739C5.02669 5.68564 4.91844 5.73977 4.8102 5.73977Z"
@@ -222,15 +227,15 @@
 								<li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Дом</li>
 							</ul>
 						</div>
-						<button
-							class="flex xl:w-[169px] xl:mb-0 mb-8 w-full items-center justify-between text-[13px] text-[#36363699] border border-[#36363699] rounded-[50px] bg-white py-3 px-5">
-							<span>Срок сдачи</span>
-							<img src="./images/calendar.svg" alt="">
-						</button>
+						<div class="relative cursor-pointer select-none w-full xl:mb-0 mb-8">
+							<input id="simple-date" placeholder="Срок сдачи"
+								class="flex xl:w-[169px] placeholder:text-[#36363699] outline-none w-full items-center justify-between text-[13px] text-[#36363699] border border-[#36363699] rounded-[50px] bg-white py-3 px-5">
+							<img class="absolute top-1/2 right-5 -translate-y-1/2" src="./images/calendar.svg" alt="">
+						</div>
 						<div class="relative dropdown xl:w-[152px] w-full">
 							<button
 								class="flex items-center justify-between text-[13px] text-[#36363699] dropdown-head border border-[#36363699] rounded-[50px] bg-white py-3 px-5 w-full">
-								<span>Тип объекта</span>
+								<span class="text-ellipsis xl:w-[80px] overflow-hidden whitespace-nowrap text-left">Тип объекта</span>
 								<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
 										d="M4.8102 5.73977C4.71548 5.73977 4.63091 5.70256 4.55649 5.62814L0.152196 1.26443C0.0507145 1.18325 -2.67388e-05 1.08177 -2.67335e-05 0.959987C-2.67293e-05 0.865271 0.0371828 0.780704 0.111603 0.706284L0.487084 0.34095C0.541208 0.286827 0.602097 0.259765 0.669751 0.259765C0.757702 0.259765 0.862566 0.320654 0.984344 0.442432L4.80005 4.21754L8.6259 0.493173C8.74768 0.371395 8.85254 0.310506 8.94049 0.310506C9.00815 0.310506 9.07918 0.347716 9.1536 0.422136L9.55953 0.828062C9.62718 0.895716 9.66101 0.959988 9.66101 1.02088C9.66101 1.06147 9.64071 1.10544 9.60012 1.1528C9.55953 1.20693 9.51217 1.26105 9.45805 1.31517L5.13494 5.57739C5.02669 5.68564 4.91844 5.73977 4.8102 5.73977Z"
@@ -283,7 +288,7 @@
 								<div class="relative dropdown w-[173px]">
 									<button
 										class="flex items-center justify-between text-[13px] text-[#36363699] dropdown-head border border-[#36363699] rounded-[50px] py-3 px-5 w-full">
-										<span>Сортировать</span>
+										<span class="text-ellipsis w-[107px] overflow-hidden whitespace-nowrap text-left">Сортировать</span>
 										<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path
 												d="M4.8102 5.73977C4.71548 5.73977 4.63091 5.70256 4.55649 5.62814L0.152196 1.26443C0.0507145 1.18325 -2.67388e-05 1.08177 -2.67335e-05 0.959987C-2.67293e-05 0.865271 0.0371828 0.780704 0.111603 0.706284L0.487084 0.34095C0.541208 0.286827 0.602097 0.259765 0.669751 0.259765C0.757702 0.259765 0.862566 0.320654 0.984344 0.442432L4.80005 4.21754L8.6259 0.493173C8.74768 0.371395 8.85254 0.310506 8.94049 0.310506C9.00815 0.310506 9.07918 0.347716 9.1536 0.422136L9.55953 0.828062C9.62718 0.895716 9.66101 0.959988 9.66101 1.02088C9.66101 1.06147 9.64071 1.10544 9.60012 1.1528C9.55953 1.20693 9.51217 1.26105 9.45805 1.31517L5.13494 5.57739C5.02669 5.68564 4.91844 5.73977 4.8102 5.73977Z"
@@ -1248,6 +1253,7 @@
 	</div>
 
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script src="./js/datepicker.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<!-- JS file -->
 	<script src="./js/main.js"></script>
