@@ -98,11 +98,11 @@ a {
 header ul a::after {
 	content: "";
 	position: absolute;
-	bottom: 0;
+	bottom: -25px;
 	height: 2.58px;
 	width: calc(100% + 12px);
 	left: -6px;
-	background: #fff;
+	background: #EF924F;
 	opacity: 0;
 	transition: .3s ease all;
 }
@@ -148,6 +148,12 @@ header ul a:hover::after {
 }
 
 .swp_pagination {
+	background: #18181833;
+	padding: 4px;
+	border-radius: 100px;
+	width: fit-content !important;
+	left: 50% !important;
+	transform: translateX(-50%) !important;
 	transform: translate(0);
 }
 
@@ -156,7 +162,7 @@ header ul a:hover::after {
 	padding: 0;
 	width: 6px;
 	height: 6px;
-	@apply bg-white opacity-100
+	@apply bg-white opacity-100;
 }
 
 .swp_pagination span.swiper-pagination-bullet-active {
@@ -424,7 +430,7 @@ input[type="range"]:focus {
 	.media-filter .dropdown,
 	.media-filter .dropdown button {
 		width: 100%;
-		margin-bottom: 32px;
+		margin-bottom: 20px;
 	}
 
 	.media-filter .dropdown-body {
@@ -452,4 +458,22 @@ input[type="range"]:focus {
 
 .datepicker {
 	width: 100%;
+}
+
+.back-call__btn {
+	font-family: 'Montserrat';
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 17.07px;
+	padding: 11px 16px;
+	border-radius: 100px;
+	background: #EF924F;
+	color: #fff;
+	transition: all .3s linear;
+	border: 1px solid #EF924F;
+}
+
+.back-call__btn:hover {
+	background: transparent;
+	color: #333333;
 }

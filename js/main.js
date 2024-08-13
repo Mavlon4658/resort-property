@@ -178,15 +178,12 @@ if (accordionItems.length) {
 }
 
 let headerBars = document.querySelector('.header_bars'),
-	mobileMenu = document.querySelector('.mobile_menu'),
-	mobileMenuClose = document.querySelector('.mobile_menu__close');
+	mobileMenu = document.querySelector('.mobile_menu');
 
 if (headerBars) {
 	headerBars.onclick = () => {
 		mobileMenu.classList.toggle('hidden');
-	}
-	mobileMenuClose.onclick = () => {
-		mobileMenu.classList.add('hidden');
+		document.body.classList.toggle('overflow-hidden');
 	}
 }
 
@@ -214,6 +211,26 @@ try {
 		navigation: {
 			nextEl: '.btn__next',
 			prevEl: '.btn__prev',
+		},
+		breakpoints: {
+			1024: {
+				slidesPerView: 1.6,
+			},
+			0: {
+				slidesPerView: 1,
+			},
+		},
+	});
+} catch (error) { }
+try {
+	// parahot swiper
+	var parahotSwiper = new Swiper('.parahot-slider2', {
+		speed: 800,
+		spaceBetween: 32,
+		slidesPerView: 1.6,
+		navigation: {
+			nextEl: '.btn__next2',
+			prevEl: '.btn__prev2',
 		},
 		breakpoints: {
 			1024: {
