@@ -92,7 +92,7 @@ a {
 }
 
 .btn-orange {
-	@apply bg-[#E78844] text-white rounded-[40px] h-[50px] px-[33px] font-montserrat font-medium text-base tracking-[1%] cursor-pointer;
+	@apply bg-[#E78844] text-white rounded-[40px] h-[50px] px-[33px] font-montserrat font-medium text-base tracking-[1%] cursor-pointer border border-coral duration-300;
 }
 
 header ul a::after {
@@ -476,4 +476,8 @@ input[type="range"]:focus {
 .back-call__btn:hover {
 	background: transparent;
 	color: #333333;
+}
+
+.back-call__modal .btn-orange {
+	color: #3D3D3D;
 }

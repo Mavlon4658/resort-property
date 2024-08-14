@@ -24,6 +24,9 @@ module.exports = {
 			screens: {
 				'lg-plus': '992px',
 			},
+			boxShadow: {
+				'custom': '0px 4px 25px 0px rgba(0, 0, 0, 0.1)', // shaqum va rangni moslashtirish
+			},
 		},
 	},
 	plugins: [],

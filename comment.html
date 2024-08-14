@@ -2,338 +2,365 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Курортная недвижимость</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <!-- CSS file -->
-  <link rel="stylesheet" href="./dist/output.css">
-  <!-- font -->
-  <link rel="stylesheet" href="./fonts/Montserrat/stylesheet.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Курортная недвижимость</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<!-- CSS file -->
+	<link rel="stylesheet" href="./dist/output.css">
+	<!-- font -->
+	<link rel="stylesheet" href="./fonts/Montserrat/stylesheet.css">
 </head>
 
 <body class="bg-[#F5F5F4]">
-  <div class="overflow-hidden">
+	<div class="overflow-hidden">
 
-    <!-- Header -->
-    <header class="header-black border-b-line-border border-b border-solid">
-      <div class="container">
-        <button class="lg:hidden block mt-[23px] pb-[11px] header_bars">
-          <img src="./images/burger_icon.svg" alt="">
-        </button>
-        <div class="flex items-center">
-          <ul class="lg:flex hidden items-center justify-end gap-[46px] pr-[130px] ml-auto">
-            <li>
-              <a href="#"
-                class="pt-[27px] pb-6  text-gray font-Montserrat font-normal text-sm relative flex">Недвижимость</a>
-            </li>
-            <li>
-              <a href="#" class="pt-[27px] pb-6  text-gray font-Montserrat font-normal text-sm relative flex">Об
-                агентстве</a>
-            </li>
-            <li>
-              <a href="#" class="pt-[27px] pb-6  text-gray font-Montserrat font-normal text-sm relative flex">Отзывы</a>
-            </li>
-            <li>
-              <a href="#"
-                class="pt-[27px] pb-6  text-gray font-Montserrat font-normal text-sm relative flex">Контакты</a>
-            </li>
-            <li>
-              <a href="#"
-                class="pt-[27px] pb-6  text-gray font-Montserrat font-normal text-sm relative flex">Ипотека</a>
-            </li>
-            <li>
-              <a href="#" class="pt-[27px] pb-6  text-gray font-Montserrat font-normal text-sm relative flex">Блог</a>
-            </li>
-          </ul>
-          <a href="tel:+88002223344" class="text-gray lg:block hidden font-Montserrat font-medium text-[24px]">8 800 222
-            33 44</a>
-        </div>
-      </div>
-    </header>
-    <!-- Header end -->
+		<!-- Header -->
+		<header class="header-black border-b-line-border border-b border-solid">
+			<div class="container">
+				<button class="lg:hidden block mt-[23px] pb-[11px] header_bars">
+					<img src="./images/burger_icon.svg" alt="">
+				</button>
+				<div class="flex items-center">
+					<ul class="lg:flex hidden items-center justify-end gap-[46px] pr-[130px] ml-auto">
+						<li>
+							<a href="#"
+								class="pt-[27px] pb-6  text-gray font-Montserrat font-normal text-sm relative flex">Недвижимость</a>
+						</li>
+						<li>
+							<a href="#" class="pt-[27px] pb-6  text-gray font-Montserrat font-normal text-sm relative flex">Об
+								агентстве</a>
+						</li>
+						<li>
+							<a href="#" class="pt-[27px] pb-6  text-gray font-Montserrat font-normal text-sm relative flex">Отзывы</a>
+						</li>
+						<li>
+							<a href="#"
+								class="pt-[27px] pb-6  text-gray font-Montserrat font-normal text-sm relative flex">Контакты</a>
+						</li>
+						<li>
+							<a href="#"
+								class="pt-[27px] pb-6  text-gray font-Montserrat font-normal text-sm relative flex">Ипотека</a>
+						</li>
+						<li>
+							<a href="#" class="pt-[27px] pb-6  text-gray font-Montserrat font-normal text-sm relative flex">Блог</a>
+						</li>
+					</ul>
+					<a href="tel:+88002223344" class="text-gray lg:block hidden font-Montserrat font-medium text-[24px]">8 800 222
+						33 44</a>
+				</div>
+			</div>
+		</header>
+		<!-- Header end -->
 
-    <!-- Mobile menu -->
-    <section class="mobile_menu fixed hidden top-0 left-0 w-full h-full z-20">
-        <div class="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.6)]"></div>
-        <div class="absolute top-0 left-0 w-[300px] h-full bg-white">
-            <button class="absolute top-[38px] right-4 mobile_menu__close">
-                <img src="./images/plus-icon.svg" class="rotate-45" alt="">
-            </button>
-            <ul class="flex flex-col py-8 px-5 gap-5">
-                <li>
-                    <a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Недвижимость</a>
-                </li>
-                <li>
-                    <a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Об агентстве</a>
-                </li>
-                <li>
-                    <a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Отзывы</a>
-                </li>
-                <li>
-                    <a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Контакты</a>
-                </li>
-                <li>
-                    <a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Ипотека</a>
-                </li>
-                <li>
-                    <a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Блог</a>
-                </li>
-                <li>
-                    <a href="tel:+88002223344" class="text-[#E78844] text-base font-semibold font-montserrat">8 800 222 33 44</a>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <!-- Mobile menu end -->
+		<!-- Mobile menu -->
+		<section class="mobile_menu fixed hidden top-0 left-0 w-full h-full z-20">
+			<div class="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.6)]"></div>
+			<div class="absolute top-0 left-0 w-[300px] h-full bg-white">
+				<button class="absolute top-[38px] right-4 mobile_menu__close">
+					<img src="./images/plus-icon.svg" class="rotate-45" alt="">
+				</button>
+				<ul class="flex flex-col py-8 px-5 gap-5">
+					<li>
+						<a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Недвижимость</a>
+					</li>
+					<li>
+						<a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Об агентстве</a>
+					</li>
+					<li>
+						<a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Отзывы</a>
+					</li>
+					<li>
+						<a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Контакты</a>
+					</li>
+					<li>
+						<a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Ипотека</a>
+					</li>
+					<li>
+						<a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Блог</a>
+					</li>
+					<li>
+						<a href="tel:+88002223344" class="text-[#E78844] text-base font-semibold font-montserrat">8 800 222 33
+							44</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- Mobile menu end -->
 
-    <!-- breadcrumbs -->
-    <div class="md:mt-[55px] mt-[28px] md:mb-[19px] mb-[3px]">
-      <div class="container">
-        <ul class="flex items-center">
-          <li>
-            <a href="/" class="font-montserrat sm:font-normal font-medium text-base text-gray">
-              Главная
-            </a>
-          </li>
-          <li class="font-montserrat sm:font-normal font-medium text-base text-gray">
-            /
-          </li>
-          <li>
-            <span class="font-montserrat sm:font-normal font-medium text-base text-gray">
-              Отзывы
-            </span>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- breadcrumbs -->
+		<!-- breadcrumbs -->
+		<div class="md:mt-[55px] mt-[28px] md:mb-[19px] mb-[3px]">
+			<div class="container">
+				<ul class="flex items-center">
+					<li>
+						<a href="/" class="font-montserrat sm:font-normal font-medium text-base text-gray">
+							Главная
+						</a>
+					</li>
+					<li class="font-montserrat sm:font-normal font-medium text-base text-gray">
+						/
+					</li>
+					<li>
+						<span class="font-montserrat sm:font-normal font-medium text-base text-gray">
+							Отзывы
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- breadcrumbs -->
 
-    <main>
+		<main>
 
-      <!-- comment -->
-      <section>
-        <div class="container">
-          <h3
-            class="font-Unbounded font-medium md:text-[60px] md:leading-[74px] text-[32px] leading-[39px] md:mb-[50px] mb-[22px]">
-            Отзывы
-          </h3>
-          <div class="flex items-stretch flex-wrap md:gap-[32px] gap-[20px] md:flex-row flex-col">
-            <div
-              class="md:w-[calc(100%_/_2_-_16px)] w-[calc(100%)] relative md:rounded-[32px] rounded-[16px] overflow-hidden">
-              <button class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-                <img src="./images/play_icon.svg" alt="">
-              </button>
-              <img class="w-full h-full object-cover" src="./images/comment1.png" alt="">
-            </div>
-            <div
-              class="md:w-[calc(100%_/_2_-_16px)] w-[calc(100%)] md:rounded-[32px] rounded-[16px] overflow-hidden md:px-[40px] px-[16px] md:py-[36px] flex flex-col justify-center py-[16px] border-solid border-line-border border-[1px]">
-              <div
-                class="md:w-[97px] md:h-[97px] w-[48px] h-[48px] bg-card-circle rounded-[50%] md:mb-[25px] mb-[15px]">
-              </div>
-              <h6 class="text-gray font-unbounded font-normal md:text-base text-sm mb-[10px]">
-                Имя пользователя
-              </h6>
-              <p class="text-text-grey font-normal md:text-sm text-xs">
-                Но не только для инвесторов интересен данный регион. Черноморское побережье станет прекрасным местом для
-                жизни. Современные комплексы апартаментов с премиальным уровнем комфорта под управлением отельеров
-                мирового класса сделают отпуск незабываемым.
-              </p>
-            </div>
-            <div
-              class="md:w-[calc(100%_/_2_-_16px)] w-[calc(100%)] relative md:rounded-[32px] rounded-[16px] overflow-hidden">
-              <button class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-                <img src="./images/play_icon.svg" alt="">
-              </button>
-              <img class="w-full" src="./images/comment2.png" alt="">
-            </div>
-            <div
-              class="md:w-[calc(100%_/_2_-_16px)] w-[calc(100%)] relative md:rounded-[32px] rounded-[16px] overflow-hidden">
-              <button class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-                <img src="./images/play_icon.svg" alt="">
-              </button>
-              <img class="w-full" src="./images/comment3.png" alt="">
-            </div>
-            <div
-              class="md:w-[calc(100%_/_2_-_16px)] w-[calc(100%)] md:rounded-[32px] rounded-[16px] overflow-hidden md:px-[40px] px-[16px] md:py-[36px] flex flex-col justify-center py-[16px] border-solid border-line-border border-[1px]">
-              <div
-                class="md:w-[97px] md:h-[97px] w-[48px] h-[48px] bg-card-circle rounded-[50%] md:mb-[25px] mb-[15px]">
-              </div>
-              <h6 class="text-gray font-unbounded font-normal md:text-base text-sm mb-[10px]">
-                Имя пользователя
-              </h6>
-              <p class="text-text-grey font-normal md:text-sm text-xs">
-                Но не только для инвесторов интересен данный регион. Черноморское побережье станет прекрасным местом для
-                жизни. Современные комплексы апартаментов с премиальным уровнем комфорта под управлением отельеров
-                мирового класса сделают отпуск незабываемым.
-              </p>
-            </div>
-            <div
-              class="md:w-[calc(100%_/_2_-_16px)] w-[calc(100%)] relative md:rounded-[32px] rounded-[16px] overflow-hidden">
-              <button class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-                <img src="./images/play_icon.svg" alt="">
-              </button>
-              <img class="w-full h-full object-cover" src="./images/comment1.png" alt="">
-            </div>
-          </div>
-          <div class="flex justify-center md:mb-[120px] mb-[52px] md:mt-[50px] mt-[32px]">
-            <button class="btn-orange">
-              Показать ещё
-            </button>
-          </div>
-        </div>
-      </section>
-      <!-- comment -->
+			<!-- comment -->
+			<section>
+				<div class="container">
+					<h3
+						class="font-Unbounded font-medium md:text-[60px] md:leading-[74px] text-[32px] leading-[39px] md:mb-[50px] mb-[22px]">
+						Отзывы
+					</h3>
+					<div class="flex items-stretch flex-wrap md:gap-[32px] gap-[20px] md:flex-row flex-col">
+						<div
+							class="md:w-[calc(100%_/_2_-_16px)] w-[calc(100%)] relative md:rounded-[32px] rounded-[16px] overflow-hidden">
+							<button class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+								<img src="./images/play_icon.svg" alt="">
+							</button>
+							<img class="w-full h-full object-cover" src="./images/comment1.png" alt="">
+						</div>
+						<div
+							class="md:w-[calc(100%_/_2_-_16px)] w-[calc(100%)] md:rounded-[32px] rounded-[16px] overflow-hidden md:px-[40px] px-[16px] md:py-[36px] flex flex-col justify-center py-[16px] border-solid border-line-border border-[1px]">
+							<div
+								class="md:w-[97px] md:h-[97px] w-[48px] h-[48px] bg-card-circle rounded-[50%] md:mb-[25px] mb-[15px]">
+							</div>
+							<h6 class="text-gray font-unbounded font-normal md:text-base text-sm mb-[10px]">
+								Имя пользователя
+							</h6>
+							<p class="text-text-grey font-normal md:text-sm text-xs">
+								Но не только для инвесторов интересен данный регион. Черноморское побережье станет прекрасным местом для
+								жизни. Современные комплексы апартаментов с премиальным уровнем комфорта под управлением отельеров
+								мирового класса сделают отпуск незабываемым.
+							</p>
+						</div>
+						<div
+							class="md:w-[calc(100%_/_2_-_16px)] w-[calc(100%)] relative md:rounded-[32px] rounded-[16px] overflow-hidden">
+							<button class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+								<img src="./images/play_icon.svg" alt="">
+							</button>
+							<img class="w-full" src="./images/comment2.png" alt="">
+						</div>
+						<div
+							class="md:w-[calc(100%_/_2_-_16px)] w-[calc(100%)] relative md:rounded-[32px] rounded-[16px] overflow-hidden">
+							<button class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+								<img src="./images/play_icon.svg" alt="">
+							</button>
+							<img class="w-full" src="./images/comment3.png" alt="">
+						</div>
+						<div
+							class="md:w-[calc(100%_/_2_-_16px)] w-[calc(100%)] md:rounded-[32px] rounded-[16px] overflow-hidden md:px-[40px] px-[16px] md:py-[36px] flex flex-col justify-center py-[16px] border-solid border-line-border border-[1px]">
+							<div
+								class="md:w-[97px] md:h-[97px] w-[48px] h-[48px] bg-card-circle rounded-[50%] md:mb-[25px] mb-[15px]">
+							</div>
+							<h6 class="text-gray font-unbounded font-normal md:text-base text-sm mb-[10px]">
+								Имя пользователя
+							</h6>
+							<p class="text-text-grey font-normal md:text-sm text-xs">
+								Но не только для инвесторов интересен данный регион. Черноморское побережье станет прекрасным местом для
+								жизни. Современные комплексы апартаментов с премиальным уровнем комфорта под управлением отельеров
+								мирового класса сделают отпуск незабываемым.
+							</p>
+						</div>
+						<div
+							class="md:w-[calc(100%_/_2_-_16px)] w-[calc(100%)] relative md:rounded-[32px] rounded-[16px] overflow-hidden">
+							<button class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+								<img src="./images/play_icon.svg" alt="">
+							</button>
+							<img class="w-full h-full object-cover" src="./images/comment1.png" alt="">
+						</div>
+					</div>
+					<div class="flex justify-center md:mb-[120px] mb-[52px] md:mt-[50px] mt-[32px]">
+						<button class="btn-orange">
+							Показать ещё
+						</button>
+					</div>
+				</div>
+			</section>
+			<!-- comment -->
 
-      <!-- statistic -->
-      <section class="bg-green-dark">
-        <div class="container">
-          <div
-            class="flex lg:flex-row flex-col justify-between gap-[32px] md:pt-[78px] pt-[36px] md:pb-[33px] pb-[35px]">
-            <div>
-              <h6
-                class="font-unbounded font-normal md:text-[36px] md:leading-[44px] text-[22px] leading-[27px] md:mb-[37px] mb-[22px] text-white uppercase">
-                Узнайте срок окупаемости инвестиций в гостиничный бизнес
-              </h6>
-              <div class="flex md:flex-row flex-col items-start md:items-center md:gap-[40px] gap-[20px]">
-                <div class="md:max-w-[195px] flex md:items-start items-center flex-row md:flex-col gap-[17px]">
-                  <div class="flex-shrink-0 w-[12px] h-[12px] bg-coral rounded-[50%]"></div>
-                  <p class="font-Montserrat font-light text-sm text-white">
-                    Расчет среднего годового роста цен на номера
-                  </p>
-                </div>
-                <div class="md:max-w-[195px] flex md:items-start items-center flex-row md:flex-col gap-[17px]">
-                  <div class="flex-shrink-0 w-[12px] h-[12px] bg-coral rounded-[50%]"></div>
-                  <p class="font-Montserrat font-light text-sm text-white">
-                    Расчет сроков окупаемости инвестиций
-                  </p>
-                </div>
-                <div class="md:max-w-[195px] flex md:items-start items-center flex-row md:flex-col gap-[17px]">
-                  <div class="flex-shrink-0 w-[12px] h-[12px] bg-coral rounded-[50%]"></div>
-                  <p class="font-Montserrat font-light text-sm text-white">
-                    Подробный анализ объекта для инвесторов
-                  </p>
-                </div>
-              </div>
-              <form action="#" class="flex items-center gap-[21px] md:mt-[65px] mt-[25px] lg:flex-row flex-col">
-                <input type="tel" placeholder="Телефон"
-                  class="lg:w-[257px] w-full font-Montserrat px-[20px] py-[16px] font-medium text-[15px] leading-[18px] text-input-dark border-white border-[1px] border-solid rounded-[50px] bg-transparent h-[50px] focus:outline-none">
-                <button class="btn-orange lg:w-[185px] w-full">
-                  Получить
-                </button>
-              </form>
-            </div>
-            <div class="lg:max-w-[412px] max-w-full">
-              <img class="w-full" src="./images/statistic_img.png" alt="">
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- statistic -->
+			<!-- statistic -->
+			<section class="bg-green-dark">
+				<div class="container">
+					<div
+						class="flex lg:flex-row flex-col justify-between gap-[32px] md:pt-[78px] pt-[36px] md:pb-[33px] pb-[35px]">
+						<div>
+							<h6
+								class="font-unbounded font-normal md:text-[36px] md:leading-[44px] text-[22px] leading-[27px] md:mb-[37px] mb-[22px] text-white uppercase">
+								Узнайте срок окупаемости инвестиций в гостиничный бизнес
+							</h6>
+							<div class="flex md:flex-row flex-col items-start md:items-center md:gap-[40px] gap-[20px]">
+								<div class="md:max-w-[195px] flex md:items-start items-center flex-row md:flex-col gap-[17px]">
+									<div class="flex-shrink-0 w-[12px] h-[12px] bg-coral rounded-[50%]"></div>
+									<p class="font-Montserrat font-light text-sm text-white">
+										Расчет среднего годового роста цен на номера
+									</p>
+								</div>
+								<div class="md:max-w-[195px] flex md:items-start items-center flex-row md:flex-col gap-[17px]">
+									<div class="flex-shrink-0 w-[12px] h-[12px] bg-coral rounded-[50%]"></div>
+									<p class="font-Montserrat font-light text-sm text-white">
+										Расчет сроков окупаемости инвестиций
+									</p>
+								</div>
+								<div class="md:max-w-[195px] flex md:items-start items-center flex-row md:flex-col gap-[17px]">
+									<div class="flex-shrink-0 w-[12px] h-[12px] bg-coral rounded-[50%]"></div>
+									<p class="font-Montserrat font-light text-sm text-white">
+										Подробный анализ объекта для инвесторов
+									</p>
+								</div>
+							</div>
+							<form action="#" class="flex items-center gap-[21px] md:mt-[65px] mt-[25px] lg:flex-row flex-col">
+								<input type="tel" placeholder="Телефон"
+									class="lg:w-[257px] w-full font-Montserrat px-[20px] py-[16px] font-medium text-[15px] leading-[18px] text-input-dark border-white border-[1px] border-solid rounded-[50px] bg-transparent h-[50px] focus:outline-none">
+								<button class="btn-orange lg:w-[185px] w-full">
+									Получить
+								</button>
+							</form>
+						</div>
+						<div class="lg:max-w-[412px] max-w-full">
+							<img class="w-full" src="./images/statistic_img.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- statistic -->
 
 
-    </main>
+		</main>
 
-    <!-- Footer -->
-    <footer class="footer md:pt-[80px] pt-[46px] md:pb-[55px] pb-[26px]">
-      <div class="container">
-        <div class="flex md:flex-row flex-col items-start justify-between gap-[20px]">
-          <ul class="flex flex-col gap-[7px] md:mb-0 mb-[20px]">
-            <h6 class="font-Unbounded font-normal text-[18px] leading-[22px] text-gray mb-[14px]">
-              Меню
-            </h6>
-            <li>
-              <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
-                Об агентстве
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
-                Отзывы
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
-                Контакты
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
-                Ипотека
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
-                Блог
-              </a>
-            </li>
-          </ul>
-          <ul class="flex flex-col gap-[7px] md:mb-0 mb-[20px]">
-            <h6 class="font-Unbounded font-normal text-[18px] leading-[22px] text-gray mb-[14px]">
-              Города
-            </h6>
-            <li>
-              <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
-                Сочи
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
-                Ялта
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
-                Алушта
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
-                Новороссийск
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
-                Адлер
-              </a>
-            </li>
-          </ul>
-          <ul class="flex flex-col gap-[7px]">
-            <h6 class="font-Unbounded font-normal text-[18px] leading-[22px] text-gray mb-[14px]">
-              Адреса
-            </h6>
-            <li>
-              <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
-                Сочи, микрорайон Центральный,<br class="md:block hidden"> ул. Роз, 117
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
-                Ялта, ул.Васильева, 16
-              </a>
-            </li>
-          </ul>
-          <div>
-            <a href="tel:+88002223344" class="font-semibold font-montserrat text-[24px] leading-[29px] text-coral">
-              8 800 222 33 44
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="max-w-[1200px] mx-auto h-[1px] md:mt-[43px] mt-[20px] bg-line-border"></div>
-      <div class="container">
-        <span class="md:mt-[29px] block mt-[20px] md:text-base text-sm font-light font-montserrat text-[#36363699]">
-          © Курортная недвижимость l 2017-2024
-        </span>
-      </div>
-    </footer>
-    <!-- Footer end -->
+		<!-- Footer -->
+		<footer class="footer md:pt-[80px] pt-[46px] md:pb-[55px] pb-[26px]">
+			<div class="container">
+				<div class="flex md:flex-row flex-col items-start justify-between gap-[20px]">
+					<ul class="flex flex-col gap-[7px] md:mb-0 mb-[20px]">
+						<h6 class="font-Unbounded font-normal text-[18px] leading-[22px] text-gray mb-[14px]">
+							Меню
+						</h6>
+						<li>
+							<a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+								Об агентстве
+							</a>
+						</li>
+						<li>
+							<a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+								Отзывы
+							</a>
+						</li>
+						<li>
+							<a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+								Контакты
+							</a>
+						</li>
+						<li>
+							<a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+								Ипотека
+							</a>
+						</li>
+						<li>
+							<a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+								Блог
+							</a>
+						</li>
+					</ul>
+					<ul class="flex flex-col gap-[7px] md:mb-0 mb-[20px]">
+						<h6 class="font-Unbounded font-normal text-[18px] leading-[22px] text-gray mb-[14px]">
+							Города
+						</h6>
+						<li>
+							<a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+								Сочи
+							</a>
+						</li>
+						<li>
+							<a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+								Ялта
+							</a>
+						</li>
+						<li>
+							<a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+								Алушта
+							</a>
+						</li>
+						<li>
+							<a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+								Новороссийск
+							</a>
+						</li>
+						<li>
+							<a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+								Адлер
+							</a>
+						</li>
+					</ul>
+					<ul class="flex flex-col gap-[7px]">
+						<h6 class="font-Unbounded font-normal text-[18px] leading-[22px] text-gray mb-[14px]">
+							Адреса
+						</h6>
+						<li>
+							<a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+								Сочи, микрорайон Центральный,<br class="md:block hidden"> ул. Роз, 117
+							</a>
+						</li>
+						<li>
+							<a href="#" class="text-text-grey-light text-base font-normal font-montserrat">
+								Ялта, ул.Васильева, 16
+							</a>
+						</li>
+					</ul>
+					<div>
+						<a href="tel:+88002223344" class="font-semibold font-montserrat text-[24px] leading-[29px] text-coral">
+							8 800 222 33 44
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="max-w-[1200px] mx-auto h-[1px] md:mt-[43px] mt-[20px] bg-line-border"></div>
+			<div class="container">
+				<span class="md:mt-[29px] block mt-[20px] md:text-base text-sm font-light font-montserrat text-[#36363699]">
+					© Курортная недвижимость l 2017-2024
+				</span>
+			</div>
+		</footer>
+		<!-- Footer end -->
 
-  </div>
+	</div>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <!-- JS file -->
-  <script src="./js/main.js"></script>
+	<!-- back call modal -->
+	<div
+		class="back-call__modal hidden fixed top-0 left-0 w-full h-full items-center justify-center flex-col bg-[#FFFFFF66] z-[999]">
+		<div
+			class="md:max-w-[380px] max-w-[350px] md:p-16 p-8 bg-[#3C606F] rounded-[32px] relative text-white modal-content">
+			<button
+				class="modal-close__btn absolute top-[10px] right-[10px] flex items-center justify-center bg-coral md:w-[50px] md:h-[50px] w-10 h-10 rounded-full">
+				<img src="images/modal-close.svg" alt="">
+			</button>
+			<h4 class="font-Montserrat md:leading-[29.26px] leading-[24.38px] md:text-2xl text-xl font-bold mb-[10px]">
+				Заказать звонок</h4>
+			<p class="font-Montserrat text-base leading-[19px]">
+				Оставьте ваш номер телефона и мы Вам перезвоним.
+			</p>
+			<form class="space-y-[10px] mt-8">
+				<input
+					class="text-[#fff] text-[15px] h-[50px] w-full leading-[18px] font-Montserrat font-normal placeholder:text-[#FFFFFFB2] py-4 px-5 border border-white rounded-[50px] bg-transparent outline-none"
+					type="text" placeholder="Ваше имя">
+				<input
+					class="text-[#fff] text-[15px] h-[50px] w-full leading-[18px] font-Montserrat font-normal placeholder:text-[#FFFFFFB2] py-4 px-5 border border-white rounded-[50px] bg-transparent outline-none"
+					type="tel" placeholder="Телефон">
+				<button class="btn-orange w-full h-[50px]">Заказать звонок</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- JS file -->
+	<script src="./js/main.js"></script>
 </body>
 
 </html>

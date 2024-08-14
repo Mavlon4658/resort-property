@@ -767,3 +767,62 @@ try {
 } catch (error) {
 
 }
+// modal
+try {
+	const backCallModal = document.querySelector('.back-call__modal');
+	const modalOpenBtn = document.querySelector('.modal-open__btn');
+	const modalCloseBtn = document.querySelector('.modal-close__btn');
+
+	modalOpenBtn.addEventListener('click', () => {
+		backCallModal.classList.remove('hidden');
+		backCallModal.classList.add('flex');
+		document.body.classList.add('overflow-hidden');
+	})
+	modalCloseBtn.addEventListener('click', () => {
+		backCallModal.classList.add('hidden');
+		backCallModal.classList.remove('flex');
+		document.body.classList.remove('overflow-hidden');
+	})
+
+	backCallModal.addEventListener('click', (e) => {
+		// Check if the clicked target is not the modal content
+		if (!e.target.closest('.modal-content')) {
+			// Hide the modal and restore body overflow
+			backCallModal.classList.add('hidden');
+			backCallModal.classList.remove('flex');
+			document.body.classList.remove('overflow-hidden');
+		}
+	});
+} catch (error) {
+
+}
+try {
+	const apartmentModal = document.querySelector('.apartment-modal');
+	const openApartmentModalBtn = document.querySelectorAll('.product-box');
+	const closeApartmentModalBtn = document.querySelector('.apartment-modal__close');
+
+	openApartmentModalBtn.forEach(btn => {
+		btn.addEventListener('click', () => {
+			apartmentModal.classList.remove('hidden');
+			apartmentModal.classList.add('flex');
+			document.body.classList.add('overflow-hidden');
+		})
+	})
+	closeApartmentModalBtn.addEventListener('click', () => {
+		apartmentModal.classList.add('hidden');
+		apartmentModal.classList.remove('flex');
+		document.body.classList.remove('overflow-hidden');
+	})
+
+	apartmentModal.addEventListener('click', (e) => {
+		// Check if the clicked target is not the modal content
+		if (!e.target.closest('.modal-content')) {
+			// Hide the modal and restore body overflow
+			apartmentModal.classList.add('hidden');
+			apartmentModal.classList.remove('flex');
+			document.body.classList.remove('overflow-hidden');
+		}
+	});
+} catch (error) {
+
+}
