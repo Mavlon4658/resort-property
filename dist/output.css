@@ -730,10 +730,6 @@ video {
   top: 28px;
 }
 
-.top-\[38px\] {
-  top: 38px;
-}
-
 .top-\[50\%\] {
   top: 50%;
 }
@@ -924,6 +920,10 @@ video {
   margin-bottom: 35px;
 }
 
+.mb-\[36px\] {
+  margin-bottom: 36px;
+}
+
 .mb-\[37px\] {
   margin-bottom: 37px;
 }
@@ -938,10 +938,6 @@ video {
 
 .mb-\[52px\] {
   margin-bottom: 52px;
-}
-
-.mb-\[54px\] {
-  margin-bottom: 54px;
 }
 
 .mb-\[5px\] {
@@ -1110,18 +1106,6 @@ video {
 
 .mt-\[80px\] {
   margin-top: 80px;
-}
-
-.mb-\[\] {
-  margin-bottom: ;
-}
-
-.mb-\[36p\] {
-  margin-bottom: 36p;
-}
-
-.mb-\[36px\] {
-  margin-bottom: 36px;
 }
 
 .block {
@@ -1732,10 +1716,6 @@ video {
   gap: 34px;
 }
 
-.gap-\[46px\] {
-  gap: 46px;
-}
-
 .gap-\[50px\] {
   gap: 50px;
 }
@@ -2045,11 +2025,6 @@ video {
   border-bottom-color: rgba(59,59,59,0.13);
 }
 
-.border-b-line-border {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(219 219 219 / var(--tw-border-opacity));
-}
-
 .border-b-transparent {
   border-bottom-color: transparent;
 }
@@ -2311,11 +2286,6 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .py-\[10px\] {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2377,10 +2347,6 @@ video {
 
 .pb-9 {
   padding-bottom: 2.25rem;
-}
-
-.pb-\[11px\] {
-  padding-bottom: 11px;
 }
 
 .pb-\[12px\] {
@@ -2551,10 +2517,6 @@ video {
   padding-right: 1rem;
 }
 
-.pr-\[130px\] {
-  padding-right: 130px;
-}
-
 .pr-\[17px\] {
   padding-right: 17px;
 }
@@ -2641,10 +2603,6 @@ video {
 
 .pt-\[25px\] {
   padding-top: 25px;
-}
-
-.pt-\[27px\] {
-  padding-top: 27px;
 }
 
 .pt-\[35px\] {
@@ -3039,11 +2997,6 @@ video {
 .text-\[\#808080\] {
   --tw-text-opacity: 1;
   color: rgb(128 128 128 / var(--tw-text-opacity));
-}
-
-.text-\[\#E78844\] {
-  --tw-text-opacity: 1;
-  color: rgb(231 136 68 / var(--tw-text-opacity));
 }
 
 .text-\[\#ECECEC\] {
@@ -3707,6 +3660,14 @@ input[type="range"]:focus {
   color: #3D3D3D;
 }
 
+header {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999 !important;
+}
+
 .marker\:text-coral *::marker {
   color: rgb(239 146 79 );
 }
@@ -3929,6 +3890,10 @@ input[type="range"]:focus {
     margin-bottom: 50px;
   }
 
+  .md\:mb-\[54px\] {
+    margin-bottom: 54px;
+  }
+
   .md\:mb-\[60px\] {
     margin-bottom: 60px;
   }
@@ -3995,10 +3960,6 @@ input[type="range"]:focus {
 
   .md\:mt-\[80px\] {
     margin-top: 80px;
-  }
-
-  .md\:mb-\[54px\] {
-    margin-bottom: 54px;
   }
 
   .md\:block {

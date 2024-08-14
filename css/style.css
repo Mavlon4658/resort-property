@@ -481,3 +481,10 @@ input[type="range"]:focus {
 .back-call__modal .btn-orange {
 	color: #3D3D3D;
 }
+header {
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999 !important;
+}

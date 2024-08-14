@@ -16,74 +16,91 @@
 	<div class="overflow-hidden">
 
 		<!-- Header -->
-		<header class="header-black border-b-line-border border-b border-solid">
-			<div class="container">
-				<button class="lg:hidden block mt-[23px] pb-[11px] header_bars">
-					<img src="./images/burger_icon.svg" alt="">
-				</button>
-				<div class="flex items-center">
-					<ul class="lg:flex hidden items-center justify-end gap-[46px] pr-[130px] ml-auto">
-						<li>
-							<a href="#"
-								class="pt-[27px] pb-6  text-gray font-Montserrat font-normal text-sm relative flex">Недвижимость</a>
-						</li>
-						<li>
-							<a href="#" class="pt-[27px] pb-6  text-gray font-Montserrat font-normal text-sm relative flex">Об
-								агентстве</a>
-						</li>
-						<li>
-							<a href="#" class="pt-[27px] pb-6  text-gray font-Montserrat font-normal text-sm relative flex">Отзывы</a>
-						</li>
-						<li>
-							<a href="#"
-								class="pt-[27px] pb-6  text-gray font-Montserrat font-normal text-sm relative flex">Контакты</a>
-						</li>
-						<li>
-							<a href="#"
-								class="pt-[27px] pb-6  text-gray font-Montserrat font-normal text-sm relative flex">Ипотека</a>
-						</li>
-						<li>
-							<a href="#" class="pt-[27px] pb-6  text-gray font-Montserrat font-normal text-sm relative flex">Блог</a>
-						</li>
-					</ul>
-					<a href="tel:+88002223344" class="text-gray lg:block hidden font-Montserrat font-medium text-[24px]">8 800 222
+		<header
+			class="absolute bg-white top-0 left-0 w-full z-10 border-b-[#ebebeb] border-b border-solid py-[14px] md:h-auto h-[50px]">
+			<div class="container relative flex items-center justify-between">
+				<a class="md:w-[217px] w-[50px] md:h-[27px] h-[20px]" href="#!">
+					<img class="w-full h-full md:block hidden" src="images/company-logo.png" alt="">
+					<img class="md:hidden" src="images/logo-media.png" alt="">
+				</a>
+				<ul class="hidden lg:flex items-center justify-center gap-[16px]">
+					<li>
+						<a href="#" class=" text-[#333333] font-medium font-montserrat text-sm relative flex">Недвижимость</a>
+					</li>
+					<li>
+						<a href="#" class=" text-[#333333] font-medium font-montserrat text-sm relative flex">Об
+							агентстве</a>
+					</li>
+					<li>
+						<a href="#" class=" text-[#333333] font-medium font-montserrat text-sm relative flex">Отзывы</a>
+					</li>
+					<li>
+						<a href="#" class=" text-[#333333] font-medium font-montserrat text-sm relative flex">Контакты</a>
+					</li>
+					<li>
+						<a href="#" class=" text-[#333333] font-medium font-montserrat text-sm relative flex">Ипотека</a>
+					</li>
+					<li>
+						<a href="#" class=" text-[#333333] font-medium font-montserrat text-sm relative flex">Блог</a>
+					</li>
+				</ul>
+				<div class="flex gap-5 items-center">
+					<a href="tel:+88002223344"
+						class="flex right-0 top-[28px] md:text-[#333333] text-[#3C606F] font-montserrat hover:text-coral duration-300 font-medium text-base">8
+						800 222
 						33 44</a>
+					<button class="back-call__btn md:flex hidden modal-open__btn">
+						Заказать звонок
+					</button>
+					<button class="lg:hidden header_bars">
+						<img src="./images/menu-bars.svg" alt="">
+					</button>
 				</div>
 			</div>
 		</header>
 		<!-- Header end -->
-
+		
 		<!-- Mobile menu -->
-		<section class="mobile_menu fixed hidden top-0 left-0 w-full h-full z-20">
-			<div class="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.6)]"></div>
-			<div class="absolute top-0 left-0 w-[300px] h-full bg-white">
-				<button class="absolute top-[38px] right-4 mobile_menu__close">
-					<img src="./images/plus-icon.svg" class="rotate-45" alt="">
-				</button>
-				<ul class="flex flex-col py-8 px-5 gap-5">
+		<section class="mobile_menu fixed hidden top-[50px] left-0 w-full z-20 h-screen">
+			<!-- <div class="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.6)]"></div> -->
+			<div class="absolute top-0 right-0 w-[300px] h-full bg-white">
+				<!-- <button class="absolute top-0 right-4 mobile_menu__close">
+							<img src="./images/plus-icon.svg" class="rotate-45" alt="">
+						</button> -->
+				<ul class="flex flex-col p-8 gap-5">
 					<li>
-						<a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Недвижимость</a>
+						<a href="#" class="text-xl text-[#3B3B3B] font-montserrat">Недвижимость</a>
 					</li>
 					<li>
-						<a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Об агентстве</a>
+						<a href="#" class="text-xl text-[#3B3B3B] font-montserrat">Об агентстве</a>
 					</li>
 					<li>
-						<a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Отзывы</a>
+						<a href="#" class="text-xl text-[#3B3B3B] font-montserrat">Отзывы</a>
 					</li>
 					<li>
-						<a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Контакты</a>
+						<a href="#" class="text-xl text-[#3B3B3B] font-montserrat">Контакты</a>
 					</li>
 					<li>
-						<a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Ипотека</a>
+						<a href="#" class="text-xl text-[#3B3B3B] font-montserrat">Ипотека</a>
 					</li>
 					<li>
-						<a href="#" class="text-sm text-[#3B3B3B] font-montserrat">Блог</a>
-					</li>
-					<li>
-						<a href="tel:+88002223344" class="text-[#E78844] text-base font-semibold font-montserrat">8 800 222 33
-							44</a>
+						<a href="#" class="text-xl text-[#3B3B3B] font-montserrat">Блог</a>
 					</li>
 				</ul>
+				<div class="p-8 space-y-[10px] pt-0">
+					<span class="text-sm leading-[20px] font-Montserrat text-[#686E7C]">Мы в соцсетях</span>
+					<div class="flex gap-[10px]">
+						<a class="w-10 h-10 rounded-full bg-coral flex items-center justify-center" href="#!">
+							<img src="images/vk.svg" alt="">
+						</a>
+						<a class="w-10 h-10 rounded-full bg-coral flex items-center justify-center" href="#!">
+							<img src="images/ox.svg" alt="">
+						</a>
+						<a class="w-10 h-10 rounded-full bg-coral flex items-center justify-center" href="#!">
+							<img src="images/telegram-2.svg" alt="">
+						</a>
+					</div>
+				</div>
 			</div>
 		</section>
 		<!-- Mobile menu end -->
