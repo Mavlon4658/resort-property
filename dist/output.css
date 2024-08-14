@@ -1112,6 +1112,18 @@ video {
   margin-top: 80px;
 }
 
+.mb-\[\] {
+  margin-bottom: ;
+}
+
+.mb-\[36p\] {
+  margin-bottom: 36p;
+}
+
+.mb-\[36px\] {
+  margin-bottom: 36px;
+}
+
 .block {
   display: block;
 }
@@ -3983,6 +3995,10 @@ input[type="range"]:focus {
 
   .md\:mt-\[80px\] {
     margin-top: 80px;
+  }
+
+  .md\:mb-\[54px\] {
+    margin-bottom: 54px;
   }
 
   .md\:block {
