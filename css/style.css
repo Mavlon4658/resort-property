@@ -423,8 +423,9 @@ input[type="range"]:focus {
 	.close-filter__btn {
 		display: block;
 		position: absolute;
-		top: 23px;
-		right: -43px;
+		top: 55px;
+		right: -33px;
+
 	}
 
 	.media-filter .dropdown,
@@ -481,6 +482,7 @@ input[type="range"]:focus {
 .back-call__modal .btn-orange {
 	color: #3D3D3D;
 }
+
 header {
 	position: fixed !important;
 	top: 0;

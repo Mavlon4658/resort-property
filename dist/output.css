@@ -770,12 +770,24 @@ video {
   z-index: 999;
 }
 
+.z-0 {
+  z-index: 0;
+}
+
 .order-1 {
   order: 1;
 }
 
 .order-2 {
   order: 2;
+}
+
+.m-2 {
+  margin: 0.5rem;
+}
+
+.m-8 {
+  margin: 2rem;
 }
 
 .mx-2 {
@@ -1284,6 +1296,10 @@ video {
   height: 100vh;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .w-1\/4 {
   width: 25%;
 }
@@ -1412,6 +1428,14 @@ video {
 .w-max {
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-\[283px\] {
+  width: 283px;
+}
+
+.w-9 {
+  width: 2.25rem;
 }
 
 .min-w-\[51px\] {
@@ -1543,6 +1567,10 @@ video {
 
 .rotate-45 {
   --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1900,6 +1928,10 @@ video {
   border-radius: 9999px;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -2179,6 +2211,10 @@ video {
 
 .p-\[8px\] {
   padding: 8px;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .\!px-\[51px\] {
@@ -3058,6 +3094,20 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\#939392\] {
+  --tw-text-opacity: 1;
+  color: rgb(147 147 146 / var(--tw-text-opacity));
+}
+
+.text-red-600 {
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
+.text-\[\[\#939392\]\] {
+  color: [#939392];
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -3141,6 +3191,34 @@ video {
 
 .ease-\[all\] {
   transition-timing-function: all;
+}
+
+.\[a\:Q\FFFD\13P\F 0\] {
+  a: Q�P0;
+}
+
+.\[b\:\+\3R\FFFD C\FFFD\] {
+  b: +R�C�;
+}
+
+.\[fK\:\FFFD\FFFD\FFFD EL\] {
+  f-k: ���EL;
+}
+
+.\[gL\:7\FFFD\FFFDj\FFFD\FFFD\FFFD\FFFD\FFFD\] {
+  g-l: 7��j�����;
+}
+
+.\[l\:\FFFD\16A\FFFD\] {
+  l: �Ū�;
+}
+
+.\[u\:\FFFD\FFFD\FFFD\FFFDv\/\FFFD\7F\] {
+  u: ����v/�;
+}
+
+.\[w\:b\5\FFFD\4F3\FFFD\FFFD\FFFD\FFFD\\\5 0\FFFD\] {
+  w: b�ӳ����\0�;
 }
 
 @font-face {
@@ -3601,8 +3679,8 @@ input[type="range"]:focus {
   .close-filter__btn {
     display: block;
     position: absolute;
-    top: 23px;
-    right: -43px;
+    top: 55px;
+    right: -33px;
   }
 
   .media-filter .dropdown,
