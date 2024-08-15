@@ -347,6 +347,7 @@ input[type="range"]:focus {
 	width: 15px;
 	border-radius: 50%;
 	background-color: #EF924F;
+	z-index: 10;
 	position: relative;
 	cursor: pointer;
 	appearance: none;
@@ -421,10 +422,10 @@ input[type="range"]:focus {
 	}
 
 	.close-filter__btn {
-		display: block;
+		display: flex;
 		position: absolute;
-		top: 55px;
-		right: -33px;
+		top: 0;
+		right: -44px;
 
 	}
 
@@ -440,7 +441,7 @@ input[type="range"]:focus {
 
 	.media-filter {
 		position: fixed;
-		top: 0;
+		top: 70px;
 		left: 0;
 		border-radius: 0;
 		max-width: 328px;
@@ -489,4 +490,54 @@ header {
 	left: 0;
 	width: 100%;
 	z-index: 999 !important;
+}
+
+.check-text {
+	position: relative;
+	user-select: none;
+}
+
+.check-text span {
+	padding-left: 22px;
+}
+
+.check-text::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 14px;
+	height: 14px;
+	border: 1px solid #878787;
+	border-radius: 4px;
+}
+
+.check-text::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 14px;
+	height: 14px;
+	background: url(../images/checked.svg) no-repeat;
+	display: none;
+	background-size: 8px 6px;
+	background-position: center;
+}
+
+.check-input:checked~.check-text::before {
+	background: #ED9256;
+	border-color: #ED9256;
+}
+
+.check-input:checked~.check-text::after {
+	display: block;
+}
+
+@media screen and (max-width: 768px) {
+	.media-filter {
+		top: 50px;
+	}
 }

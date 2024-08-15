@@ -709,6 +709,11 @@ try {
 	const trackArea2 = document.getElementById('track-area2');
 	const trackArea3 = document.getElementById('track-area3');
 
+
+	fromSlider1.value = 10;
+	fromSlider2.value = 10;
+	fromSlider3.value = 10;
+
 	// Slider qiymatlarini formatlash
 	function formatCurrency(value) {
 		return `${value} руб.`;
