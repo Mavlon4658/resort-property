@@ -2809,10 +2809,6 @@ video {
   text-transform: uppercase;
 }
 
-.capitalize {
-  text-transform: capitalize;
-}
-
 .leading-4 {
   line-height: 1rem;
 }
@@ -3733,6 +3729,16 @@ header {
 @media screen and (max-width: 768px) {
   .media-filter {
     top: 50px;
+  }
+}
+
+.best_deals__child_swp {
+  .swiper-wrapper {
+    position: relative;
+    z-index: -1;
+  }
+  button {
+    z-index: 999999;
   }
 }
 

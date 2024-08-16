@@ -541,3 +541,14 @@ header {
 		top: 50px;
 	}
 }
+
+.best_deals__child_swp {
+	.swiper-wrapper {
+		position: relative;
+		z-index: -1;
+	}
+
+	button {
+		z-index: 999999;
+	}
+}
