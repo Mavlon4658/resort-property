@@ -214,7 +214,7 @@
 						<button class="close-filter__btn xl:hidden flex w-[44px] h-[44px] bg-coral items-center justify-center">
 							<img src="images/close.svg" alt="">
 						</button>
-						<div class="relative dropdown w-[173px]">
+						<div class="relative dropdown w-[173px] z-20">
 							<button
 								class="flex items-center justify-between text-[13px] text-[#36363699] dropdown-head border border-[#36363699] rounded-[50px] bg-white py-3 px-5 w-full">
 								<span class="text-ellipsis xl:w-[80px] overflow-hidden whitespace-nowrap text-left">Регион</span>
@@ -225,13 +225,13 @@
 								</svg>
 							</button>
 							<ul
-								class="flex-col bg-white gap-6 absolute left-0 bottom-[-10px] pt-[15px] px-[22px] pb-4  translate-y-full w-full dropdown-body hidden">
+								class="flex-col bg-white gap-6 absolute left-0 bottom-[-10px] pt-[15px] px-[22px] pb-4  translate-y-full w-full z-20 dropdown-body hidden">
 								<li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Квартира</li>
 								<li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Апартаменты</li>
 								<li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Дом</li>
 							</ul>
 						</div>
-						<div class="relative dropdown w-[154px]">
+						<div class="relative dropdown w-[154px] z-20">
 							<button
 								class="flex items-center justify-between text-[13px] text-[#36363699] dropdown-head border border-[#36363699] rounded-[50px] bg-white py-3 px-5 w-full">
 								<span class="text-ellipsis xl:w-[80px] overflow-hidden whitespace-nowrap text-left">Город</span>
@@ -242,14 +242,14 @@
 								</svg>
 							</button>
 							<ul
-								class="flex-col bg-white gap-6 absolute left-0 bottom-[-10px] pt-[15px] px-[22px] pb-4  translate-y-full w-full dropdown-body hidden">
+								class="flex-col bg-white gap-6 absolute left-0 bottom-[-10px] pt-[15px] px-[22px] pb-4  translate-y-full w-full dropdown-body z-20 hidden">
 								<li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Квартира</li>
 								<li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Апартаменты</li>
 								<li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Дом</li>
 							</ul>
 						</div>
 						<!-- calendar -->
-						<div class="relative dropdown  w-full xl:mb-0 mb-8 xl:max-w-[169px]">
+						<div class="relative dropdown z-20  w-full xl:mb-0 mb-8 xl:max-w-[169px]">
 							<button
 								class="flex items-center justify-between text-[13px] text-[#36363699] dropdown-head border border-[#36363699] rounded-[50px] bg-white py-3 px-5 w-full">
 								<span class="text-ellipsis xl:w-[90px] overflow-hidden whitespace-nowrap text-left">Срок сдачи</span>
@@ -266,7 +266,7 @@
 								</svg>
 							</button>
 							<ul
-								class="flex-col bg-white gap-6 absolute left-0 z-10 bottom-[-10px] pt-[15px] px-[22px] pb-4  translate-y-full w-full dropdown-body hidden">
+								class="flex-col bg-white gap-6 absolute left-0 z-20 bottom-[-10px] pt-[15px] px-[22px] pb-4  translate-y-full w-full dropdown-body hidden">
 								<li>
 									<input class="hidden check-input" type="radio" name="date" id="one">
 									<label
@@ -304,7 +304,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="relative dropdown xl:w-[152px] w-full">
+						<div class="relative dropdown z-20 xl:w-[152px] w-full">
 							<button
 								class="flex items-center justify-between text-[13px] text-[#36363699] dropdown-head border border-[#36363699] rounded-[50px] bg-white py-3 px-5 w-full">
 								<span class="text-ellipsis xl:w-[80px] overflow-hidden whitespace-nowrap text-left">Тип объекта</span>
@@ -315,7 +315,7 @@
 								</svg>
 							</button>
 							<ul
-								class="flex-col bg-white gap-6 absolute left-0 bottom-[-10px] pt-[15px] px-[22px] pb-4  translate-y-full w-full dropdown-body hidden">
+								class="flex-col bg-white gap-6 absolute left-0 bottom-[-10px] pt-[15px] px-[22px] pb-4  translate-y-full w-full dropdown-body hidden z-20">
 								<li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Квартира</li>
 								<li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Апартаменты</li>
 								<li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Дом</li>
@@ -326,7 +326,7 @@
 							<label class="text-[13px] leading-[18px] font-Montserrat font-medium text-gray" for="one-checkbox">С
 								отделкой</label>
 						</div>
-						<div class="range-slider filter-box">
+						<div class="range-slider filter-box z-10 relative">
 							<span class="text-[13px] leading-6 text-[#36363699] font-Montserrat block mb-[10px]">Стоимость</span>
 							<span class="multi-range block h-2 relative">
 								<input type="range" min="0" max="50" value="0" id="lower1">
@@ -357,7 +357,7 @@
 								<img src="images/settings.svg" alt="">
 							</button>
 							<div class="flex gap-6 items-center">
-								<div class="relative dropdown w-[173px]">
+								<div class="relative dropdown z-20 w-[173px]">
 									<button
 										class="flex items-center justify-between text-[13px] text-[#36363699] dropdown-head border border-[#36363699] rounded-[50px] py-3 px-5 w-full">
 										<span class="text-ellipsis w-[107px] overflow-hidden whitespace-nowrap text-left">Сортировать</span>
@@ -368,7 +368,7 @@
 										</svg>
 									</button>
 									<ul
-										class="flex-col bg-white gap-6 absolute left-0 bottom-[-10px] pt-[15px] px-[22px] pb-4  translate-y-full w-full dropdown-body hidden">
+										class="flex-col bg-white gap-6 absolute left-0 bottom-[-10px] pt-[15px] px-[22px] pb-4  translate-y-full w-full dropdown-body hidden z-20">
 										<li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Квартира</li>
 										<li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Апартаменты</li>
 										<li class="text-[#3B3B3B] text-[13px] font-light cursor-pointer">Дом</li>
